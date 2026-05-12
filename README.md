@@ -9,6 +9,13 @@ This repository contains a public-facing release only. Private canon, internal v
 ## Routes
 
 - `/`
+- `/about`
+- `/books`
+- `/store`
+- `/gumroad`
+- `/products`
+- `/audit`
+- `/commercial-audit`
 - `/duat`
 - `/telecom`
 - `/handoff-hub`

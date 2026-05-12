@@ -274,7 +274,9 @@ select:focus-visible {
 .module-grid,
 .docs-grid,
 .workflow-lanes,
-.telecom-grid {
+.telecom-grid,
+.content-grid,
+.product-matrix {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
@@ -286,7 +288,8 @@ select:focus-visible {
 .handoff-panel,
 .telecom-panel,
 .control-panel,
-.release-notes {
+.release-notes,
+.content-panel {
   border: 1px solid rgba(98, 244, 219, 0.16);
   border-radius: 8px;
   background: rgba(6, 17, 19, 0.86);
@@ -296,21 +299,32 @@ select:focus-visible {
 .module-card,
 .doc-card,
 .workflow-node,
-.handoff-panel {
+.handoff-panel,
+.content-panel {
   padding: 18px;
 }
 
 .module-card svg,
 .doc-card svg,
-.workflow-node svg {
+.workflow-node svg,
+.content-panel > svg {
   color: #75e2d2;
 }
 
 .module-card h2,
-.handoff-panel h2 {
+.handoff-panel h2,
+.content-panel h2,
+.store-section h2 {
   margin: 13px 0 8px;
   color: #fff8e6;
   font-size: 1.1rem;
+}
+
+.product-panel h3,
+.matrix-card h2 {
+  margin: 12px 0 8px;
+  color: #fff8e6;
+  font-size: 1.08rem;
 }
 
 .module-card p,
@@ -318,9 +332,208 @@ select:focus-visible {
 .handoff-panel p,
 .doc-card span,
 .message-compact p,
-.empty-state {
+.empty-state,
+.content-panel p,
+.detail-list dd {
   color: #aebfbd;
   line-height: 1.55;
+}
+
+.content-grid {
+  margin-top: 12px;
+}
+
+.content-grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.lead-panel {
+  background: rgba(9, 27, 30, 0.94);
+}
+
+.tag-row,
+.route-actions,
+.panel-kicker,
+.risk-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.tag-row,
+.route-actions {
+  margin-top: 14px;
+}
+
+.tag,
+.status-badge,
+.evidence-badge,
+.pending-link,
+.boundary-note {
+  border: 1px solid rgba(117, 226, 210, 0.22);
+  border-radius: 8px;
+  background: rgba(2, 6, 7, 0.48);
+  color: #d7eeeb;
+  padding: 6px 8px;
+  font-size: 0.78rem;
+}
+
+.status-badge {
+  border-color: rgba(239, 191, 100, 0.38);
+  color: #fff1c7;
+}
+
+.evidence-badge {
+  border-color: rgba(128, 239, 207, 0.36);
+  color: #80efcf;
+}
+
+.pending-link,
+.boundary-note {
+  display: inline-block;
+  color: #ffcf9f;
+}
+
+.boundary-note {
+  margin: 10px 0;
+}
+
+.muted-line {
+  color: #82c7bb;
+  font-size: 0.92rem;
+}
+
+.check-list {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.check-list li {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  color: #bdd5d1;
+  line-height: 1.5;
+}
+
+.check-list li svg {
+  flex: 0 0 auto;
+  margin-top: 3px;
+  color: #80efcf;
+}
+
+.check-list.warn li svg,
+.risk-list svg {
+  color: #ffb37a;
+}
+
+.module-grid.compact {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 12px;
+}
+
+.mini-card {
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #f5fffd;
+}
+
+.mini-card svg {
+  color: #efbf64;
+}
+
+.store-feature {
+  margin-bottom: 22px;
+}
+
+.product-panel.featured {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.45fr) minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+}
+
+.product-panel.featured img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid rgba(98, 244, 219, 0.16);
+  background: #020607;
+}
+
+.panel-kicker {
+  color: #82c7bb;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.panel-kicker svg {
+  color: #75e2d2;
+}
+
+.store-section {
+  margin-top: 28px;
+}
+
+.product-matrix {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.matrix-card {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+}
+
+.detail-list {
+  display: grid;
+  gap: 8px;
+  margin: 6px 0 0;
+}
+
+.detail-list div {
+  display: grid;
+  gap: 3px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(98, 244, 219, 0.1);
+}
+
+.detail-list dt {
+  color: #75e2d2;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.detail-list dd {
+  margin: 0;
+}
+
+.risk-list {
+  margin-top: 8px;
+}
+
+.risk-list span {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 6px;
+  max-width: 100%;
+  color: #ffcf9f;
+  font-size: 0.82rem;
+}
+
+.ordered-list {
+  margin: 12px 0 0;
+  padding-left: 22px;
+  color: #bdd5d1;
+  line-height: 1.65;
 }
 
 .duat-console {
@@ -623,13 +836,20 @@ select:focus-visible {
 
   .module-grid,
   .docs-grid,
-  .telecom-grid {
+  .telecom-grid,
+  .content-grid,
+  .product-matrix,
+  .module-grid.compact {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .workflow-lanes,
   .telecom-summary {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .product-panel.featured {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -663,6 +883,10 @@ select:focus-visible {
   .docs-grid,
   .workflow-lanes,
   .telecom-grid,
+  .content-grid,
+  .content-grid.two,
+  .product-matrix,
+  .module-grid.compact,
   .telemetry-grid,
   .control-grid,
   .telecom-summary {

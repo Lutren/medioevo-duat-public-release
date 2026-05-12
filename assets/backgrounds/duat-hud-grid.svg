@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="DUAT HUD grid">
+  <rect width="1600" height="900" fill="#020607"/>
+  <g opacity="0.28" stroke="#64e6d5" stroke-width="1">
+    <path d="M0 80h1600M0 160h1600M0 240h1600M0 320h1600M0 400h1600M0 480h1600M0 560h1600M0 640h1600M0 720h1600M0 800h1600"/>
+    <path d="M100 0v900M200 0v900M300 0v900M400 0v900M500 0v900M600 0v900M700 0v900M800 0v900M900 0v900M1000 0v900M1100 0v900M1200 0v900M1300 0v900M1400 0v900M1500 0v900"/>
+  </g>
+  <g fill="none" stroke-width="3">
+    <path d="M160 690C320 530 440 580 560 430s250-140 390-30 260 80 470-120" stroke="#64e6d5" opacity="0.66"/>
+    <path d="M160 730c190-80 360-40 520-100s300-120 460-70 250 20 330-70" stroke="#efbf64" opacity="0.52"/>
+  </g>
+  <g fill="#64e6d5">
+    <circle cx="560" cy="430" r="7"/>
+    <circle cx="950" cy="400" r="7"/>
+    <circle cx="1420" cy="280" r="7"/>
+  </g>
+  <g fill="#efbf64">
+    <rect x="1180" y="104" width="220" height="12" rx="6"/>
+    <rect x="1180" y="132" width="146" height="12" rx="6"/>
+    <rect x="1180" y="160" width="188" height="12" rx="6"/>
+  </g>
+</svg>

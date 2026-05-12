@@ -1,0 +1,691 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #020607;
+  color: #eaf7f5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    linear-gradient(115deg, rgba(4, 13, 17, 0.96), rgba(2, 6, 7, 0.98)),
+    #020607;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.app-shell {
+  min-height: 100dvh;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 20px;
+  border-bottom: 1px solid rgba(98, 244, 219, 0.18);
+  background: rgba(3, 10, 12, 0.88);
+  backdrop-filter: blur(16px);
+}
+
+.brand-lockup {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-lockup img {
+  width: 34px;
+  height: 34px;
+}
+
+.brand-lockup span {
+  display: grid;
+  gap: 2px;
+}
+
+.brand-lockup strong {
+  font-size: 0.92rem;
+}
+
+.brand-lockup small {
+  color: #82c7bb;
+  font-size: 0.76rem;
+}
+
+.site-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.site-header nav a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 11px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #b9d4d0;
+  font-size: 0.9rem;
+}
+
+.site-header nav a:hover,
+.site-header nav a.active {
+  border-color: rgba(96, 230, 211, 0.4);
+  background: rgba(20, 116, 108, 0.16);
+  color: #f4fffd;
+}
+
+.hero {
+  position: relative;
+  min-height: 78dvh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(98, 244, 219, 0.12);
+  background:
+    linear-gradient(90deg, rgba(2, 6, 7, 0.94), rgba(2, 6, 7, 0.78) 46%, rgba(2, 6, 7, 0.4)),
+    url("/duat-assets/backgrounds/duat-hud-grid.svg");
+  background-size: cover;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(2, 6, 7, 0.7) 100%);
+  pointer-events: none;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 2;
+  width: min(720px, calc(100% - 40px));
+  margin-left: clamp(20px, 6vw, 80px);
+  padding: 70px 0;
+}
+
+.hero-visual {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.58;
+  transform: translateX(21%);
+  pointer-events: none;
+}
+
+.hero h1,
+.route-header h1 {
+  margin: 0;
+  color: #f5fffd;
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.hero-lede,
+.route-header p {
+  max-width: 720px;
+  margin: 18px 0 0;
+  color: #bdd5d1;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.eyebrow,
+.section-title {
+  margin: 0;
+  color: #75e2d2;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero-actions,
+.control-row,
+.telecom-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-actions {
+  margin-top: 26px;
+}
+
+.command-link,
+.icon-button,
+.tool {
+  min-height: 44px;
+  border: 1px solid rgba(117, 226, 210, 0.28);
+  border-radius: 8px;
+  background: rgba(4, 24, 27, 0.78);
+  color: #eaf7f5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 9px 12px;
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.command-link:hover,
+.icon-button:hover,
+.tool:hover {
+  transform: translateY(-1px);
+  border-color: rgba(117, 226, 210, 0.72);
+  background: rgba(10, 56, 60, 0.92);
+}
+
+.command-link:focus-visible,
+.icon-button:focus-visible,
+.tool:focus-visible,
+.site-header a:focus-visible,
+select:focus-visible {
+  outline: 2px solid #5fe6d5;
+  outline-offset: 2px;
+}
+
+.command-link.primary,
+.icon-button.primary,
+.tool.active {
+  border-color: rgba(239, 191, 100, 0.76);
+  background: rgba(239, 191, 100, 0.16);
+  color: #fff8e6;
+}
+
+.signal-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  background: rgba(98, 244, 219, 0.16);
+  border-bottom: 1px solid rgba(98, 244, 219, 0.16);
+}
+
+.metric,
+.telecom-metric {
+  display: grid;
+  gap: 5px;
+  min-height: 74px;
+  padding: 14px;
+  background: #061113;
+}
+
+.metric span,
+.telecom-metric span {
+  color: #82c7bb;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.metric strong,
+.telecom-metric strong {
+  color: #f5fffd;
+  font-size: 1.05rem;
+}
+
+.section-band,
+.route-surface {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
+.route-header {
+  margin-bottom: 26px;
+}
+
+.module-grid,
+.docs-grid,
+.workflow-lanes,
+.telecom-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.module-card,
+.doc-card,
+.workflow-node,
+.handoff-panel,
+.telecom-panel,
+.control-panel,
+.release-notes {
+  border: 1px solid rgba(98, 244, 219, 0.16);
+  border-radius: 8px;
+  background: rgba(6, 17, 19, 0.86);
+  box-shadow: 0 14px 42px rgba(0, 0, 0, 0.28);
+}
+
+.module-card,
+.doc-card,
+.workflow-node,
+.handoff-panel {
+  padding: 18px;
+}
+
+.module-card svg,
+.doc-card svg,
+.workflow-node svg {
+  color: #75e2d2;
+}
+
+.module-card h2,
+.handoff-panel h2 {
+  margin: 13px 0 8px;
+  color: #fff8e6;
+  font-size: 1.1rem;
+}
+
+.module-card p,
+.workflow-node p,
+.handoff-panel p,
+.doc-card span,
+.message-compact p,
+.empty-state {
+  color: #aebfbd;
+  line-height: 1.55;
+}
+
+.duat-console {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  min-height: 630px;
+  border: 1px solid rgba(98, 244, 219, 0.16);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #020607;
+}
+
+.duat-console.compact {
+  height: 100%;
+  min-height: 100%;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.duat-console.compact .control-panel {
+  display: none;
+}
+
+.duat-console.compact .field-panel {
+  min-height: 78dvh;
+}
+
+.field-panel {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  background: #010304;
+}
+
+.field-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  touch-action: none;
+  image-rendering: pixelated;
+  cursor: crosshair;
+}
+
+.field-overlay {
+  position: absolute;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  color: rgba(234, 247, 245, 0.74);
+  font-size: 0.76rem;
+  pointer-events: none;
+}
+
+.field-overlay span {
+  padding: 4px 7px;
+  border: 1px solid rgba(117, 226, 210, 0.28);
+  border-radius: 8px;
+  background: rgba(2, 6, 7, 0.72);
+}
+
+.top-left {
+  top: 12px;
+  left: 12px;
+}
+
+.bottom-right {
+  right: 12px;
+  bottom: 12px;
+  justify-content: flex-end;
+}
+
+.control-panel {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+  padding: 14px;
+  border-width: 0 0 0 1px;
+  border-radius: 0;
+}
+
+.panel-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.panel-title strong {
+  color: #efbf64;
+}
+
+.telemetry-grid,
+.control-grid,
+.telecom-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.control-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.tool {
+  width: 100%;
+  color: #d7eeeb;
+  text-transform: capitalize;
+}
+
+.workflow-lanes {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.workflow-node strong,
+.doc-card strong {
+  display: block;
+  margin-top: 12px;
+  color: #f5fffd;
+}
+
+.handoff-panel {
+  margin-top: 12px;
+}
+
+.devday-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  gap: 12px;
+  align-items: stretch;
+}
+
+.devday-layout img {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+  border: 1px solid rgba(98, 244, 219, 0.16);
+  border-radius: 8px;
+  background: #061113;
+}
+
+.release-notes {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  padding: 14px;
+}
+
+.status-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px;
+  border: 1px solid rgba(98, 244, 219, 0.12);
+  border-radius: 8px;
+  background: rgba(7, 31, 34, 0.72);
+}
+
+.status-line strong {
+  color: #80efcf;
+}
+
+.status-line.blocked strong {
+  color: #ffb37a;
+}
+
+.doc-card {
+  min-height: 132px;
+}
+
+.telecom-shell {
+  width: min(1320px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 42px 0 64px;
+}
+
+.telecom-topbar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 14px;
+}
+
+.telecom-topbar h1 {
+  margin: 4px 0 0;
+  font-size: 2.4rem;
+}
+
+.telecom-actions select {
+  min-height: 44px;
+  max-width: 220px;
+  border: 1px solid rgba(117, 226, 210, 0.28);
+  border-radius: 8px;
+  background: #061113;
+  color: #eaf7f5;
+  padding: 9px 12px;
+}
+
+.telecom-summary {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin-bottom: 12px;
+}
+
+.telecom-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.telecom-panel {
+  min-height: 240px;
+  padding: 14px;
+}
+
+.telecom-panel.alert {
+  border-color: rgba(255, 179, 122, 0.34);
+}
+
+.telecom-panel header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: #75e2d2;
+}
+
+.message-list,
+.channel-list,
+.timeline {
+  display: grid;
+  gap: 8px;
+}
+
+.message-compact,
+.channel-row,
+.timeline-event {
+  padding: 10px;
+  border: 1px solid rgba(98, 244, 219, 0.11);
+  border-radius: 8px;
+  background: rgba(2, 6, 7, 0.52);
+}
+
+.message-compact div,
+.channel-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: #82c7bb;
+  font-size: 0.74rem;
+}
+
+.message-compact strong,
+.channel-row strong,
+.timeline-event strong {
+  display: block;
+  margin-top: 6px;
+  color: #f5fffd;
+}
+
+.message-compact p {
+  margin: 6px 0 0;
+  font-size: 0.86rem;
+}
+
+.message-compact small,
+.timeline-event small {
+  display: block;
+  margin-top: 7px;
+  color: #efbf64;
+}
+
+.priority {
+  color: #80efcf;
+}
+
+.priority.p0,
+.telecom-metric.alert strong {
+  color: #ffb37a;
+}
+
+.icon-button.wide {
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media (max-width: 1040px) {
+  .hero h1,
+  .route-header h1 {
+    font-size: 3rem;
+  }
+
+  .duat-console,
+  .devday-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .control-panel {
+    border-width: 1px 0 0;
+  }
+
+  .module-grid,
+  .docs-grid,
+  .telecom-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .workflow-lanes,
+  .telecom-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .site-header,
+  .telecom-topbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .site-header nav {
+    justify-content: flex-start;
+  }
+
+  .hero {
+    min-height: 82dvh;
+  }
+
+  .hero-copy {
+    margin-left: 18px;
+    padding: 58px 0;
+  }
+
+  .hero h1,
+  .route-header h1 {
+    font-size: 2.35rem;
+  }
+
+  .signal-strip,
+  .module-grid,
+  .docs-grid,
+  .workflow-lanes,
+  .telecom-grid,
+  .telemetry-grid,
+  .control-grid,
+  .telecom-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .section-band,
+  .route-surface,
+  .telecom-shell {
+    width: min(100% - 20px, 1180px);
+    padding: 42px 0;
+  }
+
+  .field-panel {
+    min-height: 430px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}

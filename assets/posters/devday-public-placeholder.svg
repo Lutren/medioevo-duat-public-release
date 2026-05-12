@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="DUAT DevDay public placeholder">
+  <rect width="1200" height="675" fill="#020607"/>
+  <rect x="54" y="54" width="1092" height="567" rx="18" fill="#061113" stroke="#64e6d5" stroke-width="3"/>
+  <path d="M120 460c130-120 238-78 348-178 132-120 250-112 356-42 94 62 168 76 256 8" fill="none" stroke="#64e6d5" stroke-width="8"/>
+  <path d="M120 516c160-52 280-28 418-80 174-66 318-76 476-10" fill="none" stroke="#efbf64" stroke-width="8"/>
+  <text x="120" y="156" fill="#eaf7f5" font-family="Arial, sans-serif" font-size="62" font-weight="700">DUAT</text>
+  <text x="120" y="214" fill="#75e2d2" font-family="Arial, sans-serif" font-size="32">Public demo display</text>
+  <text x="120" y="270" fill="#aebfbd" font-family="Arial, sans-serif" font-size="24">Agent orchestration, handoffs, memory and system telemetry.</text>
+</svg>

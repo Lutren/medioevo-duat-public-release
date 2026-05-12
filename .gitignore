@@ -5,6 +5,7 @@ dist/
 coverage/
 *.log
 *.tsbuildinfo
+qa/asset_review/
 
 .env
 .env.*

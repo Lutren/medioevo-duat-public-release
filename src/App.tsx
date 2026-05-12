@@ -7,6 +7,7 @@ import {
   Eye,
   FileText,
   GitBranch,
+  Globe2,
   Network,
   Pause,
   Play,
@@ -34,6 +35,7 @@ import { MetricsTracker } from "./theory/metrics";
 import { DEFAULT_OBSERVER_A, DEFAULT_OBSERVER_B } from "./theory/observers";
 import { FieldCanvas } from "./ui/FieldCanvas";
 import { TelecomCore } from "./ui/TelecomCore";
+import "./styles/duat-display.css";
 
 const NAV_ITEMS = [
   { href: "/", label: "Overview" },
@@ -78,14 +80,69 @@ const PUBLIC_MODULES = [
 ];
 
 const DOCS = [
+  "PUBLIC_README.md",
+  "PUBLIC_SCOPE.md",
   "MEDIOEVO_OVERVIEW.md",
   "DUAT_OVERVIEW.md",
+  "TELECOM_CORE_OVERVIEW.md",
   "ARCHITECTURE.md",
   "HANDOFFHUB.md",
   "DUAT_TELECOM_CORE.md",
   "AGENT_ORCHESTRATION.md",
   "OBSERVACIONISMO_PUBLIC.md",
   "DEV_DAY_SUBMISSION.md",
+  "DEV_DAY_SUBMISSION_TEXT_EN.md",
+];
+
+const DEVDAY_MODULES = [
+  {
+    icon: Network,
+    title: "Agent Orchestration",
+    body: "Specialized agents remain visible as roles, status, channels and handoff owners.",
+    kpi: "5 active lanes",
+  },
+  {
+    icon: Globe2,
+    title: "Geospatial Context",
+    body: "Operational information can be arranged spatially when location and logistics matter.",
+    kpi: "142 sources",
+  },
+  {
+    icon: Database,
+    title: "Memory Status",
+    body: "Persistent context, claims, artifacts and project state are exposed as inspectable telemetry.",
+    kpi: "87% health",
+  },
+  {
+    icon: Workflow,
+    title: "Workflow Graph",
+    body: "Work moves through intake, analysis, planning, execution, evaluation and handoff.",
+    kpi: "24 workflows",
+  },
+  {
+    icon: BrainCircuit,
+    title: "Knowledge Integration",
+    body: "CEREBRO and public-safe memory surfaces connect evidence without publishing private canon.",
+    kpi: "curated layer",
+  },
+  {
+    icon: GitBranch,
+    title: "Handoff Stream",
+    body: "Fingerprints and evidence references let the next agent continue without re-deriving state.",
+    kpi: "live continuity",
+  },
+  {
+    icon: FileText,
+    title: "WitnessLog",
+    body: "Append-only events provide a visible trail for tests, scans, builds and decisions.",
+    kpi: "evidence first",
+  },
+  {
+    icon: ShieldCheck,
+    title: "ActionGate",
+    body: "External action remains blocked until secrets, claims, repo and deploy gates pass.",
+    kpi: "push blocked",
+  },
 ];
 
 const EMPTY_METRICS: SimulationMetrics = {
@@ -136,7 +193,7 @@ export default function App() {
     <main className="app-shell">
       <header className="site-header">
         <a className="brand-lockup" href="/" onClick={(event) => navigate(event, "/")}>
-          <img src="/duat-assets/brand/duat-mark.svg" alt="" aria-hidden="true" />
+          <img src="/duat-assets/brand/duat-logo-mark.svg" alt="" aria-hidden="true" />
           <span>
             <strong>MEDIOEVO / DUAT</strong>
             <small>Public Release</small>
@@ -251,20 +308,51 @@ function HandoffHubRoute() {
 
 function DevDayRoute() {
   return (
-    <section className="route-surface">
-      <RouteHeader
-        eyebrow="DUAT DevDay"
-        title="Submission packet boundary"
-        body="The release includes a public-facing DevDay page and generated public-safe SVG assets. The original DUAT_DEV_DAY_ASSETS_v1 ZIP is not copied because the local source card requires exact gate validation before publication."
-      />
-      <div className="devday-layout">
-        <img src="/duat-assets/backgrounds/duat-hud-grid.svg" alt="DUAT HUD grid preview" />
-        <div className="release-notes">
-          <StatusLine label="Asset source cards" status="Detected" />
-          <StatusLine label="Original ZIP copied" status="Blocked" tone="blocked" />
-          <StatusLine label="Public SVG set" status="Included" />
-          <StatusLine label="Claims posture" status="Prototype" />
+    <section className="duat-devday-page">
+      <div className="duat-devday-hero">
+        <div className="duat-devday-copy">
+          <div className="duat-devday-brand">
+            <img src="/duat-assets/brand/duat-logo-mark.svg" alt="DUAT logo mark" />
+            <img src="/duat-assets/brand/duat-wordmark.svg" alt="DUAT wordmark" />
+          </div>
+          <p className="duat-devday-label">OpenAI DevDay concept visual · public release candidate</p>
+          <h1>DUAT</h1>
+          <h2>Adaptive Intelligence Display</h2>
+          <p>
+            DUAT is a cognitive display and orchestration layer for advanced AI work. It turns fragmented information into structured, inspectable workflows by coordinating specialized agents, persistent memory, geospatial context, evidence, gates and handoffs in one operational surface.
+          </p>
+          <p>
+            This page uses the approved DUAT DevDay asset pack and keeps the claim boundary explicit: orchestration display, prototype and public demo, not externally verified AGI.
+          </p>
         </div>
+        <div className="duat-devday-visual" aria-label="DUAT DevDay approved asset preview">
+          <figure className="duat-devday-frame primary">
+            <img src="/duat-assets/posters/png/duat-display-concept-generated.png" alt="DUAT adaptive intelligence display concept" />
+          </figure>
+          <div className="duat-devday-frame secondary">
+            <img src="/duat-assets/posters/png/duat-devday-hero.png" alt="DUAT DevDay hero visual" />
+            <img src="/duat-assets/posters/png/duat-social-card.png" alt="DUAT social card visual" />
+          </div>
+        </div>
+      </div>
+      <div className="duat-devday-modules">
+        {DEVDAY_MODULES.map((module) => {
+          const Icon = module.icon;
+          return (
+            <article className="duat-devday-module" key={module.title}>
+              <header>
+                <Icon size={18} />
+                <span className="duat-devday-label">{module.title}</span>
+              </header>
+              <h3>{module.title}</h3>
+              <p>{module.body}</p>
+              <div className="duat-devday-kpi">
+                <span>status</span>
+                <strong>{module.kpi}</strong>
+              </div>
+            </article>
+          );
+        })}
       </div>
     </section>
   );

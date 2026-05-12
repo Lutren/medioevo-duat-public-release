@@ -2,7 +2,7 @@
 
 Date: 2026-05-12
 
-51 files are included in the release candidate, excluding `node_modules/`, `dist/`, `.git/`, local logs and TypeScript build info.
+173 files are included in the P2 release candidate, excluding `node_modules/`, `dist/`, `.git/`, `qa/asset_review/`, local logs and TypeScript build info.
 
 ```text
 .gitignore
@@ -59,3 +59,5 @@ qa/DEPLOY_REPORT.md
 ```
 
 `tsconfig.tsbuildinfo` and dev server logs are generated local artifacts and are ignored.
+
+P2 added approved DUAT DevDay runtime assets under `public/duat-assets/`, mirrored asset files under `assets/`, public DevDay text under `docs/` and `src/content/devday/`, and preflight reports under `qa/`.

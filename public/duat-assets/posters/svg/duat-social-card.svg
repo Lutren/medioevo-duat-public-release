@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+
+  <defs>
+    <radialGradient id="duatGlow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#24E8FF" stop-opacity="0.42"/>
+      <stop offset="42%" stop-color="#3E7BFF" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#030911" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#24E8FF" stop-opacity="0.22"/>
+      <stop offset="40%" stop-color="#071525" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#3E7BFF" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#24E8FF" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#00F5D4" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#3E7BFF" stop-opacity="0.25"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M 42 0 L 0 0 0 42" stroke="#24E8FF" stroke-opacity="0.075" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="#030911"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.6"/>
+  <circle cx="900" cy="140" r="360" fill="url(#duatGlow)"/>
+  <text x="64" y="150" font-family="Inter,Arial" font-size="96" font-weight="900" fill="#F4FBFF" letter-spacing="8">DUAT</text>
+  <text x="70" y="205" font-family="Inter,Arial" font-size="32" font-weight="700" fill="#24E8FF">Adaptive Intelligence Display</text>
+  <text x="70" y="270" font-family="Inter,Arial" font-size="28" fill="#F4FBFF" opacity=".9">A cognitive operating surface for structured AI workflows.</text>
+  <path d="M70 320H550" stroke="url(#edge)" stroke-width="4"/>
+  <text x="70" y="375" font-family="Inter,Arial" font-size="24" fill="#8CB7C9">Multi-agent coordination · persistent memory · geospatial intelligence</text>
+  <g transform="translate(690 92)">
+    <rect x="0" y="0" width="430" height="382" rx="28" fill="url(#glass)" stroke="#24E8FF" stroke-opacity=".55"/>
+    <rect x="35" y="50" width="360" height="118" rx="14" fill="#071525" stroke="#174B63"/>
+    <path d="M60 130C130 70 180 160 240 110s95-35 130-60" stroke="#24E8FF" stroke-width="4" fill="none"/>
+    <circle cx="224" cy="114" r="28" stroke="#00F5D4" stroke-width="4"/><circle cx="224" cy="114" r="7" fill="#24E8FF"/>
+    <rect x="35" y="195" width="165" height="126" rx="14" fill="#071525" stroke="#174B63"/>
+    <rect x="230" y="195" width="165" height="126" rx="14" fill="#071525" stroke="#174B63"/>
+    <circle cx="117" cy="258" r="42" stroke="#24E8FF" stroke-width="5"/><text x="117" y="268" text-anchor="middle" font-family="Inter" font-size="24" fill="#F4FBFF">R</text>
+    <path d="M263 270 C295 220 330 310 370 245" stroke="#00F5D4" stroke-width="5" fill="none"/>
+  </g>
+</svg>

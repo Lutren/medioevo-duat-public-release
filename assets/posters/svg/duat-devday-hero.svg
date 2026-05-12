@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" fill="none">
+
+  <defs>
+    <radialGradient id="duatGlow" cx="50%" cy="50%" r="70%"><stop offset="0%" stop-color="#24E8FF" stop-opacity="0.42"/><stop offset="42%" stop-color="#3E7BFF" stop-opacity="0.12"/><stop offset="100%" stop-color="#030911" stop-opacity="0"/></radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#24E8FF" stop-opacity="0.22"/><stop offset="40%" stop-color="#071525" stop-opacity="0.98"/><stop offset="100%" stop-color="#3E7BFF" stop-opacity="0.2"/></linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#24E8FF" stop-opacity="0.25"/><stop offset="50%" stop-color="#00F5D4" stop-opacity="0.9"/><stop offset="100%" stop-color="#3E7BFF" stop-opacity="0.25"/></linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M 42 0 L 0 0 0 42" stroke="#24E8FF" stroke-opacity="0.075" stroke-width="1"/></pattern>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#030911"/>
+  <rect width="1920" height="1080" fill="url(#grid)" opacity="0.75"/>
+  <circle cx="1320" cy="280" r="560" fill="url(#duatGlow)"/>
+  <text x="80" y="180" font-family="Inter, Arial, sans-serif" font-size="150" font-weight="900" fill="#F4FBFF" letter-spacing="10">DUAT</text>
+  <text x="88" y="245" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="600" fill="#24E8FF">Adaptive Intelligence Display</text>
+  <text x="88" y="307" font-family="Inter, Arial, sans-serif" font-size="28" fill="#F4FBFF" opacity="0.88"><tspan x="88" y="307">A Cognitive Operating Surface for</tspan><tspan x="88" y="345">Structured AI Workflows</tspan></text>
+  <path d="M88 385H650" stroke="url(#edge)" stroke-width="4"/>
+  <text font-family="Inter, Arial, sans-serif" font-size="27" fill="#F4FBFF" opacity="0.92"><tspan x="88" y="446">DUAT is a cognitive display and</tspan><tspan x="88" y="483">orchestration layer for advanced AI</tspan><tspan x="88" y="519">work. It transforms fragmented</tspan><tspan x="88" y="556">information into structured, actionable</tspan><tspan x="88" y="593">systems by coordinating specialized</tspan><tspan x="88" y="630">agents, memory, geospatial context, and</tspan><tspan x="88" y="666">adaptive workflows in one unified</tspan><tspan x="88" y="703">environment. Designed for high-</tspan><tspan x="88" y="740">complexity operations, DUAT helps humans</tspan><tspan x="88" y="776">and AI work together with clarity,</tspan><tspan x="88" y="813">continuity, and precision.</tspan></text>
+  <g transform="translate(88 812)"><g transform="translate(0 0)"><rect width="62" height="62" rx="14" fill="#071525" stroke="#24E8FF" stroke-opacity="0.7"/><circle cx="31" cy="31" r="13" stroke="#00F5D4" stroke-width="3"/><text x="84" y="38" font-family="Inter,Arial" font-size="27" fill="#F4FBFF">Multi-agent coordination</text></g><g transform="translate(0 80)"><rect width="62" height="62" rx="14" fill="#071525" stroke="#24E8FF" stroke-opacity="0.7"/><circle cx="31" cy="31" r="13" stroke="#00F5D4" stroke-width="3"/><text x="84" y="38" font-family="Inter,Arial" font-size="27" fill="#F4FBFF">Persistent memory and context</text></g><g transform="translate(0 160)"><rect width="62" height="62" rx="14" fill="#071525" stroke="#24E8FF" stroke-opacity="0.7"/><circle cx="31" cy="31" r="13" stroke="#00F5D4" stroke-width="3"/><text x="84" y="38" font-family="Inter,Arial" font-size="27" fill="#F4FBFF">Geospatial and operational intelligence</text></g></g>
+  <g transform="translate(790 110)">
+    <rect x="0" y="0" width="1060" height="690" rx="38" fill="url(#glass)" stroke="#24E8FF" stroke-opacity="0.58" stroke-width="2"/>
+    <rect x="34" y="52" width="992" height="600" rx="20" fill="#061626" opacity="0.84" stroke="#174B63"/>
+    <text x="52" y="35" font-family="Inter,Arial" font-size="24" font-weight="800" fill="#F4FBFF" letter-spacing="5">DUAT</text>
+    <text x="805" y="35" font-family="Inter,Arial" font-size="16" fill="#45FF98">OPERATIONAL</text>
+    <rect x="58" y="84" width="240" height="500" rx="18" fill="#071525" stroke="#174B63"/>
+    <rect x="330" y="84" width="430" height="315" rx="18" fill="#071525" stroke="#174B63"/>
+    <rect x="790" y="84" width="198" height="315" rx="18" fill="#071525" stroke="#174B63"/>
+    <rect x="330" y="430" width="658" height="154" rx="18" fill="#071525" stroke="#174B63"/>
+    <rect x="82" y="124" width="192" height="50" rx="11" fill="#0A2135" stroke="#24E8FF" stroke-opacity="0.28"/><circle cx="108" cy="149" r="10" fill="#3E7BFF"/><text x="128" y="155" font-family="Inter,Arial" font-size="14" fill="#F4FBFF">ANALYST</text><rect x="82" y="202" width="192" height="50" rx="11" fill="#0A2135" stroke="#24E8FF" stroke-opacity="0.28"/><circle cx="108" cy="227" r="10" fill="#8A5CFF"/><text x="128" y="233" font-family="Inter,Arial" font-size="14" fill="#F4FBFF">PLANNER</text><rect x="82" y="280" width="192" height="50" rx="11" fill="#0A2135" stroke="#24E8FF" stroke-opacity="0.28"/><circle cx="108" cy="305" r="10" fill="#00F5D4"/><text x="128" y="311" font-family="Inter,Arial" font-size="14" fill="#F4FBFF">GEO</text><rect x="82" y="358" width="192" height="50" rx="11" fill="#0A2135" stroke="#24E8FF" stroke-opacity="0.28"/><circle cx="108" cy="383" r="10" fill="#FFD166"/><text x="128" y="389" font-family="Inter,Arial" font-size="14" fill="#F4FBFF">RESEARCH</text><rect x="82" y="436" width="192" height="50" rx="11" fill="#0A2135" stroke="#24E8FF" stroke-opacity="0.28"/><circle cx="108" cy="461" r="10" fill="#45FF98"/><text x="128" y="467" font-family="Inter,Arial" font-size="14" fill="#F4FBFF">OPS</text>
+    <path d="M365 260C430 160 510 340 590 240S710 210 738 165" stroke="#24E8FF" stroke-width="3" fill="none" opacity="0.85"/>
+    <path d="M365 310C465 245 530 365 635 290S700 330 738 285" stroke="#8A5CFF" stroke-width="3" fill="none" opacity="0.55"/>
+    <circle cx="555" cy="253" r="42" stroke="#24E8FF" stroke-width="4" opacity="0.75"/><circle cx="555" cy="253" r="8" fill="#00F5D4"/>
+    <circle cx="889" cy="210" r="68" stroke="#24E8FF" stroke-width="7"/><text x="889" y="220" text-anchor="middle" font-family="Inter,Arial" font-size="34" font-weight="800" fill="#F4FBFF">87%</text>
+    <path d="M374 512 C490 430 560 590 674 512 S825 432 948 512" stroke="#24E8FF" stroke-width="4" fill="none"/>
+    <circle cx="374" cy="512" r="22" fill="#0A2135" stroke="#3E7BFF" stroke-width="4"/><circle cx="518" cy="512" r="22" fill="#0A2135" stroke="#8A5CFF" stroke-width="4"/><circle cx="662" cy="512" r="22" fill="#0A2135" stroke="#00F5D4" stroke-width="4"/><circle cx="806" cy="512" r="22" fill="#0A2135" stroke="#FFD166" stroke-width="4"/><circle cx="950" cy="512" r="22" fill="#0A2135" stroke="#24E8FF" stroke-width="4"/>
+  </g>
+</svg>

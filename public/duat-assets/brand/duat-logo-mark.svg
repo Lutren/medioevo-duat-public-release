@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+
+  <defs>
+    <radialGradient id="duatGlow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#24E8FF" stop-opacity="0.42"/>
+      <stop offset="42%" stop-color="#3E7BFF" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#030911" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#24E8FF" stop-opacity="0.22"/>
+      <stop offset="40%" stop-color="#071525" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#3E7BFF" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#24E8FF" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#00F5D4" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#3E7BFF" stop-opacity="0.25"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M 42 0 L 0 0 0 42" stroke="#24E8FF" stroke-opacity="0.075" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="512" height="512" rx="96" fill="#030911"/>
+  <rect x="18" y="18" width="476" height="476" rx="86" fill="url(#glass)" stroke="#24E8FF" stroke-opacity="0.55" stroke-width="2"/>
+  <circle cx="256" cy="186" r="92" stroke="#24E8FF" stroke-width="18" filter="url(#softGlow)"/>
+  <circle cx="256" cy="186" r="48" stroke="#00F5D4" stroke-width="4" stroke-opacity="0.9"/>
+  <path d="M256 286V408" stroke="#24E8FF" stroke-width="18" stroke-linecap="round" filter="url(#softGlow)"/>
+  <path d="M166 332H346" stroke="#24E8FF" stroke-width="18" stroke-linecap="round"/>
+  <path d="M130 422C180 376 332 376 382 422" stroke="#3E7BFF" stroke-width="8" stroke-linecap="round" stroke-opacity="0.9"/>
+  <g fill="#00F5D4">
+    <circle cx="147" cy="112" r="5"/><circle cx="365" cy="112" r="5"/><circle cx="116" cy="356" r="5"/><circle cx="396" cy="356" r="5"/>
+  </g>
+  <text x="256" y="472" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700" fill="#F4FBFF" letter-spacing="10">DUAT</text>
+</svg>

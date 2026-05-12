@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" fill="none">
+
+  <defs>
+    <radialGradient id="duatGlow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#24E8FF" stop-opacity="0.42"/>
+      <stop offset="42%" stop-color="#3E7BFF" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#030911" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#24E8FF" stop-opacity="0.22"/>
+      <stop offset="40%" stop-color="#071525" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#3E7BFF" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#24E8FF" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#00F5D4" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#3E7BFF" stop-opacity="0.25"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M 42 0 L 0 0 0 42" stroke="#24E8FF" stroke-opacity="0.075" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#030911"/>
+  <ellipse cx="960" cy="1050" rx="760" ry="120" fill="#24E8FF" opacity="0.12" filter="url(#softGlow)"/>
+  <path d="M280 880 H1640 L1500 1010 H420 Z" fill="#071525" stroke="#24E8FF" stroke-opacity="0.45"/>
+  <path d="M425 945 H1495" stroke="url(#edge)" stroke-width="5" opacity="0.75"/>
+  <circle cx="960" cy="900" r="120" fill="url(#duatGlow)"/>
+  <circle cx="960" cy="900" r="74" stroke="#24E8FF" stroke-width="3" opacity="0.8"/>
+  <circle cx="960" cy="900" r="34" stroke="#00F5D4" stroke-width="2" opacity="0.8"/>
+  <rect x="360" y="95" width="1200" height="650" rx="36" fill="url(#glass)" stroke="#24E8FF" stroke-opacity="0.55" stroke-width="2"/>
+  <rect x="390" y="130" width="1140" height="590" rx="20" fill="#061626" opacity="0.78" stroke="#174B63"/>
+</svg>

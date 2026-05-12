@@ -275,7 +275,7 @@ export const MESSAGEBUS_MESSAGES: AgentMessage[] = [
     certeza: ["Run 1 ya creo fingerprint y NEXT_SESSION_BRIEF."],
     inferencia: ["La cola de tareas debe vivir como mensajes con evidencia, no como chat suelto."],
     incognita: ["Backend real pendiente."],
-    bloqueo: ["Sin Supabase ni red."],
+    bloqueo: ["Sin backend externo ni red."],
     evidence_refs: ["MEDIOEVO_LIVE_TREE/NEXT_SESSION_BRIEF.md"],
     artifact_refs: ["MEDIOEVO_LIVE_TREE/03_SYSTEMS/MEDIOEVO_MESSAGEBUS.md"],
     handoff_fingerprint: "MDV-TELECOM-RUN2-6C9A",

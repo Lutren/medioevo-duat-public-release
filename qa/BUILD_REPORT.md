@@ -39,4 +39,12 @@ Vite dev server started on `http://127.0.0.1:5179/`.
 - `/duat-devday` -> HTTP 200
 - `/docs` -> HTTP 200
 
+P2 asset routes:
+
+- `/duat-assets/posters/png/duat-display-concept-generated.png` -> HTTP 200
+- `/duat-assets/posters/png/duat-devday-hero.png` -> HTTP 200
+- `/duat-assets/posters/png/duat-social-card.png` -> HTTP 200
+- `/duat-assets/brand/duat-logo-mark.svg` -> HTTP 200
+- `/duat-assets/brand/duat-wordmark.svg` -> HTTP 200
+
 Browser screenshot automation was not available in this session; HTTP route smoke and production build passed.

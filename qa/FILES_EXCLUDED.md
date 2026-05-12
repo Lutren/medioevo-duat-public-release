@@ -15,6 +15,7 @@ The release intentionally excludes:
 - raw MEDIOEVO canon folders
 - raw `MEDIOEVO_LIVE_TREE`
 - original `DUAT_DEV_DAY_ASSETS_v1.zip`
+- `qa/asset_review/DUAT_DEV_DAY_ASSETS_v1_extracted/`
 - files marked `SECURITY_REVIEW`
 - private game / TCG / RPG material
 - Gumroad, Stripe, Discord, YouTube or local credential/config files
@@ -23,6 +24,6 @@ The release intentionally excludes:
 ## Source Decisions
 
 - Lovable/Vite app: selectively absorbed as React/Vite source, tests and MessageBus demo.
-- DUAT DevDay source cards: detected, but original assets remain excluded because their cards require exact gate validation before copying.
+- DUAT DevDay asset pack: validated in P2 by ZIP hash and selective copy; original ZIP, prompts and raw patch folders remain excluded.
 - MEDIOEVO live tree and canon: used only as boundary context, not copied raw.
 - Existing website tree: inspected as a public-surface reference, not copied wholesale.

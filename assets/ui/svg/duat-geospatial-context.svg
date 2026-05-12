@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" fill="none">
+
+  <defs>
+    <radialGradient id="duatGlow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#24E8FF" stop-opacity="0.42"/>
+      <stop offset="42%" stop-color="#3E7BFF" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#030911" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#24E8FF" stop-opacity="0.22"/>
+      <stop offset="40%" stop-color="#071525" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#3E7BFF" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#24E8FF" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#00F5D4" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#3E7BFF" stop-opacity="0.25"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M 42 0 L 0 0 0 42" stroke="#24E8FF" stroke-opacity="0.075" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="540" rx="26" fill="#030911"/>
+  <rect x="28" y="28" width="904" height="484" rx="22" fill="url(#glass)" stroke="#24E8FF" stroke-opacity="0.45"/>
+  <text x="60" y="82" font-family="Inter,Arial" font-size="28" font-weight="700" fill="#F4FBFF" letter-spacing="3">GEOSPATIAL CONTEXT</text>
+  <g transform="translate(480 285)">
+    <polygon points="-250,60 0,-40 250,60 0,160" fill="#0A2135" fill-opacity="0.18" stroke="#24E8FF" stroke-opacity="0.35"/><polygon points="-250,18 0,-82 250,18 0,118" fill="#0A2135" fill-opacity="0.26" stroke="#24E8FF" stroke-opacity="0.43"/><polygon points="-250,-24 0,-124 250,-24 0,76" fill="#0A2135" fill-opacity="0.33999999999999997" stroke="#24E8FF" stroke-opacity="0.51"/><polygon points="-250,-66 0,-166 250,-66 0,34" fill="#0A2135" fill-opacity="0.42" stroke="#24E8FF" stroke-opacity="0.59"/>
+    <path d="M-160 70C-90 20-60 120 10 70S120 20 190 90" stroke="#00F5D4" stroke-width="5" fill="none" opacity="0.85"/>
+    <circle cx="34" cy="28" r="30" fill="#24E8FF" opacity="0.2"/><circle cx="34" cy="28" r="8" fill="#24E8FF"/>
+  </g>
+  <text x="60" y="445" font-family="Inter,Arial" font-size="22" fill="#8CB7C9">Sector 7B · adaptive map layer · operational focus</text>
+</svg>

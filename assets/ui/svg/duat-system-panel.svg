@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" fill="none">
+
+  <defs>
+    <radialGradient id="duatGlow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#24E8FF" stop-opacity="0.42"/>
+      <stop offset="42%" stop-color="#3E7BFF" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#030911" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#24E8FF" stop-opacity="0.22"/>
+      <stop offset="40%" stop-color="#071525" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#3E7BFF" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#24E8FF" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#00F5D4" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#3E7BFF" stop-opacity="0.25"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M 42 0 L 0 0 0 42" stroke="#24E8FF" stroke-opacity="0.075" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="720" rx="28" fill="#030911"/>
+  <rect x="24" y="24" width="1232" height="672" rx="28" fill="url(#glass)" stroke="#24E8FF" stroke-opacity="0.5" stroke-width="2"/>
+  <path d="M60 88H1220" stroke="url(#edge)" stroke-width="3" opacity="0.75"/>
+  <text x="70" y="68" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#F4FBFF" letter-spacing="5">DUAT / SYSTEM PANEL</text>
+  <text x="1060" y="68" font-family="Inter, Arial, sans-serif" font-size="18" fill="#45FF98">OPERATIONAL</text>
+  <rect x="70" y="120" width="280" height="520" rx="18" fill="#071525" stroke="#174B63"/>
+  <rect x="382" y="120" width="530" height="330" rx="18" fill="#071525" stroke="#174B63"/>
+  <rect x="382" y="480" width="530" height="160" rx="18" fill="#071525" stroke="#174B63"/>
+  <rect x="944" y="120" width="266" height="520" rx="18" fill="#071525" stroke="#174B63"/>
+  <rect x="100" y="150" width="220" height="54" rx="12" fill="#0A2135" stroke="#24E8FF" stroke-opacity="0.26"/><circle cx="130" cy="177" r="12" fill="#3E7BFF" opacity=".9"/><text x="158" y="183" font-family="Inter,Arial" font-size="16" fill="#F4FBFF">ANALYST</text><rect x="100" y="236" width="220" height="54" rx="12" fill="#0A2135" stroke="#24E8FF" stroke-opacity="0.29000000000000004"/><circle cx="130" cy="263" r="12" fill="#8A5CFF" opacity=".9"/><text x="158" y="183" font-family="Inter,Arial" font-size="16" fill="#F4FBFF">PLANNER</text><rect x="100" y="322" width="220" height="54" rx="12" fill="#0A2135" stroke="#24E8FF" stroke-opacity="0.32"/><circle cx="130" cy="349" r="12" fill="#00F5D4" opacity=".9"/><text x="158" y="183" font-family="Inter,Arial" font-size="16" fill="#F4FBFF">GEO</text><rect x="100" y="408" width="220" height="54" rx="12" fill="#0A2135" stroke="#24E8FF" stroke-opacity="0.35"/><circle cx="130" cy="435" r="12" fill="#FFD166" opacity=".9"/><text x="158" y="183" font-family="Inter,Arial" font-size="16" fill="#F4FBFF">RESEARCH</text><rect x="100" y="494" width="220" height="54" rx="12" fill="#0A2135" stroke="#24E8FF" stroke-opacity="0.38"/><circle cx="130" cy="521" r="12" fill="#45FF98" opacity=".9"/><text x="158" y="183" font-family="Inter,Arial" font-size="16" fill="#F4FBFF">OPS</text>
+  <path d="M420 294C520 180 620 410 720 260S850 230 880 190" stroke="#24E8FF" stroke-width="4" fill="none" opacity="0.8"/>
+  <path d="M420 330C550 250 610 360 745 310S820 340 880 280" stroke="#8A5CFF" stroke-width="3" fill="none" opacity="0.55"/>
+  <circle cx="420" cy="300" r="5" fill="#00F5D4"/><circle cx="478" cy="343" r="5" fill="#00F5D4"/><circle cx="536" cy="347" r="5" fill="#00F5D4"/><circle cx="594" cy="307" r="5" fill="#00F5D4"/><circle cx="652" cy="261" r="5" fill="#00F5D4"/><circle cx="710" cy="251" r="5" fill="#00F5D4"/><circle cx="768" cy="286" r="5" fill="#00F5D4"/><circle cx="826" cy="334" r="5" fill="#00F5D4"/>
+  <circle cx="1076" cy="250" r="86" stroke="#24E8FF" stroke-width="8" opacity="0.9"/>
+  <circle cx="1076" cy="250" r="56" stroke="#00F5D4" stroke-width="4" opacity="0.75"/>
+  <text x="1076" y="260" text-anchor="middle" font-family="Inter,Arial" font-size="36" font-weight="800" fill="#F4FBFF">87%</text>
+  <rect x="985" y="390" width="170" height="8" rx="4" fill="#174B63"/><rect x="985" y="390" width="120" height="8" rx="4" fill="#24E8FF"/><rect x="985" y="432" width="170" height="8" rx="4" fill="#174B63"/><rect x="985" y="432" width="132" height="8" rx="4" fill="#00F5D4"/><rect x="985" y="474" width="170" height="8" rx="4" fill="#174B63"/><rect x="985" y="474" width="144" height="8" rx="4" fill="#24E8FF"/><rect x="985" y="516" width="170" height="8" rx="4" fill="#174B63"/><rect x="985" y="516" width="156" height="8" rx="4" fill="#00F5D4"/>
+</svg>

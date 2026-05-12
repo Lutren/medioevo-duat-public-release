@@ -1,8 +1,19 @@
-# MEDIOEVO / DUAT
+# MEDIOEVO / DUAT Public Release
 
 MEDIOEVO is a cognitive engineering and agent orchestration framework focused on reducing informational residue across complex workflows.
 
-DUAT is the visual operating layer: an adaptive intelligence display for agents, memory, workflows, handoffs, geospatial context and system coordination.
+DUAT is an adaptive intelligence and orchestration display prototype for agents, memory, workflows, handoffs, geospatial context and system coordination.
+
+This repository contains a public-facing release only. Private canon, internal vaults, credentials, and unpublished research material are intentionally excluded.
+
+## Routes
+
+- `/`
+- `/duat`
+- `/telecom`
+- `/handoff-hub`
+- `/duat-devday`
+- `/docs`
 
 ## Public Modules
 
@@ -22,17 +33,17 @@ DUAT is the visual operating layer: an adaptive intelligence display for agents,
 
 ## Status
 
-Prototype / research system / public demo.
+Prototype / public display / local-first orchestration interface.
 
 ## Security
 
-No secrets or private canon are included in this public release.
+No credentials, private canon, internal vaults, raw archives or local runtime logs are included in this public release.
 
-## Local Run
+## Local Dev
 
 ```bash
 npm install
-npm run test
-npm run build
 npm run dev
+npm test
+npm run build
 ```

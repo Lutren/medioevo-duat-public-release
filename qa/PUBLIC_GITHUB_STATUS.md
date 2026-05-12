@@ -9,8 +9,9 @@ Date: 2026-05-12
 - GitHub URL: `https://github.com/Lutren/medioevo-duat-public-release`
 - Branch: `main`
 - Base commit before P3 report commit: `42cbb21`
+- P3 publication commit verified on remote `main`: `a2611594455b2857d219485a31afc3bf28a49edb`
 
-The exact commit published by the final P3 push is the repository `main` HEAD after this report commit. The operator final response records the short hash verified after push.
+This file is the post-push status artifact. If committed after the first publication push, the operator final response records the final repository `main` HEAD verified after the report update.
 
 ## Pre-Push QA
 
@@ -50,6 +51,12 @@ Checked:
 
 ## Push Result
 
-Status: PUBLISHED_TO_GITHUB after final P3 push command succeeds.
+- Command executed: `git push -u origin main`
+- Result: PASS.
+- Remote branch: `origin/main`.
+- Verified remote HEAD after first P3 publication push: `a2611594455b2857d219485a31afc3bf28a49edb`.
+- GitHub repo visibility: PUBLIC.
+- GitHub default branch: `main`.
+- Status: PUBLISHED_TO_GITHUB.
 
 No deploy was executed.

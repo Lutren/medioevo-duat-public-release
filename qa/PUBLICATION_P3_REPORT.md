@@ -12,6 +12,8 @@ Date: 2026-05-12
 - Configured `origin` as `https://github.com/Lutren/medioevo-duat-public-release.git`.
 - Repeated critical QA before publication.
 - Prepared GitHub/deploy handoff reports.
+- Pushed `main` to `origin` with a normal fast-forward publication push.
+- Verified the public GitHub repository after push.
 
 ## What Was Not Done
 
@@ -56,10 +58,13 @@ Excluded:
 - Blocked filenames: 0.
 - Local route smoke: all required routes HTTP 200.
 - Remote URL: `https://github.com/Lutren/medioevo-duat-public-release.git`.
+- GitHub URL: `https://github.com/Lutren/medioevo-duat-public-release`.
+- Remote `main` verified after first publication push: `a2611594455b2857d219485a31afc3bf28a49edb`.
+- Repository visibility: PUBLIC.
+- Default branch: `main`.
 
 ## Pending
 
-- Verify GitHub URL after push.
 - Choose deploy platform.
 - Connect `medioevo.space` only in P4 after DNS/platform authorization.
 

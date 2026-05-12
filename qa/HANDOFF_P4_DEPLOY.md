@@ -7,7 +7,8 @@ Fingerprint: `MDV-PUBLISH-P4-READY-FROM-P3`
 - GitHub repo: `https://github.com/Lutren/medioevo-duat-public-release`
 - Remote: `https://github.com/Lutren/medioevo-duat-public-release.git`
 - Branch: `main`
-- Published commit: verify current `main` HEAD at the start of P4.
+- Published commit verified during P3: `a2611594455b2857d219485a31afc3bf28a49edb`.
+- Start P4 by verifying the current `main` HEAD again, because this P3 report update may be followed by a final report-only commit.
 
 ## QA State From P3
 

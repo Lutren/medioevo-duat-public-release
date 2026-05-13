@@ -1,0 +1,128 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "MEDIOEVO public tools by Lutren / Tyr",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "SoftwareSourceCode",
+        "name": "obsai-core",
+        "url": "https://github.com/Lutren/obsai-core",
+        "description": "Evidence, residue, claim and continuity primitives.",
+        "license": "https://opensource.org/license/mit"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "SoftwareSourceCode",
+        "name": "residueos",
+        "url": "https://github.com/Lutren/residueos",
+        "description": "Local ActionGate with APPROVE / REVIEW / BLOCK and SQLite audit trails.",
+        "license": "https://opensource.org/license/mit"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "SoftwareSourceCode",
+        "name": "observacionismo-gate",
+        "url": "https://github.com/Lutren/observacionismo-gate",
+        "description": "SDK for evidence, jamming, cost and approval gates.",
+        "license": "https://opensource.org/license/mit"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "SoftwareSourceCode",
+        "name": "safe-exec",
+        "url": "https://github.com/Lutren/safe-exec",
+        "description": "Safe execution layer for LLM tools.",
+        "license": "https://opensource.org/license/mit"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "SoftwareSourceCode",
+        "name": "obs-safe-integration-kit",
+        "url": "https://github.com/Lutren/obs-safe-integration-kit",
+        "description": "Evidence envelopes and dry-run wrappers.",
+        "license": "https://opensource.org/license/mit"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "SoftwareSourceCode",
+        "name": "data-curation-observatory",
+        "url": "https://github.com/Lutren/data-curation-observatory",
+        "description": "Source fichas, manifests, deduplication and evidence labels.",
+        "license": "https://opensource.org/license/mit"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@type": "SoftwareSourceCode",
+        "name": "agent-handoff-protocol",
+        "url": "https://github.com/Lutren/agent-handoff-protocol",
+        "description": "Practical handoff workflow for multi-session coding agents.",
+        "license": "https://opensource.org/license/mit"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@type": "SoftwareSourceCode",
+        "name": "agent-release-checklist",
+        "url": "https://github.com/Lutren/agent-release-checklist",
+        "description": "Release checklist with scans, proof and release discipline.",
+        "license": "https://opensource.org/license/mit"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+        "@type": "SoftwareSourceCode",
+        "name": "duat-genesis",
+        "url": "https://github.com/Lutren/duat-genesis",
+        "description": "Synthetic observable simulation sandbox.",
+        "license": "https://opensource.org/license/mit"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "item": {
+        "@type": "SoftwareSourceCode",
+        "name": "duat-lab",
+        "url": "https://github.com/Lutren/duat-lab",
+        "description": "Sanitized lab skeleton for public-safe research workflows.",
+        "license": "https://opensource.org/license/mit"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "item": {
+        "@type": "SoftwareSourceCode",
+        "name": "la-biblioteca-de-alejandria",
+        "url": "https://github.com/Lutren/la-biblioteca-de-alejandria",
+        "description": "Public index and claims boundary.",
+        "license": "https://opensource.org/license/mit"
+      }
+    }
+  ]
+}

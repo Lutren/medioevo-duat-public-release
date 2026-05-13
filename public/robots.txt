@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
+Disallow: /private/
+Disallow: /internal/
+Disallow: /vault/
+Disallow: /runtime/
+Disallow: /logs/
+Disallow: /secrets/
 
 Sitemap: https://medioevo.space/sitemap.xml

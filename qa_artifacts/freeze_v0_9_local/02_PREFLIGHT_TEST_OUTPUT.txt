@@ -1,0 +1,13 @@
+
+> medioevo-duat-public-release@0.1.0 test
+> vitest run --run
+
+
+ RUN  v4.1.6 C:/Users/L-Tyr/OneDrive/Escritorio/-=L.R.GONZALEZ=-/publish_staging/medioevo-duat-public-release
+
+
+ Test Files  5 passed (5)
+      Tests  33 passed (33)
+   Start at  09:17:05
+   Duration  14.34s (transform 760ms, setup 0ms, import 959ms, tests 27.46s, environment 1ms)
+

@@ -1,0 +1,146 @@
+[
+  {
+    "route": "/",
+    "status": 200,
+    "bytes": 5809,
+    "result": "PASS"
+  },
+  {
+    "route": "/landing",
+    "status": 200,
+    "bytes": 5809,
+    "result": "PASS"
+  },
+  {
+    "route": "/canon",
+    "status": 200,
+    "bytes": 5809,
+    "result": "PASS"
+  },
+  {
+    "route": "/tools",
+    "status": 200,
+    "bytes": 5809,
+    "result": "PASS"
+  },
+  {
+    "route": "/boundary",
+    "status": 200,
+    "bytes": 5809,
+    "result": "PASS"
+  },
+  {
+    "route": "/handoff",
+    "status": 200,
+    "bytes": 5809,
+    "result": "PASS"
+  },
+  {
+    "route": "/handoff-engine",
+    "status": 200,
+    "bytes": 5809,
+    "result": "PASS"
+  },
+  {
+    "route": "/duat-devday",
+    "status": 200,
+    "bytes": 5809,
+    "result": "PASS"
+  },
+  {
+    "route": "/duat-city",
+    "status": 200,
+    "bytes": 5809,
+    "result": "PASS"
+  },
+  {
+    "route": "/about",
+    "status": 200,
+    "bytes": 4999,
+    "result": "PASS"
+  },
+  {
+    "route": "/books",
+    "status": 200,
+    "bytes": 3585,
+    "result": "PASS"
+  },
+  {
+    "route": "/store",
+    "status": 200,
+    "bytes": 5626,
+    "result": "PASS"
+  },
+  {
+    "route": "/despertar-preview",
+    "status": 200,
+    "bytes": 5300,
+    "result": "PASS"
+  },
+  {
+    "route": "/despertar-preview.html",
+    "status": 200,
+    "bytes": 5300,
+    "result": "PASS"
+  },
+  {
+    "route": "/gumroad",
+    "status": 200,
+    "bytes": 3353,
+    "result": "PASS"
+  },
+  {
+    "route": "/products",
+    "status": 200,
+    "bytes": 5809,
+    "result": "PASS"
+  },
+  {
+    "route": "/audit",
+    "status": 200,
+    "bytes": 5809,
+    "result": "PASS"
+  },
+  {
+    "route": "/commercial-audit",
+    "status": 200,
+    "bytes": 5809,
+    "result": "PASS"
+  },
+  {
+    "route": "/status",
+    "status": 200,
+    "bytes": 5809,
+    "result": "PASS"
+  },
+  {
+    "route": "/duat",
+    "status": 200,
+    "bytes": 5809,
+    "result": "PASS"
+  },
+  {
+    "route": "/telecom",
+    "status": 200,
+    "bytes": 5809,
+    "result": "PASS"
+  },
+  {
+    "route": "/teleco",
+    "status": 200,
+    "bytes": 5809,
+    "result": "PASS"
+  },
+  {
+    "route": "/handoff-hub",
+    "status": 200,
+    "bytes": 5809,
+    "result": "PASS"
+  },
+  {
+    "route": "/docs",
+    "status": 200,
+    "bytes": 5809,
+    "result": "PASS"
+  }
+]

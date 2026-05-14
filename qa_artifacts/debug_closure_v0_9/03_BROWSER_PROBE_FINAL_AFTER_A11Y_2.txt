@@ -1,0 +1,6 @@
+{
+  "routes": 24,
+  "visual": 20,
+  "i18n": 4,
+  "failures": 0
+}

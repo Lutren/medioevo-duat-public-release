@@ -1,0 +1,1101 @@
+{
+  "routes": [
+    {
+      "route": "/",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO / Lutren / Tyr - Observacionismo, OSIT and Local-First AI Agent Tools",
+        "h1": [
+          "MEDIOEVO / DUAT",
+          "Architecture surfaced for the web"
+        ],
+        "bodyTextLength": 1525,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 24,
+        "unnamedInteractive": [],
+        "backButton": false,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": true,
+        "storageKeys": [
+          "medioevo-duat-language"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/landing",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO / Lutren / Tyr - Observacionismo, OSIT and Local-First AI Agent Tools",
+        "h1": [
+          "A clearer way to run AI work"
+        ],
+        "bodyTextLength": 785,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 24,
+        "unnamedInteractive": [],
+        "backButton": false,
+        "simpleMode": true,
+        "advancedToggle": true,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": true,
+        "storageKeys": [
+          "medioevo-duat-language"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/about",
+      "ok": true,
+      "metrics": {
+        "title": "Luis René González López · Lutren / Tyr",
+        "h1": [
+          "Luis René González López · Lutren / Tyr"
+        ],
+        "bodyTextLength": 1164,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 7,
+        "unnamedInteractive": [],
+        "backButton": false,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": false,
+        "storageKeys": [
+          "medioevo-duat-language"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/books",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO Public Books",
+        "h1": [
+          "MEDIOEVO Public Books"
+        ],
+        "bodyTextLength": 520,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 6,
+        "unnamedInteractive": [],
+        "backButton": false,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": false,
+        "storageKeys": [
+          "medioevo-duat-language"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/store",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO Store",
+        "h1": [
+          "MEDIOEVO Store"
+        ],
+        "bodyTextLength": 1025,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 9,
+        "unnamedInteractive": [],
+        "backButton": false,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": false,
+        "storageKeys": [
+          "medioevo-duat-language"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/despertar-preview",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO: Despertar Preview",
+        "h1": [
+          "MEDIOEVO: Despertar Preview"
+        ],
+        "bodyTextLength": 863,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 8,
+        "unnamedInteractive": [],
+        "backButton": false,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": false,
+        "storageKeys": [
+          "medioevo-duat-language"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/despertar-preview.html",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO: Despertar Preview",
+        "h1": [
+          "MEDIOEVO: Despertar Preview"
+        ],
+        "bodyTextLength": 863,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 8,
+        "unnamedInteractive": [],
+        "backButton": false,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": false,
+        "storageKeys": [
+          "medioevo-duat-language"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/gumroad",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO Gumroad Links",
+        "h1": [
+          "MEDIOEVO Gumroad Links"
+        ],
+        "bodyTextLength": 518,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 9,
+        "unnamedInteractive": [],
+        "backButton": false,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": false,
+        "storageKeys": [
+          "medioevo-duat-language"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/products",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO / Lutren / Tyr - Observacionismo, OSIT and Local-First AI Agent Tools",
+        "h1": [
+          "Publication order and risk map"
+        ],
+        "bodyTextLength": 6363,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 29,
+        "unnamedInteractive": [],
+        "backButton": false,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": true,
+        "storageKeys": [
+          "medioevo-duat-language"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/audit",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO / Lutren / Tyr - Observacionismo, OSIT and Local-First AI Agent Tools",
+        "h1": [
+          "Observacionismo Public Audit"
+        ],
+        "bodyTextLength": 2053,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 22,
+        "unnamedInteractive": [],
+        "backButton": false,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": true,
+        "storageKeys": [
+          "medioevo-duat-language"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/commercial-audit",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO / Lutren / Tyr - Observacionismo, OSIT and Local-First AI Agent Tools",
+        "h1": [
+          "Professional publication path"
+        ],
+        "bodyTextLength": 2417,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 23,
+        "unnamedInteractive": [],
+        "backButton": false,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": true,
+        "storageKeys": [
+          "medioevo-duat-language"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/status",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO / Lutren / Tyr - Observacionismo, OSIT and Local-First AI Agent Tools",
+        "h1": [
+          "Current public release state"
+        ],
+        "bodyTextLength": 1064,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 23,
+        "unnamedInteractive": [],
+        "backButton": false,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": true,
+        "storageKeys": [
+          "medioevo-duat-language"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/boundary",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO / Lutren / Tyr - Observacionismo, OSIT and Local-First AI Agent Tools",
+        "h1": [
+          "Public-safe surface only"
+        ],
+        "bodyTextLength": 795,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 22,
+        "unnamedInteractive": [],
+        "backButton": true,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": true,
+        "storageKeys": [
+          "medioevo-duat-language"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/canon",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO / Lutren / Tyr - Observacionismo, OSIT and Local-First AI Agent Tools",
+        "h1": [
+          "Operational canon, not private vault"
+        ],
+        "bodyTextLength": 762,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 22,
+        "unnamedInteractive": [],
+        "backButton": true,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": true,
+        "storageKeys": [
+          "medioevo-duat-language"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/tools",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO / Lutren / Tyr - Observacionismo, OSIT and Local-First AI Agent Tools",
+        "h1": [
+          "Release-safe developer modules"
+        ],
+        "bodyTextLength": 685,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 22,
+        "unnamedInteractive": [],
+        "backButton": true,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": true,
+        "storageKeys": [
+          "medioevo-duat-language"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/duat",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO / Lutren / Tyr - Observacionismo, OSIT and Local-First AI Agent Tools",
+        "h1": [
+          "Visual demo for observable agent state"
+        ],
+        "bodyTextLength": 633,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 33,
+        "unnamedInteractive": [],
+        "backButton": false,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": true,
+        "storageKeys": [
+          "medioevo-duat-language"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/telecom",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO / Lutren / Tyr - Observacionismo, OSIT and Local-First AI Agent Tools",
+        "h1": [
+          "Agent Bulletin Hub"
+        ],
+        "bodyTextLength": 4434,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 27,
+        "unnamedInteractive": [],
+        "backButton": false,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": true,
+        "storageKeys": [
+          "medioevo-duat-language",
+          "duat-telecom-core:messagebus:v1"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/teleco",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO / Lutren / Tyr - Observacionismo, OSIT and Local-First AI Agent Tools",
+        "h1": [
+          "Agent Bulletin Hub"
+        ],
+        "bodyTextLength": 4434,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 27,
+        "unnamedInteractive": [],
+        "backButton": false,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": true,
+        "storageKeys": [
+          "medioevo-duat-language",
+          "duat-telecom-core:messagebus:v1"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/handoff",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO / Lutren / Tyr - Observacionismo, OSIT and Local-First AI Agent Tools",
+        "h1": [
+          "Unknowns-first continuity contract"
+        ],
+        "bodyTextLength": 1151,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 22,
+        "unnamedInteractive": [],
+        "backButton": true,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": true,
+        "storageKeys": [
+          "medioevo-duat-language",
+          "duat-telecom-core:messagebus:v1"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/handoff-hub",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO / Lutren / Tyr - Observacionismo, OSIT and Local-First AI Agent Tools",
+        "h1": [
+          "Unknowns-first continuity contract"
+        ],
+        "bodyTextLength": 1151,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 22,
+        "unnamedInteractive": [],
+        "backButton": true,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": true,
+        "storageKeys": [
+          "medioevo-duat-language",
+          "duat-telecom-core:messagebus:v1"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/handoff-engine",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO / Lutren / Tyr - Observacionismo, OSIT and Local-First AI Agent Tools",
+        "h1": [
+          "Continuity checks before the next agent"
+        ],
+        "bodyTextLength": 878,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 22,
+        "unnamedInteractive": [],
+        "backButton": true,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": true,
+        "storageKeys": [
+          "medioevo-duat-language",
+          "duat-telecom-core:messagebus:v1"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/duat-devday",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO / Lutren / Tyr - Observacionismo, OSIT and Local-First AI Agent Tools",
+        "h1": [
+          "DUAT"
+        ],
+        "bodyTextLength": 1885,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 21,
+        "unnamedInteractive": [],
+        "backButton": false,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": true,
+        "storageKeys": [
+          "medioevo-duat-language",
+          "duat-telecom-core:messagebus:v1"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/duat-city",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO / Lutren / Tyr - Observacionismo, OSIT and Local-First AI Agent Tools",
+        "h1": [
+          "DUAT City"
+        ],
+        "bodyTextLength": 2003,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 26,
+        "unnamedInteractive": [],
+        "backButton": true,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": true,
+        "districtCards": 6,
+        "commandShell": true,
+        "languageSelect": true,
+        "storageKeys": [
+          "medioevo-duat-language",
+          "duat-telecom-core:messagebus:v1"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    },
+    {
+      "route": "/docs",
+      "ok": true,
+      "metrics": {
+        "title": "MEDIOEVO / Lutren / Tyr - Observacionismo, OSIT and Local-First AI Agent Tools",
+        "h1": [
+          "Public docs included in the repo"
+        ],
+        "bodyTextLength": 1281,
+        "mainExists": true,
+        "navExists": true,
+        "horizontalOverflow": false,
+        "whiteScreen": false,
+        "activeElementCount": 21,
+        "unnamedInteractive": [],
+        "backButton": false,
+        "simpleMode": false,
+        "advancedToggle": false,
+        "duatCity": false,
+        "districtCards": 0,
+        "commandShell": false,
+        "languageSelect": true,
+        "storageKeys": [
+          "medioevo-duat-language",
+          "duat-telecom-core:messagebus:v1"
+        ]
+      },
+      "errors": {
+        "console_errors": [],
+        "network_errors": [],
+        "runtime_errors": []
+      }
+    }
+  ],
+  "visual": [
+    {
+      "route": "/landing",
+      "viewport": "mobile",
+      "size": "390x844",
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\mobile_landing.png",
+      "bytes": 120135,
+      "ok": true,
+      "metrics": {
+        "overflow": false,
+        "text": 785,
+        "title": "A clearer way to run AI work"
+      }
+    },
+    {
+      "route": "/duat-city",
+      "viewport": "mobile",
+      "size": "390x844",
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\mobile_duat-city.png",
+      "bytes": 358933,
+      "ok": true,
+      "metrics": {
+        "overflow": false,
+        "text": 2003,
+        "title": "DUAT City"
+      }
+    },
+    {
+      "route": "/duat-devday",
+      "viewport": "mobile",
+      "size": "390x844",
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\mobile_duat-devday.png",
+      "bytes": 752717,
+      "ok": true,
+      "metrics": {
+        "overflow": false,
+        "text": 1885,
+        "title": "DUAT"
+      }
+    },
+    {
+      "route": "/tools",
+      "viewport": "mobile",
+      "size": "390x844",
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\mobile_tools.png",
+      "bytes": 113222,
+      "ok": true,
+      "metrics": {
+        "overflow": false,
+        "text": 685,
+        "title": "Release-safe developer modules"
+      }
+    },
+    {
+      "route": "/handoff-engine",
+      "viewport": "mobile",
+      "size": "390x844",
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\mobile_handoff-engine.png",
+      "bytes": 122197,
+      "ok": true,
+      "metrics": {
+        "overflow": false,
+        "text": 878,
+        "title": "Continuity checks before the next agent"
+      }
+    },
+    {
+      "route": "/landing",
+      "viewport": "tablet",
+      "size": "768x1024",
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\tablet_landing.png",
+      "bytes": 177124,
+      "ok": true,
+      "metrics": {
+        "overflow": false,
+        "text": 785,
+        "title": "A clearer way to run AI work"
+      }
+    },
+    {
+      "route": "/duat-city",
+      "viewport": "tablet",
+      "size": "768x1024",
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\tablet_duat-city.png",
+      "bytes": 487225,
+      "ok": true,
+      "metrics": {
+        "overflow": false,
+        "text": 2003,
+        "title": "DUAT City"
+      }
+    },
+    {
+      "route": "/duat-devday",
+      "viewport": "tablet",
+      "size": "768x1024",
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\tablet_duat-devday.png",
+      "bytes": 1165109,
+      "ok": true,
+      "metrics": {
+        "overflow": false,
+        "text": 1885,
+        "title": "DUAT"
+      }
+    },
+    {
+      "route": "/tools",
+      "viewport": "tablet",
+      "size": "768x1024",
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\tablet_tools.png",
+      "bytes": 170289,
+      "ok": true,
+      "metrics": {
+        "overflow": false,
+        "text": 685,
+        "title": "Release-safe developer modules"
+      }
+    },
+    {
+      "route": "/handoff-engine",
+      "viewport": "tablet",
+      "size": "768x1024",
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\tablet_handoff-engine.png",
+      "bytes": 188889,
+      "ok": true,
+      "metrics": {
+        "overflow": false,
+        "text": 878,
+        "title": "Continuity checks before the next agent"
+      }
+    },
+    {
+      "route": "/landing",
+      "viewport": "desktop",
+      "size": "1440x900",
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\desktop_landing.png",
+      "bytes": 248723,
+      "ok": true,
+      "metrics": {
+        "overflow": false,
+        "text": 785,
+        "title": "A clearer way to run AI work"
+      }
+    },
+    {
+      "route": "/duat-city",
+      "viewport": "desktop",
+      "size": "1440x900",
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\desktop_duat-city.png",
+      "bytes": 694568,
+      "ok": true,
+      "metrics": {
+        "overflow": false,
+        "text": 2003,
+        "title": "DUAT City"
+      }
+    },
+    {
+      "route": "/duat-devday",
+      "viewport": "desktop",
+      "size": "1440x900",
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\desktop_duat-devday.png",
+      "bytes": 1245564,
+      "ok": true,
+      "metrics": {
+        "overflow": false,
+        "text": 1885,
+        "title": "DUAT"
+      }
+    },
+    {
+      "route": "/tools",
+      "viewport": "desktop",
+      "size": "1440x900",
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\desktop_tools.png",
+      "bytes": 238501,
+      "ok": true,
+      "metrics": {
+        "overflow": false,
+        "text": 685,
+        "title": "Release-safe developer modules"
+      }
+    },
+    {
+      "route": "/handoff-engine",
+      "viewport": "desktop",
+      "size": "1440x900",
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\desktop_handoff-engine.png",
+      "bytes": 261557,
+      "ok": true,
+      "metrics": {
+        "overflow": false,
+        "text": 878,
+        "title": "Continuity checks before the next agent"
+      }
+    },
+    {
+      "route": "/landing",
+      "viewport": "wide",
+      "size": "1920x1080",
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\wide_landing.png",
+      "bytes": 354819,
+      "ok": true,
+      "metrics": {
+        "overflow": false,
+        "text": 785,
+        "title": "A clearer way to run AI work"
+      }
+    },
+    {
+      "route": "/duat-city",
+      "viewport": "wide",
+      "size": "1920x1080",
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\wide_duat-city.png",
+      "bytes": 802204,
+      "ok": true,
+      "metrics": {
+        "overflow": false,
+        "text": 2003,
+        "title": "DUAT City"
+      }
+    },
+    {
+      "route": "/duat-devday",
+      "viewport": "wide",
+      "size": "1920x1080",
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\wide_duat-devday.png",
+      "bytes": 1498097,
+      "ok": true,
+      "metrics": {
+        "overflow": false,
+        "text": 1885,
+        "title": "DUAT"
+      }
+    },
+    {
+      "route": "/tools",
+      "viewport": "wide",
+      "size": "1920x1080",
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\wide_tools.png",
+      "bytes": 345982,
+      "ok": true,
+      "metrics": {
+        "overflow": false,
+        "text": 685,
+        "title": "Release-safe developer modules"
+      }
+    },
+    {
+      "route": "/handoff-engine",
+      "viewport": "wide",
+      "size": "1920x1080",
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\wide_handoff-engine.png",
+      "bytes": 357653,
+      "ok": true,
+      "metrics": {
+        "overflow": false,
+        "text": 878,
+        "title": "Continuity checks before the next agent"
+      }
+    }
+  ],
+  "i18n": [
+    {
+      "language": "en",
+      "ok": true,
+      "metrics": {
+        "lang": "en",
+        "selected": "en",
+        "cityTitle": "DUAT City",
+        "navText": "Overview\nLanding\nAbout\nStore\nDespertar\nBooks\nProducts\nAudit\nStatus\nBoundary\nCanon\nTools\nDUAT\nTelecom\nHandoff\nHandoffHub\nDevDay\nCity\nDocs",
+        "overflow": false,
+        "commandShell": true
+      },
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\i18n_en_duat-city_mobile.png"
+    },
+    {
+      "language": "es",
+      "ok": true,
+      "metrics": {
+        "lang": "es",
+        "selected": "es",
+        "cityTitle": "DUAT City",
+        "navText": "Inicio\nSimple\nAcerca\nTienda\nDespertar\nLibros\nProductos\nAuditoria\nEstado\nLimites\nCanon\nHerramientas\nDUAT\nTelecom\nHandoff\nHandoffHub\nDevDay\nCiudad\nDocs",
+        "overflow": false,
+        "commandShell": true
+      },
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\i18n_es_duat-city_mobile.png"
+    },
+    {
+      "language": "ru",
+      "ok": true,
+      "metrics": {
+        "lang": "ru",
+        "selected": "ru",
+        "cityTitle": "DUAT City",
+        "navText": "Обзор\nСтарт\nО проекте\nМагазин\nDespertar\nКниги\nПродукты\nАудит\nСтатус\nГраницы\nКанон\nИнструменты\nDUAT\nTelecom\nHandoff\nHandoffHub\nDevDay\nГород\nДокументы",
+        "overflow": false,
+        "commandShell": true
+      },
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\i18n_ru_duat-city_mobile.png"
+    },
+    {
+      "language": "zh",
+      "ok": true,
+      "metrics": {
+        "lang": "zh",
+        "selected": "zh",
+        "cityTitle": "DUAT City",
+        "navText": "概览\n入口\n关于\n商店\nDespertar\n书籍\n产品\n审计\n状态\n边界\n规范\n工具\nDUAT\nTelecom\n交接\nHandoffHub\nDevDay\n城市\n文档",
+        "overflow": false,
+        "commandShell": true
+      },
+      "path": "qa_artifacts\\debug_closure_v0_9\\screenshots\\i18n_zh_duat-city_mobile.png"
+    }
+  ],
+  "command_shell": {
+    "ok": true,
+    "transcript": "Commands: help, open menu, go landing, go tools, equip, attack, inspect, back."
+  }
+}

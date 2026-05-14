@@ -1,6 +1,7 @@
 import {
   Activity,
   AlertTriangle,
+  ArrowLeft,
   ArrowRight,
   BarChart3,
   BookOpenText,
@@ -27,7 +28,7 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import type { MouseEvent, PointerEvent } from "react";
+import type { FormEvent, MouseEvent, PointerEvent } from "react";
 import { DuatEngine } from "./simulation/engine";
 import {
   GRID_HEIGHT,
@@ -52,34 +53,363 @@ import { productMatrix, storeOrder, type ProductMatrixItem } from "./content/pro
 import { publicIdentity } from "./content/publicIdentity";
 import "./styles/duat-display.css";
 
+type LanguageCode = "en" | "es" | "ru" | "zh";
+
+type LocalizedCopy = {
+  languageLabel: string;
+  nav: Record<string, string>;
+  landing: {
+    eyebrow: string;
+    title: string;
+    body: string;
+    panelKicker: string;
+    panelTitle: string;
+    panelBody: string;
+    exploreTools: string;
+    viewHandoff: string;
+    cardsLabel: string;
+    evidence: string;
+    evidenceBody: string;
+    boundaries: string;
+    boundariesBody: string;
+    continuity: string;
+    continuityBody: string;
+    advancedButton: string;
+  };
+  duatCity: {
+    eyebrow: string;
+    title: string;
+    lede: string;
+    notice: string;
+    cityKicker: string;
+    cityTitle: string;
+    cityBody: string;
+    argusKicker: string;
+    argusTitle: string;
+    argusBody: string;
+    exploreTools: string;
+    commandTitle: string;
+    commandBody: string;
+    commandHelp: string;
+    commandInputLabel: string;
+    commandPlaceholder: string;
+    commandRun: string;
+    transcriptLabel: string;
+    visualEffects: string;
+  };
+};
+
+const LANGUAGE_OPTIONS: { code: LanguageCode; label: string }[] = [
+  { code: "en", label: "EN" },
+  { code: "es", label: "ES" },
+  { code: "ru", label: "RU" },
+  { code: "zh", label: "ZH" },
+];
+
+const DEFAULT_LANGUAGE: LanguageCode = "en";
+const LANGUAGE_STORAGE_KEY = "medioevo-duat-language";
+
 const NAV_ITEMS = [
   { href: "/", label: "Overview" },
+  { href: "/landing", label: "Landing" },
   { href: "/about", label: "About" },
   { href: "/store", label: "Store" },
+  { href: "/despertar-preview", label: "Despertar" },
   { href: "/books", label: "Books" },
   { href: "/products", label: "Products" },
   { href: "/audit", label: "Audit" },
+  { href: "/status", label: "Status" },
+  { href: "/boundary", label: "Boundary" },
+  { href: "/canon", label: "Canon" },
+  { href: "/tools", label: "Tools" },
   { href: "/duat", label: "DUAT" },
   { href: "/telecom", label: "Telecom" },
+  { href: "/handoff", label: "Handoff" },
   { href: "/handoff-hub", label: "HandoffHub" },
   { href: "/duat-devday", label: "DevDay" },
+  { href: "/duat-city", label: "City" },
   { href: "/docs", label: "Docs" },
 ];
 
+const I18N: Record<LanguageCode, LocalizedCopy> = {
+  en: {
+    languageLabel: "Language",
+    nav: {
+      "/": "Overview",
+      "/landing": "Landing",
+      "/about": "About",
+      "/store": "Store",
+      "/despertar-preview": "Despertar",
+      "/books": "Books",
+      "/products": "Products",
+      "/audit": "Audit",
+      "/status": "Status",
+      "/boundary": "Boundary",
+      "/canon": "Canon",
+      "/tools": "Tools",
+      "/duat": "DUAT",
+      "/telecom": "Telecom",
+      "/handoff": "Handoff",
+      "/handoff-hub": "HandoffHub",
+      "/duat-devday": "DevDay",
+      "/duat-city": "City",
+      "/docs": "Docs",
+    },
+    landing: {
+      eyebrow: "Simple Mode",
+      title: "A clearer way to run AI work",
+      body: "MEDIOEVO / DUAT keeps agent work visible: what is known, what is allowed, what is blocked and what should happen next.",
+      panelKicker: "Human first",
+      panelTitle: "Start with the state, then choose the next safe action.",
+      panelBody: "Instead of scattered chats and hidden decisions, this portal shows evidence, boundaries and continuity in one public-safe surface.",
+      exploreTools: "Explore tools",
+      viewHandoff: "View handoff",
+      cardsLabel: "Simple Mode cards",
+      evidence: "Evidence",
+      evidenceBody: "Every action should know what supports it.",
+      boundaries: "Boundaries",
+      boundariesBody: "Private work stays protected before public action.",
+      continuity: "Continuity",
+      continuityBody: "Sessions can hand off state without starting over.",
+      advancedButton: "Advanced OSIT details",
+    },
+    duatCity: {
+      eyebrow: "Public demo route",
+      title: "DUAT City",
+      lede: "A public-safe map of MEDIOEVO / OSIT agent infrastructure.",
+      notice: "Public-safe demo. This is not the full DUAT/GEODIA runtime. Protected systems, books, RPG/TCG, private prompts, datasets, secrets and internal agent logic are not included.",
+      cityKicker: "City shell",
+      cityTitle: "Agent work as public districts",
+      cityBody: "This route presents a toy city shell for visibility, evidence and safe routing. It does not connect to private runtimes, local logs or protected source material.",
+      argusKicker: "Argus Firewall",
+      argusTitle: "Boundary metaphor, not private security",
+      argusBody: "Argus Firewall is a public-facing boundary metaphor for visibility, review and safe routing. It is not a claim of production security and does not expose private internals.",
+      exploreTools: "Explore tools",
+      commandTitle: "Command Console",
+      commandBody: "Text-first shell for assistive navigation. It is a demo transcript only; it does not run private logic or game combat.",
+      commandHelp: "Commands: help, open menu, go landing, go tools, equip, attack, inspect, back.",
+      commandInputLabel: "Command input",
+      commandPlaceholder: "Type help or go tools",
+      commandRun: "Run command",
+      transcriptLabel: "Command transcript",
+      visualEffects: "Visual effects",
+    },
+  },
+  es: {
+    languageLabel: "Idioma",
+    nav: {
+      "/": "Inicio",
+      "/landing": "Simple",
+      "/about": "Acerca",
+      "/store": "Tienda",
+      "/despertar-preview": "Despertar",
+      "/books": "Libros",
+      "/products": "Productos",
+      "/audit": "Auditoria",
+      "/status": "Estado",
+      "/boundary": "Limites",
+      "/canon": "Canon",
+      "/tools": "Herramientas",
+      "/duat": "DUAT",
+      "/telecom": "Telecom",
+      "/handoff": "Handoff",
+      "/handoff-hub": "HandoffHub",
+      "/duat-devday": "DevDay",
+      "/duat-city": "Ciudad",
+      "/docs": "Docs",
+    },
+    landing: {
+      eyebrow: "Modo simple",
+      title: "Una forma mas clara de operar trabajo con IA",
+      body: "MEDIOEVO / DUAT hace visible el trabajo de agentes: que se sabe, que se permite, que se bloquea y cual es el siguiente paso.",
+      panelKicker: "Humano primero",
+      panelTitle: "Empieza con el estado y luego elige la siguiente accion segura.",
+      panelBody: "En vez de chats dispersos y decisiones ocultas, este portal muestra evidencia, limites y continuidad en una superficie publica segura.",
+      exploreTools: "Explorar herramientas",
+      viewHandoff: "Ver handoff",
+      cardsLabel: "Tarjetas de modo simple",
+      evidence: "Evidencia",
+      evidenceBody: "Cada accion debe saber que la sostiene.",
+      boundaries: "Limites",
+      boundariesBody: "El trabajo privado queda protegido antes de la accion publica.",
+      continuity: "Continuidad",
+      continuityBody: "Las sesiones pueden entregar estado sin empezar de cero.",
+      advancedButton: "Detalles OSIT avanzados",
+    },
+    duatCity: {
+      eyebrow: "Ruta demo publica",
+      title: "DUAT City",
+      lede: "Un mapa publico seguro de la infraestructura de agentes MEDIOEVO / OSIT.",
+      notice: "Demo publica segura. Esto no es el runtime completo DUAT/GEODIA. Sistemas protegidos, libros, RPG/TCG, prompts privados, datasets, secretos y logica interna de agentes no estan incluidos.",
+      cityKicker: "Shell de ciudad",
+      cityTitle: "Trabajo de agentes como distritos publicos",
+      cityBody: "Esta ruta muestra una maqueta de ciudad para visibilidad, evidencia y enrutamiento seguro. No conecta con runtimes privados, logs locales ni material fuente protegido.",
+      argusKicker: "Argus Firewall",
+      argusTitle: "Metafora de frontera, no seguridad privada",
+      argusBody: "Argus Firewall es una metafora publica de frontera para visibilidad, revision y enrutamiento seguro. No afirma seguridad de produccion ni expone internos privados.",
+      exploreTools: "Explorar herramientas",
+      commandTitle: "Consola de comandos",
+      commandBody: "Shell textual para navegacion asistiva. Es solo una transcripcion demo; no ejecuta logica privada ni combate de juego.",
+      commandHelp: "Comandos: help, open menu, go landing, go tools, equip, attack, inspect, back.",
+      commandInputLabel: "Entrada de comando",
+      commandPlaceholder: "Escribe help o go tools",
+      commandRun: "Ejecutar",
+      transcriptLabel: "Transcripcion de comandos",
+      visualEffects: "Efectos visuales",
+    },
+  },
+  ru: {
+    languageLabel: "Язык",
+    nav: {
+      "/": "Обзор",
+      "/landing": "Старт",
+      "/about": "О проекте",
+      "/store": "Магазин",
+      "/despertar-preview": "Despertar",
+      "/books": "Книги",
+      "/products": "Продукты",
+      "/audit": "Аудит",
+      "/status": "Статус",
+      "/boundary": "Границы",
+      "/canon": "Канон",
+      "/tools": "Инструменты",
+      "/duat": "DUAT",
+      "/telecom": "Telecom",
+      "/handoff": "Handoff",
+      "/handoff-hub": "HandoffHub",
+      "/duat-devday": "DevDay",
+      "/duat-city": "Город",
+      "/docs": "Документы",
+    },
+    landing: {
+      eyebrow: "Простой режим",
+      title: "Более ясный способ вести работу с ИИ",
+      body: "MEDIOEVO / DUAT показывает работу агентов: что известно, что разрешено, что заблокировано и какой следующий шаг.",
+      panelKicker: "Сначала человек",
+      panelTitle: "Начните с состояния, затем выберите следующее безопасное действие.",
+      panelBody: "Вместо разрозненных чатов портал показывает доказательства, границы и непрерывность в публично безопасной форме.",
+      exploreTools: "Открыть инструменты",
+      viewHandoff: "Открыть handoff",
+      cardsLabel: "Карты простого режима",
+      evidence: "Доказательства",
+      evidenceBody: "Каждое действие должно иметь основание.",
+      boundaries: "Границы",
+      boundariesBody: "Частная работа защищена до публичного действия.",
+      continuity: "Непрерывность",
+      continuityBody: "Сессии передают состояние без старта с нуля.",
+      advancedButton: "Детали OSIT",
+    },
+    duatCity: {
+      eyebrow: "Публичная demo route",
+      title: "DUAT City",
+      lede: "Публично безопасная карта инфраструктуры агентов MEDIOEVO / OSIT.",
+      notice: "Публично безопасная демонстрация. Это не полный runtime DUAT/GEODIA. Защищенные системы, книги, RPG/TCG, частные prompts, datasets, secrets и внутренняя логика агентов не включены.",
+      cityKicker: "Городская оболочка",
+      cityTitle: "Работа агентов как публичные районы",
+      cityBody: "Эта route показывает toy city shell для видимости, доказательств и безопасной маршрутизации. Она не подключается к private runtimes, local logs или защищенным источникам.",
+      argusKicker: "Argus Firewall",
+      argusTitle: "Метафора границы, не частная безопасность",
+      argusBody: "Argus Firewall is a public-facing boundary metaphor for visibility, review and safe routing. It is not a claim of production security and does not expose private internals.",
+      exploreTools: "Открыть инструменты",
+      commandTitle: "Командная консоль",
+      commandBody: "Текстовая оболочка для доступной навигации. Это только demo transcript; она не запускает private logic или game combat.",
+      commandHelp: "Commands: help, open menu, go landing, go tools, equip, attack, inspect, back.",
+      commandInputLabel: "Ввод команды",
+      commandPlaceholder: "Введите help или go tools",
+      commandRun: "Выполнить",
+      transcriptLabel: "Транскрипт команд",
+      visualEffects: "Визуальные эффекты",
+    },
+  },
+  zh: {
+    languageLabel: "语言",
+    nav: {
+      "/": "概览",
+      "/landing": "入口",
+      "/about": "关于",
+      "/store": "商店",
+      "/despertar-preview": "Despertar",
+      "/books": "书籍",
+      "/products": "产品",
+      "/audit": "审计",
+      "/status": "状态",
+      "/boundary": "边界",
+      "/canon": "规范",
+      "/tools": "工具",
+      "/duat": "DUAT",
+      "/telecom": "Telecom",
+      "/handoff": "交接",
+      "/handoff-hub": "HandoffHub",
+      "/duat-devday": "DevDay",
+      "/duat-city": "城市",
+      "/docs": "文档",
+    },
+    landing: {
+      eyebrow: "简单模式",
+      title: "更清晰地运行 AI 工作",
+      body: "MEDIOEVO / DUAT 让代理工作可见：已知内容、允许内容、阻止内容以及下一步。",
+      panelKicker: "人先于系统",
+      panelTitle: "先读取状态，再选择下一个安全动作。",
+      panelBody: "这个门户把证据、边界和连续性放在一个 public-safe 界面中，而不是分散聊天和隐藏决策。",
+      exploreTools: "查看工具",
+      viewHandoff: "查看交接",
+      cardsLabel: "简单模式卡片",
+      evidence: "证据",
+      evidenceBody: "每个动作都应知道支持它的依据。",
+      boundaries: "边界",
+      boundariesBody: "公开动作前保护私人工作。",
+      continuity: "连续性",
+      continuityBody: "会话可以交接状态，不必从零开始。",
+      advancedButton: "高级 OSIT 细节",
+    },
+    duatCity: {
+      eyebrow: "公开演示路线",
+      title: "DUAT City",
+      lede: "MEDIOEVO / OSIT agent infrastructure 的 public-safe 地图。",
+      notice: "Public-safe demo. This is not the full DUAT/GEODIA runtime. Protected systems, books, RPG/TCG, private prompts, datasets, secrets and internal agent logic are not included.",
+      cityKicker: "城市外壳",
+      cityTitle: "把代理工作组织成公开区块",
+      cityBody: "这条路线是一个 toy city shell，用于可见性、证据和安全路由。它不连接 private runtimes、local logs 或受保护源材料。",
+      argusKicker: "Argus Firewall",
+      argusTitle: "边界隐喻，不是私有安全系统",
+      argusBody: "Argus Firewall is a public-facing boundary metaphor for visibility, review and safe routing. It is not a claim of production security and does not expose private internals.",
+      exploreTools: "查看工具",
+      commandTitle: "命令控制台",
+      commandBody: "面向辅助导航的 text-first shell。它只是 demo transcript，不运行 private logic 或 game combat。",
+      commandHelp: "Commands: help, open menu, go landing, go tools, equip, attack, inspect, back.",
+      commandInputLabel: "命令输入",
+      commandPlaceholder: "输入 help 或 go tools",
+      commandRun: "运行命令",
+      transcriptLabel: "命令记录",
+      visualEffects: "视觉效果",
+    },
+  },
+};
+
 const ROUTE_PATHS = [
   "/",
+  "/landing",
   "/about",
   "/books",
   "/store",
+  "/despertar-preview",
+  "/despertar-preview.html",
   "/gumroad",
   "/products",
   "/audit",
   "/commercial-audit",
+  "/status",
+  "/boundary",
+  "/canon",
+  "/tools",
   "/duat",
   "/telecom",
   "/teleco",
+  "/handoff",
   "/handoff-hub",
+  "/handoff-engine",
   "/duat-devday",
+  "/duat-city",
   "/docs",
 ];
 
@@ -119,11 +449,18 @@ const PUBLIC_MODULES = [
 const DOCS = [
   "PUBLIC_README.md",
   "PUBLIC_SCOPE.md",
+  "STATUS.md",
+  "PUBLIC_REPO_MAP.md",
+  "PUBLICATION_BOUNDARY.md",
+  "CLAIMS_BOUNDARY.md",
+  "OPEN_SOURCE_ROADMAP.md",
   "MEDIOEVO_OVERVIEW.md",
   "DUAT_OVERVIEW.md",
   "TELECOM_CORE_OVERVIEW.md",
   "ARCHITECTURE.md",
   "HANDOFFHUB.md",
+  "HANDOFF_v2_1_STATUS.md",
+  "HANDOFF_v2_1_H-STD.yaml",
   "DUAT_TELECOM_CORE.md",
   "AGENT_ORCHESTRATION.md",
   "OBSERVACIONISMO_PUBLIC.md",
@@ -182,6 +519,50 @@ const DEVDAY_MODULES = [
   },
 ];
 
+const DUAT_CITY_DISTRICTS: {
+  icon: LucideIcon;
+  name: string;
+  function: string;
+  gate: string;
+}[] = [
+  {
+    icon: Eye,
+    name: "Evidence District",
+    function: "Shows what supports a public action before the next step is chosen.",
+    gate: "GhostGate",
+  },
+  {
+    icon: ShieldCheck,
+    name: "Gate District",
+    function: "Keeps local, review and blocked actions visually separated.",
+    gate: "ActionGate",
+  },
+  {
+    icon: GitBranch,
+    name: "Continuity District",
+    function: "Keeps session state legible so work can continue without guessing.",
+    gate: "Handoff",
+  },
+  {
+    icon: FileText,
+    name: "Source Card District",
+    function: "Turns public-safe references into cards without exposing private sources.",
+    gate: "WitnessLog",
+  },
+  {
+    icon: ClipboardCheck,
+    name: "Handoff District",
+    function: "Packages the next contract, checksum and reconstruction test.",
+    gate: "Handoff",
+  },
+  {
+    icon: AlertTriangle,
+    name: "Boundary District",
+    function: "Names protected areas before they drift into a public surface.",
+    gate: "BoundaryCheck",
+  },
+];
+
 const EMPTY_METRICS: SimulationMetrics = {
   mean: 0,
   variance: 0,
@@ -206,8 +587,24 @@ const EMPTY_METRICS: SimulationMetrics = {
   cosmologyState: "NU",
 };
 
+function isLanguageCode(value: string | null): value is LanguageCode {
+  return value === "en" || value === "es" || value === "ru" || value === "zh";
+}
+
+function readInitialLanguage(): LanguageCode {
+  if (typeof window === "undefined") return DEFAULT_LANGUAGE;
+  try {
+    const stored = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
+    return isLanguageCode(stored) ? stored : DEFAULT_LANGUAGE;
+  } catch {
+    return DEFAULT_LANGUAGE;
+  }
+}
+
 export default function App() {
   const [path, setPath] = useState(() => normalizePath(typeof window === "undefined" ? "/" : window.location.pathname));
+  const [language, setLanguage] = useState<LanguageCode>(() => readInitialLanguage());
+  const copy = I18N[language] ?? I18N[DEFAULT_LANGUAGE];
 
   useEffect(() => {
     const onPop = () => setPath(normalizePath(window.location.pathname));
@@ -219,12 +616,25 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: "auto" });
   }, [path]);
 
-  const navigate = useCallback((event: MouseEvent<HTMLAnchorElement>, href: string) => {
-    event.preventDefault();
+  useEffect(() => {
+    document.documentElement.lang = language;
+    try {
+      window.localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
+    } catch {
+      // Language persistence is optional and never blocks rendering.
+    }
+  }, [language]);
+
+  const goTo = useCallback((href: string) => {
     const next = normalizePath(href);
     window.history.pushState(null, "", next);
     setPath(next);
   }, []);
+
+  const navigate = useCallback((event: MouseEvent<HTMLAnchorElement>, href: string) => {
+    event.preventDefault();
+    goTo(href);
+  }, [goTo]);
 
   return (
     <main className="app-shell">
@@ -239,27 +649,49 @@ export default function App() {
         <nav aria-label="Primary navigation">
           {NAV_ITEMS.map((item) => (
             <a key={item.href} className={path === item.href || (item.href === "/telecom" && path === "/teleco") ? "active" : ""} href={item.href} onClick={(event) => navigate(event, item.href)}>
-              {item.label}
+              {copy.nav[item.href] ?? item.label}
             </a>
           ))}
         </nav>
+        <LanguageSelect language={language} label={copy.languageLabel} onChange={setLanguage} />
       </header>
 
       {path === "/" ? <Overview navigate={navigate} /> : null}
+      {path === "/landing" ? <LandingRoute navigate={navigate} copy={copy.landing} /> : null}
       {path === "/about" ? <AboutRoute navigate={navigate} /> : null}
       {path === "/books" ? <BooksRoute navigate={navigate} /> : null}
       {path === "/store" ? <StoreRoute navigate={navigate} /> : null}
+      {path === "/despertar-preview" || path === "/despertar-preview.html" ? <DespertarPreviewRoute navigate={navigate} /> : null}
       {path === "/gumroad" ? <GumroadRoute navigate={navigate} /> : null}
       {path === "/products" ? <ProductsRoute navigate={navigate} /> : null}
       {path === "/audit" ? <AuditRoute navigate={navigate} /> : null}
       {path === "/commercial-audit" ? <CommercialAuditRoute navigate={navigate} /> : null}
+      {path === "/status" ? <StatusRoute navigate={navigate} /> : null}
+      {path === "/boundary" ? <BoundaryRoute navigate={navigate} /> : null}
+      {path === "/canon" ? <CanonRoute navigate={navigate} /> : null}
+      {path === "/tools" ? <ToolsRoute navigate={navigate} /> : null}
       {path === "/duat" ? <DuatRoute /> : null}
       {path === "/telecom" || path === "/teleco" ? <TelecomCore /> : null}
-      {path === "/handoff-hub" ? <HandoffHubRoute /> : null}
+      {path === "/handoff" || path === "/handoff-hub" ? <HandoffHubRoute navigate={navigate} /> : null}
+      {path === "/handoff-engine" ? <HandoffEngineRoute navigate={navigate} /> : null}
       {path === "/duat-devday" ? <DevDayRoute /> : null}
+      {path === "/duat-city" ? <DuatCityRoute navigate={navigate} goTo={goTo} copy={copy.duatCity} /> : null}
       {path === "/docs" ? <DocsRoute /> : null}
       {!ROUTE_PATHS.includes(path) ? <NotFound navigate={navigate} /> : null}
     </main>
+  );
+}
+
+function LanguageSelect({ language, label, onChange }: { language: LanguageCode; label: string; onChange: (language: LanguageCode) => void }) {
+  return (
+    <label className="language-select">
+      <span>{label}</span>
+      <select value={language} onChange={(event) => onChange(event.target.value as LanguageCode)} aria-label={label}>
+        {LANGUAGE_OPTIONS.map((option) => (
+          <option key={option.code} value={option.code}>{option.label}</option>
+        ))}
+      </select>
+    </label>
   );
 }
 
@@ -315,6 +747,77 @@ function Overview({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElement
         </div>
       </section>
     </>
+  );
+}
+
+function LandingRoute({ navigate, copy }: { navigate: (event: MouseEvent<HTMLAnchorElement>, href: string) => void; copy: LocalizedCopy["landing"] }) {
+  const [advancedOpen, setAdvancedOpen] = useState(false);
+  const advancedId = "landing-advanced-osit";
+
+  return (
+    <section className="route-surface simple-landing" data-testid="simple-mode-landing">
+      <RouteHeader
+        eyebrow={copy.eyebrow}
+        title={copy.title}
+        body={copy.body}
+      />
+      <div className="simple-mode-panel">
+        <div className="simple-mode-copy">
+          <p className="section-title">{copy.panelKicker}</p>
+          <h2>{copy.panelTitle}</h2>
+          <p>{copy.panelBody}</p>
+          <div className="route-actions">
+            <a className="command-link primary" href="/tools" onClick={(event) => navigate(event, "/tools")}>
+              {copy.exploreTools}
+              <ArrowRight size={17} />
+            </a>
+            <a className="command-link" href="/handoff" onClick={(event) => navigate(event, "/handoff")}>
+              {copy.viewHandoff}
+              <GitBranch size={17} />
+            </a>
+          </div>
+        </div>
+        <div className="simple-card-grid" aria-label={copy.cardsLabel}>
+          <article className="simple-card">
+            <CheckCircle2 size={20} />
+            <h3>{copy.evidence}</h3>
+            <p>{copy.evidenceBody}</p>
+          </article>
+          <article className="simple-card">
+            <ShieldCheck size={20} />
+            <h3>{copy.boundaries}</h3>
+            <p>{copy.boundariesBody}</p>
+          </article>
+          <article className="simple-card">
+            <GitBranch size={20} />
+            <h3>{copy.continuity}</h3>
+            <p>{copy.continuityBody}</p>
+          </article>
+        </div>
+      </div>
+      <section className="content-panel advanced-toggle-panel">
+        <button
+          className="icon-button"
+          type="button"
+          aria-expanded={advancedOpen}
+          aria-controls={advancedId}
+          onClick={() => setAdvancedOpen((current) => !current)}
+        >
+          {advancedOpen ? <Pause size={17} /> : <Play size={17} />}
+          {copy.advancedButton}
+        </button>
+        <div id={advancedId} className={advancedOpen ? "advanced-details open" : "advanced-details"} hidden={!advancedOpen}>
+          <p>
+            OSIT keeps this public surface low-claim: observe state, separate evidence from inference, apply ActionGate and write a handoff before the next session.
+          </p>
+          <ul className="check-list">
+            <li><CheckCircle2 size={16} /> No private runtime payloads.</li>
+            <li><CheckCircle2 size={16} /> No unsupported scientific claims.</li>
+            <li><CheckCircle2 size={16} /> No public action without a gate.</li>
+          </ul>
+        </div>
+      </section>
+    </section>
   );
 }
 
@@ -398,6 +901,7 @@ function BooksRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorEleme
               <span>{book.category}</span>
               <span className="status-badge">{book.status}</span>
             </div>
+            {book.coverImage ? <img className="book-cover" src={book.coverImage} alt="" aria-hidden="true" /> : null}
             <h2>{book.title}</h2>
             {book.subtitle ? <p className="muted-line">{book.subtitle}</p> : null}
             <p>{book.description}</p>
@@ -425,6 +929,68 @@ function BooksRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorEleme
             <ShoppingCart size={18} />
             Store
           </a>
+        </div>
+      </section>
+    </section>
+  );
+}
+
+function DespertarPreviewRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElement>, href: string) => void }) {
+  const product = gumroadProducts.find((item) => item.id === "medioevo-despertar-preview");
+  const book = booksCatalog.find((item) => item.id === "medioevo-despertar-preview");
+
+  return (
+    <section className="route-surface">
+      <RouteHeader
+        eyebrow="MEDIOEVO books"
+        title="DESPERTAR is the public entry"
+        body="A single reader-facing door into MEDIOEVO, prepared with a human reading gate and local editorial QA. It stays separate from private archives, RPG/TCG material and external science claims."
+      />
+      <div className="content-grid two">
+        <article className="content-panel lead-panel">
+          <BookOpenText size={24} />
+          {book?.coverImage ? <img className="book-cover feature-cover" src={book.coverImage} alt="" aria-hidden="true" /> : null}
+          <h2>{book?.title ?? "MEDIOEVO: Despertar Preview"}</h2>
+          <p>{book?.description}</p>
+          <p className="boundary-note">{book?.privateBoundary}</p>
+          <div className="route-actions">
+            <a className="command-link primary" href={product?.gumroadUrl ?? "https://lrgonzalez.gumroad.com/l/dmqgzi"} target="_blank" rel="noreferrer">
+              Open on Gumroad
+              <ExternalLink size={16} />
+            </a>
+            <a className="command-link" href="/store" onClick={(event) => navigate(event, "/store")}>
+              <ShoppingCart size={18} />
+              Store
+            </a>
+          </div>
+        </article>
+        <article className="content-panel">
+          <ShieldCheck size={24} />
+          <h2>Publication boundary</h2>
+          <ul className="check-list">
+            <li><CheckCircle2 size={16} /> Public-safe preview only.</li>
+            <li><CheckCircle2 size={16} /> No full private archive.</li>
+            <li><CheckCircle2 size={16} /> No RPG/TCG distribution from this route.</li>
+            <li><CheckCircle2 size={16} /> No real bestseller claim until market evidence exists.</li>
+            <li><CheckCircle2 size={16} /> Diegetic systems remain fiction unless separately validated.</li>
+          </ul>
+        </article>
+      </div>
+      <section className="content-panel">
+        <h2>What the preview solves</h2>
+        <div className="module-grid compact">
+          <article className="mini-card">
+            <PackageCheck size={18} />
+            <strong>One clean starting point</strong>
+          </article>
+          <article className="mini-card">
+            <ShieldCheck size={18} />
+            <strong>Private canon protected</strong>
+          </article>
+          <article className="mini-card">
+            <ClipboardCheck size={18} />
+            <strong>Market test ready locally</strong>
+          </article>
         </div>
       </section>
     </section>
@@ -496,6 +1062,7 @@ function GumroadRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorEle
       <div className="content-grid">
         {gumroadProducts.map((product) => (
           <article className="content-panel product-panel" key={product.id}>
+            <img className="product-thumb" src={product.image} alt="" aria-hidden="true" />
             <div className="panel-kicker">
               <ExternalLink size={18} />
               <span>{product.sitePlacement}</span>
@@ -662,33 +1229,320 @@ function DuatRoute() {
       <RouteHeader
         eyebrow="DUAT Display"
         title="Visual demo for observable agent state"
-        body="A local synthetic simulation demonstrates live telemetry, state transitions and low-claim observability. It is a prototype display, not AGI or validated physics."
+        body="A local synthetic simulation demonstrates live telemetry, state transitions and low-claim observability. It is a prototype display, not autonomous general intelligence or validated physics."
       />
       <DuatField />
     </section>
   );
 }
 
-function HandoffHubRoute() {
+function StatusRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElement>, href: string) => void }) {
   return (
     <section className="route-surface">
       <RouteHeader
-        eyebrow="HandoffHub"
-        title="Continuity between agents"
-        body="HandoffHub treats a handoff as state: task, evidence, confidence, blocker, fingerprint and next action. The public release shows the contract without exposing private runtime logs."
+        eyebrow="Public status"
+        title="Current public release state"
+        body="This is a public-safe prototype release. It exposes the DUAT visual demo, MessageBus surface, Handoff v2.1 contract, boundary documents and toy/synthetic tooling only."
+      />
+      <div className="content-grid two">
+        <article className="content-panel">
+          <h2>Ready now</h2>
+          <ul className="check-list">
+            <li><CheckCircle2 size={16} /> ActionGate / WitnessLog documentation</li>
+            <li><CheckCircle2 size={16} /> Handoff v2.1 public contract and templates</li>
+            <li><CheckCircle2 size={16} /> DUAT display prototype with synthetic telemetry</li>
+            <li><CheckCircle2 size={16} /> MessageBus and agent orchestration overview</li>
+            <li><CheckCircle2 size={16} /> Public boundary and claim boundary docs</li>
+          </ul>
+        </article>
+        <article className="content-panel">
+          <h2>Blocked from public release</h2>
+          <ul className="check-list warn">
+            <li><AlertTriangle size={16} /> Private canon, raw prompts and source vaults</li>
+            <li><AlertTriangle size={16} /> Full books, manuscripts, RPG/TCG and DUAT/GEODIA internals</li>
+            <li><AlertTriangle size={16} /> Credentials, tokens, local runtime logs and .env files</li>
+            <li><AlertTriangle size={16} /> Unsupported claims about autonomous general intelligence, consciousness or physics</li>
+          </ul>
+        </article>
+      </div>
+      <section className="content-panel">
+        <h2>Release gate</h2>
+        <p>Publication remains gated by SecretScan, BoundaryCheck, Build, RouteCheck, Handoff v2.1 schema validation and reconstruction test.</p>
+        <div className="route-actions">
+          <a className="command-link primary" href="/handoff" onClick={(event) => navigate(event, "/handoff")}>
+            <GitBranch size={18} />
+            Handoff v2.1
+          </a>
+          <a className="command-link" href="/boundary" onClick={(event) => navigate(event, "/boundary")}>
+            <ShieldCheck size={18} />
+            Boundary
+          </a>
+        </div>
+      </section>
+    </section>
+  );
+}
+
+function BoundaryRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElement>, href: string) => void }) {
+  return (
+    <section className="route-surface">
+      <BackButton navigate={navigate} />
+      <RouteHeader
+        eyebrow="Publication boundary"
+        title="Public-safe surface only"
+        body="The public repository may publish methods, templates, gates and synthetic demos. It must not publish protected creative or private runtime assets."
+      />
+      <div className="content-grid two">
+        <InfoList title="Publicable" items={["ActionGate", "WitnessLog", "Handoff v2.1", "Source Cards", "Claim Classifier", "Secret Scanner", "Canon Compiler", "Context Compressor", "agent templates", "toy demos", "synthetic data", "public roadmap"]} />
+        <InfoList title="Protected" tone="warn" items={["full books and unpublished manuscripts", "RPG/TCG systems and assets", "complete DUAT/GEODIA", "Wabi-Sabi internals", "Claudio private runtime", "raw prompts", "private datasets", "source zips", "credentials and local logs"]} />
+      </div>
+    </section>
+  );
+}
+
+function CanonRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElement>, href: string) => void }) {
+  return (
+    <section className="route-surface">
+      <BackButton navigate={navigate} />
+      <RouteHeader
+        eyebrow="Public canon"
+        title="Operational canon, not private vault"
+        body="This route summarizes the public-safe operating rules: evidence first, unknowns first, reversible action, explicit gates and handoff continuity."
+      />
+      <div className="content-grid">
+        <WorkflowNode icon={Eye} title="Unknowns First" body="Start every handoff by naming gaps, blockers and decisions needed before action." />
+        <WorkflowNode icon={ShieldCheck} title="ActionGate" body="Classify actions as APPROVE, REVIEW or BLOCK before execution." />
+        <WorkflowNode icon={FileText} title="Source Cards" body="Preserve provenance without publishing raw private sources." />
+        <WorkflowNode icon={GitBranch} title="Reconstruction Test" body="A new agent must recover state, next action, do-not list and gates from the handoff." />
+      </div>
+    </section>
+  );
+}
+
+function ToolsRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElement>, href: string) => void }) {
+  return (
+    <section className="route-surface">
+      <BackButton navigate={navigate} />
+      <RouteHeader
+        eyebrow="Public tools"
+        title="Release-safe developer modules"
+        body="The open-source lane is a toolkit for safer agent workflows and public demos. It is not a dump of private runtime or protected canon."
+      />
+      <div className="content-grid two">
+        <InfoList title="Tooling candidates" items={["SecretScan", "BoundaryCheck", "Claim Classifier", "Handoff v2.1 validator", "Context Compressor", "Canon Compiler", "Source Card template", "WitnessLog reader"]} />
+        <InfoList title="Demo constraints" tone="warn" items={["synthetic data only", "no local machine paths", "no credentials", "no private books", "no raw prompts", "no protected runtime internals"]} />
+      </div>
+    </section>
+  );
+}
+
+function HandoffHubRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElement>, href: string) => void }) {
+  return (
+    <section className="route-surface">
+      <BackButton navigate={navigate} />
+      <RouteHeader
+        eyebrow="Handoff v2.1"
+        title="Unknowns-first continuity contract"
+        body="The public HandoffHub now uses the HANDOFF v2.1 H-MIN/H-STD contract: unknowns first, next contract, required gates, semantic checksum, reconstruction test and append-only ledger path."
       />
       <div className="workflow-lanes">
-        <WorkflowNode icon={FileText} title="Context" body="Curated brief, scope, source boundary and task owner." />
-        <WorkflowNode icon={ShieldCheck} title="Gate" body="Secret scan, ActionGate status, publication block and claim boundary." />
-        <WorkflowNode icon={GitBranch} title="Fingerprint" body="Stable handoff id that lets the next agent resume without guessing." />
-        <WorkflowNode icon={Database} title="Evidence" body="Build reports, tests, manifests and included/excluded file lists." />
+        <WorkflowNode icon={Eye} title="Unknowns First" body="INCOGNITA, BLOQUEO and decisions needed are listed before recommendations." />
+        <WorkflowNode icon={ClipboardCheck} title="Next Contract" body="Do now, do not, required gates, success criteria and stop conditions are explicit." />
+        <WorkflowNode icon={GitBranch} title="Semantic Checksum" body="Canonical claims, hash and a check question prevent semantic drift." />
+        <WorkflowNode icon={Database} title="Ledger" body="Append-only ledger path records sequence, supersession and evidence." />
       </div>
       <section className="handoff-panel">
         <p className="section-title">Current public handoff</p>
-        <h2>MDV-PUBLISH-GH-SPACE-91D4</h2>
-        <p>Prepare local public release, validate secrets/build, commit locally and stop before push or deploy until repo and platform are confirmed.</p>
+        <h2>HANDOFF v2.1 H-STD</h2>
+        <p>Schema version 2.1. Public release state is REVIEW until SecretScan, BoundaryCheck, build, route check, schema validation and reconstruction test pass on the public package.</p>
+        <ul className="check-list">
+          <li><CheckCircle2 size={16} /> Unknowns First</li>
+          <li><CheckCircle2 size={16} /> Next Contract</li>
+          <li><CheckCircle2 size={16} /> Do Not list</li>
+          <li><CheckCircle2 size={16} /> Required Gates</li>
+          <li><CheckCircle2 size={16} /> Semantic Check</li>
+          <li><CheckCircle2 size={16} /> Reconstruction Test</li>
+          <li><CheckCircle2 size={16} /> Ledger path: docs/handoff_ledger.jsonl</li>
+        </ul>
       </section>
     </section>
+  );
+}
+
+function HandoffEngineRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElement>, href: string) => void }) {
+  return (
+    <section className="route-surface">
+      <BackButton navigate={navigate} />
+      <RouteHeader
+        eyebrow="Handoff Engine"
+        title="Continuity checks before the next agent"
+        body="A public-safe read-only route for the handoff engine contract: state fingerprint, unknowns first, next contract, semantic check and ledger discipline."
+      />
+      <div className="workflow-lanes">
+        <WorkflowNode icon={Eye} title="Read state" body="Start from the current fingerprint and explicit unknowns instead of implicit memory." />
+        <WorkflowNode icon={ClipboardCheck} title="Check gates" body="Confirm ActionGate, SecretCheck and BoundaryCheck before changing state." />
+        <WorkflowNode icon={GitBranch} title="Carry continuity" body="Record the next contract so another agent can continue without re-deriving context." />
+      </div>
+      <section className="handoff-panel">
+        <p className="section-title">Engine boundary</p>
+        <h2>Read-only public route</h2>
+        <p>This route explains the continuity model. It does not connect to a backend, publish private handoffs or expose local runtime logs.</p>
+      </section>
+    </section>
+  );
+}
+
+function DuatCityRoute({
+  navigate,
+  goTo,
+  copy,
+}: {
+  navigate: (event: MouseEvent<HTMLAnchorElement>, href: string) => void;
+  goTo: (href: string) => void;
+  copy: LocalizedCopy["duatCity"];
+}) {
+  return (
+    <section className="route-surface duat-city-page">
+      <BackButton navigate={navigate} />
+      <section className="duat-city-hero">
+        <p className="eyebrow">{copy.eyebrow}</p>
+        <h1>{copy.title}</h1>
+        <p className="duat-city-lede">{copy.lede}</p>
+        <div className="duat-city-notice" role="note">
+          <ShieldCheck size={18} />
+          <p>{copy.notice}</p>
+        </div>
+      </section>
+
+      <section className="duat-city-section">
+        <div>
+          <p className="section-title">{copy.cityKicker}</p>
+          <h2>{copy.cityTitle}</h2>
+          <p>{copy.cityBody}</p>
+        </div>
+        <div className="duat-city-grid">
+          {DUAT_CITY_DISTRICTS.map((district) => (
+            <DuatCityDistrictCard key={district.name} district={district} />
+          ))}
+        </div>
+      </section>
+
+      <section className="duat-city-argus">
+        <div>
+          <p className="section-title">{copy.argusKicker}</p>
+          <h2>{copy.argusTitle}</h2>
+          <p>{copy.argusBody}</p>
+        </div>
+        <a className="command-link primary" href="/tools" onClick={(event) => navigate(event, "/tools")}>
+          {copy.exploreTools}
+          <ArrowRight size={16} />
+        </a>
+      </section>
+
+      <DuatCityCommandShell copy={copy} goTo={goTo} />
+    </section>
+  );
+}
+
+function DuatCityCommandShell({ copy, goTo }: { copy: LocalizedCopy["duatCity"]; goTo: (href: string) => void }) {
+  const [command, setCommand] = useState("");
+  const [visualEffects, setVisualEffects] = useState(true);
+  const [transcript, setTranscript] = useState<string[]>([
+    copy.commandHelp,
+  ]);
+
+  useEffect(() => {
+    setTranscript([copy.commandHelp]);
+  }, [copy.commandHelp]);
+
+  const runCommand = useCallback((rawCommand: string) => {
+    const normalized = rawCommand.trim().toLowerCase();
+    if (!normalized) return;
+
+    const respond = (message: string) => setTranscript((current) => [...current, `> ${rawCommand}`, message].slice(-8));
+
+    if (normalized === "help" || normalized === "open menu") {
+      respond(copy.commandHelp);
+      return;
+    }
+    if (normalized === "go landing") {
+      respond("Opening /landing.");
+      goTo("/landing");
+      return;
+    }
+    if (normalized === "go tools") {
+      respond("Opening /tools.");
+      goTo("/tools");
+      return;
+    }
+    if (normalized === "back") {
+      respond("Returning to Simple Mode.");
+      goTo("/landing");
+      return;
+    }
+    if (normalized === "inspect") {
+      respond("Inspect: public demo route, six districts, no private runtime connected.");
+      return;
+    }
+    if (normalized === "equip" || normalized === "attack") {
+      respond("Demo shell only: command logged, no game state or combat is executed.");
+      return;
+    }
+    respond("Unknown command. Try: help, open menu, go landing, go tools, inspect, back.");
+  }, [copy.commandHelp, goTo]);
+
+  const onSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    runCommand(command);
+    setCommand("");
+  };
+
+  return (
+    <section className={visualEffects ? "duat-command-shell" : "duat-command-shell effects-muted"} aria-labelledby="duat-command-shell-title">
+      <div>
+        <p className="section-title">Accessible shell</p>
+        <h2 id="duat-command-shell-title">{copy.commandTitle}</h2>
+        <p>{copy.commandBody}</p>
+        <p className="muted-line">{copy.commandHelp}</p>
+      </div>
+      <label className="visual-effects-toggle">
+        <input type="checkbox" checked={visualEffects} onChange={(event) => setVisualEffects(event.target.checked)} aria-label={copy.visualEffects} />
+        <span>{copy.visualEffects}</span>
+      </label>
+      <form className="command-form" onSubmit={onSubmit}>
+        <label>
+          <span>{copy.commandInputLabel}</span>
+          <input value={command} onChange={(event) => setCommand(event.target.value)} placeholder={copy.commandPlaceholder} autoComplete="off" aria-label={copy.commandInputLabel} />
+        </label>
+        <button className="command-link primary" type="submit">{copy.commandRun}</button>
+      </form>
+      <div className="command-transcript" role="log" aria-live="polite" aria-label={copy.transcriptLabel}>
+        {transcript.map((line, index) => (
+          <p key={`${line}-${index}`}>{line}</p>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function DuatCityDistrictCard({ district }: { district: (typeof DUAT_CITY_DISTRICTS)[number] }) {
+  const Icon = district.icon;
+  return (
+    <article className="duat-city-card">
+      <Icon size={20} />
+      <h3>{district.name}</h3>
+      <p>{district.function}</p>
+      <dl>
+        <div>
+          <dt>Status</dt>
+          <dd>PUBLIC_DEMO</dd>
+        </div>
+        <div>
+          <dt>Gate</dt>
+          <dd>{district.gate}</dd>
+        </div>
+      </dl>
+    </article>
   );
 }
 
@@ -708,7 +1562,7 @@ function DevDayRoute() {
             DUAT is a cognitive display and orchestration layer for advanced AI work. It turns fragmented information into structured, inspectable workflows by coordinating specialized agents, persistent memory, geospatial context, evidence, gates and handoffs in one operational surface.
           </p>
           <p>
-            This page uses the approved DUAT DevDay asset pack and keeps the claim boundary explicit: orchestration display, prototype and public demo, not externally verified AGI.
+             This page uses the approved DUAT DevDay asset pack and keeps the claim boundary explicit: orchestration display, prototype and public demo, not externally verified autonomous general intelligence.
           </p>
         </div>
         <div className="duat-devday-visual" aria-label="DUAT DevDay approved asset preview">
@@ -750,7 +1604,7 @@ function DocsRoute() {
       <RouteHeader
         eyebrow="Documentation"
         title="Public docs included in the repo"
-        body="These files are curated for a public repository. They avoid private routes, secrets, unreviewed vault material and unsupported AGI claims."
+        body="These files are curated for a public repository. They avoid private routes, secrets, unreviewed vault material and unsupported autonomous general intelligence claims."
       />
       <div className="docs-grid">
         {DOCS.map((doc) => (
@@ -768,7 +1622,7 @@ function DocsRoute() {
 function NotFound({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElement>, href: string) => void }) {
   return (
     <section className="route-surface">
-      <RouteHeader eyebrow="404" title="Route not found" body="The public release exposes Overview, About, Books, Store, Gumroad, Products, Audit, Commercial Audit, DUAT, Telecom Core, HandoffHub, DevDay and Docs routes." />
+      <RouteHeader eyebrow="404" title="Route not found" body="The public release exposes Overview, About, Books, Store, Gumroad, Products, Audit, Status, Boundary, Canon, Tools, DUAT, Telecom Core, Handoff v2.1, DevDay, City and Docs routes." />
       <a className="command-link primary" href="/" onClick={(event) => navigate(event, "/")}>
         <ArrowRight size={17} />
         Return overview
@@ -844,6 +1698,15 @@ function InfoList({ title, items, tone = "ok" }: { title: string; items: string[
         ))}
       </ul>
     </article>
+  );
+}
+
+function BackButton({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElement>, href: string) => void }) {
+  return (
+    <a className="back-button" href="/landing" onClick={(event) => navigate(event, "/landing")}>
+      <ArrowLeft size={17} />
+      Back to Simple Mode
+    </a>
   );
 }
 
@@ -1069,5 +1932,6 @@ function Metric({ label, value }: { label: string; value: string }) {
 
 function normalizePath(path: string) {
   if (!path || path === "/index.html") return "/";
+  if (path === "/despertar-preview.html") return "/despertar-preview";
   return path.endsWith("/") && path.length > 1 ? path.slice(0, -1) : path;
 }

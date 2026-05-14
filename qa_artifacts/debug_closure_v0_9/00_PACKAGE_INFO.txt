@@ -1,0 +1,31 @@
+{
+  "name": "medioevo-duat-public-release",
+  "private": false,
+  "version": "0.1.0",
+  "description": "Public MEDIOEVO / DUAT release site, DUAT visual demo and MessageBus prototype.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "test": "vitest run",
+    "preview": "vite preview --host 127.0.0.1",
+    "sweep": "vite-node scripts/run-duat-sweep.ts"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^18.3.24",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^6.0.1",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.12",
+    "vitest": "^4.1.6"
+  }
+}
+11.11.0
+v24.14.1

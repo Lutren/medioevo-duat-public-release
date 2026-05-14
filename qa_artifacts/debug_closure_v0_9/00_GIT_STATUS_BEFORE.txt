@@ -1,0 +1,62 @@
+ M MAINTENANCE.md
+ M README.md
+ M ROADMAP.md
+ M docs/DEV_DAY_SUBMISSION_TEXT_EN.md
+ M docs/MEDIOEVO_OVERVIEW.md
+ M docs/PUBLIC_SCOPE.md
+ M public/llms.txt
+ M public/sitemap.xml
+ M qa/CLOUDFLARE_PAGES_STATUS.md
+ M qa/GUMROAD_INTEGRATION_REPORT.md
+ M qa/STORE_IMPLEMENTATION_REPORT.md
+ M src/App.tsx
+ M src/content/books.ts
+ M src/content/devday/DEV_DAY_SUBMISSION_TEXT_EN.md
+ M src/content/gumroadProducts.ts
+ M src/content/products.ts
+ M src/content/publicIdentity.ts
+ M src/styles.css
+?? 08_QA_WITNESSLOG/
+?? CLAIMS_BOUNDARY.md
+?? OPEN_SOURCE_ROADMAP.md
+?? PUBLICATION_BOUNDARY.md
+?? PUBLIC_REPO_MAP.md
+?? STATUS.md
+?? docs/CLAIMS_BOUNDARY.md
+?? docs/HANDOFF_v2_1_H-STD.json
+?? docs/HANDOFF_v2_1_H-STD.yaml
+?? docs/HANDOFF_v2_1_STATUS.md
+?? docs/OPEN_SOURCE_ROADMAP.md
+?? docs/PUBLICATION_BOUNDARY.md
+?? docs/PUBLIC_REPO_MAP.md
+?? docs/STATUS.md
+?? docs/handoff_ledger.jsonl
+?? public/books.html
+?? public/despertar-preview.html
+?? public/gumroad.html
+?? public/product-assets/
+?? public/schemas/
+?? public/store.html
+?? public_release_package/
+?? qa/DESPERTAR_STORE_STAGING_REPORT_2026-05-14.md
+?? qa/HANDOFF_P8_PUBLIC_FEEDBACK_LOOP.md
+?? qa/P7_PUBLIC_ITERATION_REPORT.md
+?? qa/P7_SECURITY_REVIEW_REQUIRED.md
+?? qa/PRODUCT_ASSETS_PUBLICITY_REPORT_2026-05-14.md
+?? qa/PUBLIC_DOCS_REVIEW_P7.md
+?? qa/PUBLIC_ISSUES_REVIEW.md
+?? qa/PUBLIC_ROUTE_HEALTH_P7.md
+?? qa/SCREENSHOT_CAPTURE_REPORT.md
+?? qa/SOCIAL_POST_READY_QUEUE.md
+?? qa/UNTRACKED_CONTENT_REVIEW.md
+?? qa/screenshots/
+?? qa_artifacts/
+?? scripts/
+?? src/content/despertarStore.test.ts
+public-identity-ai-discovery
+2e57c68
+
+LocalAddress LocalPort OwningProcess
+------------ --------- -------------
+127.0.0.1         4173         37356
+

@@ -1,0 +1,4 @@
+{
+  "pattern": "any_word",
+  "match": "src\\content\\observacionismoAudit.ts:24:    { name: \"SATURADO\", description: \"Stop and reduce scope before any public action.\" },"
+}

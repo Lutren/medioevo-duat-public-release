@@ -1,0 +1,876 @@
+{
+  "scopes": [
+    "src",
+    "public",
+    "index.html",
+    "dist",
+    "qa_artifacts debug/final reports"
+  ],
+  "findings_count": 123,
+  "block_risk_count": 0,
+  "status": "PASS_WITH_PUBLIC_SAFE_AND_QA_INTERNAL_TERMS",
+  "values_printed": false,
+  "findings": [
+    {
+      "path": "src\\App.tsx",
+      "scope": "public_surface",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\App.tsx",
+      "scope": "public_surface",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\App.tsx",
+      "scope": "public_surface",
+      "type": "DUAT_COMPLETE",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\App.tsx",
+      "scope": "public_surface",
+      "type": "CLAUDIO_PRIVATE_RUNTIME",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\App.tsx",
+      "scope": "public_surface",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\App.tsx",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\App.tsx",
+      "scope": "public_surface",
+      "type": "PRIVATE_DATASETS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\books.ts",
+      "scope": "public_surface",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\books.ts",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\commercialAudit.ts",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\despertarStore.test.ts",
+      "scope": "public_surface",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\despertarStore.test.ts",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\gumroadProducts.ts",
+      "scope": "public_surface",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\gumroadProducts.ts",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\observacionismoAudit.ts",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\products.ts",
+      "scope": "public_surface",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\products.ts",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\publicIdentity.ts",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\about.html",
+      "scope": "public_surface",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\about.html",
+      "scope": "public_surface",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\about.html",
+      "scope": "public_surface",
+      "type": "CLAUDIO_PRIVATE_RUNTIME",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\about.html",
+      "scope": "public_surface",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\about.html",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\books.html",
+      "scope": "public_surface",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\books.html",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\despertar-preview.html",
+      "scope": "public_surface",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\despertar-preview.html",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\gumroad.html",
+      "scope": "public_surface",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\gumroad.html",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\llms.txt",
+      "scope": "public_surface",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\llms.txt",
+      "scope": "public_surface",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\llms.txt",
+      "scope": "public_surface",
+      "type": "CLAUDIO_PRIVATE_RUNTIME",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\llms.txt",
+      "scope": "public_surface",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\llms.txt",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\public-boundary.html",
+      "scope": "public_surface",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\public-boundary.html",
+      "scope": "public_surface",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\public-boundary.html",
+      "scope": "public_surface",
+      "type": "CLAUDIO_PRIVATE_RUNTIME",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\public-boundary.html",
+      "scope": "public_surface",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\public-boundary.html",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\sitemap.xml",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\store.html",
+      "scope": "public_surface",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\store.html",
+      "scope": "public_surface",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\store.html",
+      "scope": "public_surface",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\store.html",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\about.html",
+      "scope": "public_surface",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\about.html",
+      "scope": "public_surface",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\about.html",
+      "scope": "public_surface",
+      "type": "CLAUDIO_PRIVATE_RUNTIME",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\about.html",
+      "scope": "public_surface",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\about.html",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\books.html",
+      "scope": "public_surface",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\books.html",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\despertar-preview.html",
+      "scope": "public_surface",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\despertar-preview.html",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\gumroad.html",
+      "scope": "public_surface",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\gumroad.html",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\llms.txt",
+      "scope": "public_surface",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\llms.txt",
+      "scope": "public_surface",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\llms.txt",
+      "scope": "public_surface",
+      "type": "CLAUDIO_PRIVATE_RUNTIME",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\llms.txt",
+      "scope": "public_surface",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\llms.txt",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\public-boundary.html",
+      "scope": "public_surface",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\public-boundary.html",
+      "scope": "public_surface",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\public-boundary.html",
+      "scope": "public_surface",
+      "type": "CLAUDIO_PRIVATE_RUNTIME",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\public-boundary.html",
+      "scope": "public_surface",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\public-boundary.html",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\sitemap.xml",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\store.html",
+      "scope": "public_surface",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\store.html",
+      "scope": "public_surface",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\store.html",
+      "scope": "public_surface",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\store.html",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\assets\\index-jFxas3oC.js",
+      "scope": "public_surface",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\assets\\index-jFxas3oC.js",
+      "scope": "public_surface",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\assets\\index-jFxas3oC.js",
+      "scope": "public_surface",
+      "type": "DUAT_COMPLETE",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\assets\\index-jFxas3oC.js",
+      "scope": "public_surface",
+      "type": "CLAUDIO_PRIVATE_RUNTIME",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\assets\\index-jFxas3oC.js",
+      "scope": "public_surface",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\assets\\index-jFxas3oC.js",
+      "scope": "public_surface",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\assets\\index-jFxas3oC.js",
+      "scope": "public_surface",
+      "type": "PRIVATE_DATASETS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\00_DIFF_CHECK_FINAL_AFTER_A11Y_2.txt",
+      "scope": "qa_internal",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\00_DIFF_CHECK_FINAL_AFTER_A11Y.txt",
+      "scope": "qa_internal",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\00_DIFF_CHECK_FINAL_AFTER_REPORT_PATCH.txt",
+      "scope": "qa_internal",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\00_DIFF_CHECK_FINAL_POST_REPORTS.txt",
+      "scope": "qa_internal",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\00_DIFF_CHECK_FINAL.txt",
+      "scope": "qa_internal",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\00_GIT_STATUS_BEFORE.txt",
+      "scope": "qa_internal",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\03_ROUTE_SMOKE_FINAL_AFTER_A11Y_2.json",
+      "scope": "qa_internal",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\03_ROUTE_SMOKE_FINAL_AFTER_A11Y.json",
+      "scope": "qa_internal",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\03_ROUTE_SMOKE_FINAL_POST_REPORTS.json",
+      "scope": "qa_internal",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\03_ROUTE_SMOKE_FINAL.json",
+      "scope": "qa_internal",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\03_ROUTE_SMOKE_REPORT.md",
+      "scope": "qa_internal",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\07_ACCESSIBILITY_REPORT.md",
+      "scope": "qa_internal",
+      "type": "CLAUDIO_PRIVATE_RUNTIME",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\10_BOUNDARY_REPORT.md",
+      "scope": "qa_internal",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\10_BOUNDARY_REPORT.md",
+      "scope": "qa_internal",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\10_BOUNDARY_REPORT.md",
+      "scope": "qa_internal",
+      "type": "DUAT_COMPLETE",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\10_BOUNDARY_REPORT.md",
+      "scope": "qa_internal",
+      "type": "CLAUDIO_PRIVATE_RUNTIME",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\10_BOUNDARY_REPORT.md",
+      "scope": "qa_internal",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\10_BOUNDARY_REPORT.md",
+      "scope": "qa_internal",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\10_BOUNDARY_REPORT.md",
+      "scope": "qa_internal",
+      "type": "SOURCE_ZIPS",
+      "severity": "QA_INTERNAL_REVIEW_ONLY",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\10_BOUNDARY_REPORT.md",
+      "scope": "qa_internal",
+      "type": "PRIVATE_DATASETS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\10_BOUNDARY_SCAN_FINAL_AFTER_A11Y_2_SUMMARY.json",
+      "scope": "qa_internal",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\10_BOUNDARY_SCAN_FINAL_AFTER_A11Y_2_SUMMARY.json",
+      "scope": "qa_internal",
+      "type": "SOURCE_ZIPS",
+      "severity": "QA_INTERNAL_REVIEW_ONLY",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\10_BOUNDARY_SCAN_FINAL_POST_REPORTS_SUMMARY.json",
+      "scope": "qa_internal",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\10_BOUNDARY_SCAN_FINAL_POST_REPORTS_SUMMARY.json",
+      "scope": "qa_internal",
+      "type": "SOURCE_ZIPS",
+      "severity": "QA_INTERNAL_REVIEW_ONLY",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\10_BOUNDARY_SCAN_FINAL_SUMMARY.json",
+      "scope": "qa_internal",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\10_BOUNDARY_SCAN_FINAL_SUMMARY.json",
+      "scope": "qa_internal",
+      "type": "SOURCE_ZIPS",
+      "severity": "QA_INTERNAL_REVIEW_ONLY",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\10_BOUNDARY_SCAN_SUMMARY.json",
+      "scope": "qa_internal",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\11_CODE_REVIEW_REPORT.md",
+      "scope": "qa_internal",
+      "type": "CLAUDIO_PRIVATE_RUNTIME",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\12_BACKLOG_AFTER_DEBUG.md",
+      "scope": "qa_internal",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\15_FINAL_DEBUG_CLOSURE_REPORT.md",
+      "scope": "qa_internal",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\15_FINAL_DEBUG_CLOSURE_REPORT.md",
+      "scope": "qa_internal",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\15_FINAL_DEBUG_CLOSURE_REPORT.md",
+      "scope": "qa_internal",
+      "type": "CLAUDIO_PRIVATE_RUNTIME",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\15_FINAL_DEBUG_CLOSURE_REPORT.md",
+      "scope": "qa_internal",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\15_FINAL_DEBUG_CLOSURE_REPORT.md",
+      "scope": "qa_internal",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\15_FINAL_DEBUG_CLOSURE_REPORT.md",
+      "scope": "qa_internal",
+      "type": "PRIVATE_DATASETS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\debug_closure_v0_9\\browser_debug_probe.json",
+      "scope": "qa_internal",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\FINAL_ROUTE_CHECK.md",
+      "scope": "qa_internal",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\FINAL_BOUNDARY_CHECK.md",
+      "scope": "qa_internal",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\FINAL_BOUNDARY_CHECK.md",
+      "scope": "qa_internal",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\FINAL_BOUNDARY_CHECK.md",
+      "scope": "qa_internal",
+      "type": "SOURCE_ZIPS",
+      "severity": "QA_INTERNAL_REVIEW_ONLY",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\PENDING_CLOSEOUT_v0_9_LOCAL.md",
+      "scope": "qa_internal",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\PENDING_CLOSEOUT_v0_9_LOCAL.md",
+      "scope": "qa_internal",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\PENDING_CLOSEOUT_v0_9_LOCAL.md",
+      "scope": "qa_internal",
+      "type": "CLAUDIO_PRIVATE_RUNTIME",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\PENDING_CLOSEOUT_v0_9_LOCAL.md",
+      "scope": "qa_internal",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\PENDING_CLOSEOUT_v0_9_LOCAL.md",
+      "scope": "qa_internal",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "qa_artifacts\\PENDING_CLOSEOUT_v0_9_LOCAL.md",
+      "scope": "qa_internal",
+      "type": "PRIVATE_DATASETS",
+      "severity": "REVIEW_ALLOWED_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    }
+  ]
+}

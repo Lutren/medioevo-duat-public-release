@@ -1,0 +1,22 @@
+[
+  {
+    "file": "qa_artifacts\\debug_closure_v0_9\\browser_debug_probe.json",
+    "status": "PASS"
+  },
+  {
+    "file": "qa_artifacts\\debug_closure_v0_9\\browser_debug_failures.json",
+    "status": "PASS"
+  },
+  {
+    "file": "qa_artifacts\\debug_closure_v0_9\\03_ROUTE_SMOKE_FINAL_POST_REPORTS.json",
+    "status": "PASS"
+  },
+  {
+    "file": "qa_artifacts\\debug_closure_v0_9\\09_SECRET_SCAN_FINAL_POST_REPORTS_FOCUSED_SUMMARY.json",
+    "status": "PASS"
+  },
+  {
+    "file": "qa_artifacts\\debug_closure_v0_9\\10_BOUNDARY_SCAN_FINAL_POST_REPORTS_SUMMARY.json",
+    "status": "PASS"
+  }
+]

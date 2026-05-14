@@ -1,0 +1,475 @@
+{
+  "scope": [
+    "src",
+    "public",
+    "dist"
+  ],
+  "findings_count": 77,
+  "block_risk_count": 0,
+  "status": "PASS_WITH_ALLOWED_PUBLIC_SAFE_BOUNDARY_TERMS",
+  "interpretation": "Public-safe notices and boundary matrices are allowed; no private source path or source_zips term was detected in public src/dist scope.",
+  "findings": [
+    {
+      "path": "src\\App.tsx",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\App.tsx",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\App.tsx",
+      "type": "DUAT_COMPLETE",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\App.tsx",
+      "type": "CLAUDIO_PRIVATE_RUNTIME",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\App.tsx",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\App.tsx",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\App.tsx",
+      "type": "PRIVATE_DATASETS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\books.ts",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\books.ts",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\commercialAudit.ts",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\despertarStore.test.ts",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\despertarStore.test.ts",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\gumroadProducts.ts",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\gumroadProducts.ts",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\observacionismoAudit.ts",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\products.ts",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\products.ts",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "src\\content\\publicIdentity.ts",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\about.html",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\about.html",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\about.html",
+      "type": "CLAUDIO_PRIVATE_RUNTIME",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\about.html",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\about.html",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\books.html",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\books.html",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\despertar-preview.html",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\despertar-preview.html",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\gumroad.html",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\gumroad.html",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\llms.txt",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\llms.txt",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\llms.txt",
+      "type": "CLAUDIO_PRIVATE_RUNTIME",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\llms.txt",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\llms.txt",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\public-boundary.html",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\public-boundary.html",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\public-boundary.html",
+      "type": "CLAUDIO_PRIVATE_RUNTIME",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\public-boundary.html",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\public-boundary.html",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\sitemap.xml",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\store.html",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\store.html",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\store.html",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "public\\store.html",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\about.html",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\about.html",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\about.html",
+      "type": "CLAUDIO_PRIVATE_RUNTIME",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\about.html",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\about.html",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\books.html",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\books.html",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\despertar-preview.html",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\despertar-preview.html",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\gumroad.html",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\gumroad.html",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\llms.txt",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\llms.txt",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\llms.txt",
+      "type": "CLAUDIO_PRIVATE_RUNTIME",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\llms.txt",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\llms.txt",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\public-boundary.html",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\public-boundary.html",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\public-boundary.html",
+      "type": "CLAUDIO_PRIVATE_RUNTIME",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\public-boundary.html",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\public-boundary.html",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\sitemap.xml",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\store.html",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\store.html",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\store.html",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\store.html",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\assets\\index-jFxas3oC.js",
+      "type": "WABI_INTERNALS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\assets\\index-jFxas3oC.js",
+      "type": "RPG_TCG",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\assets\\index-jFxas3oC.js",
+      "type": "DUAT_COMPLETE",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\assets\\index-jFxas3oC.js",
+      "type": "CLAUDIO_PRIVATE_RUNTIME",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\assets\\index-jFxas3oC.js",
+      "type": "BOOKS_OR_LIBROS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\assets\\index-jFxas3oC.js",
+      "type": "RAW_PROMPTS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    },
+    {
+      "path": "dist\\assets\\index-jFxas3oC.js",
+      "type": "PRIVATE_DATASETS",
+      "severity": "REVIEW_ALLOWED_IF_PUBLIC_SAFE_CONTEXT",
+      "value_printed": false
+    }
+  ]
+}

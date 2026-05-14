@@ -1,0 +1,14 @@
+
+> medioevo-duat-public-release@0.1.0 build
+> tsc -b && vite build
+
+[36mvite v8.0.12 [32mbuilding client environment for production...[36m[39m
+[2K
+transforming...✓ 1583 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   5.80 kB │ gzip:  1.46 kB
+dist/assets/index-DpgXJ09f.css   18.90 kB │ gzip:  4.80 kB
+dist/assets/index-Bz2ta5t9.js   247.00 kB │ gzip: 76.56 kB
+
+[32m✓ built in 516ms[39m

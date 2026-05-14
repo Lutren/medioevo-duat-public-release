@@ -1,0 +1,380 @@
+[
+  {
+    "route": "/landing",
+    "viewport": "mobile",
+    "size": "390x844",
+    "path": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release\\qa_artifacts\\screenshots\\v0_8_1_real_visual\\mobile_landing.png",
+    "bytes": 120103,
+    "ok": true,
+    "metrics": {
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "scrollHeight": 1561,
+      "h1": "A clearer way to run AI work",
+      "backButton": false,
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "route": "/canon",
+    "viewport": "mobile",
+    "size": "390x844",
+    "path": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release\\qa_artifacts\\screenshots\\v0_8_1_real_visual\\mobile_canon.png",
+    "bytes": 115448,
+    "ok": true,
+    "metrics": {
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "scrollHeight": 1390,
+      "h1": "Operational canon, not private vault",
+      "backButton": true,
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "route": "/tools",
+    "viewport": "mobile",
+    "size": "390x844",
+    "path": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release\\qa_artifacts\\screenshots\\v0_8_1_real_visual\\mobile_tools.png",
+    "bytes": 111526,
+    "ok": true,
+    "metrics": {
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "scrollHeight": 1255,
+      "h1": "Release-safe developer modules",
+      "backButton": true,
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "route": "/boundary",
+    "viewport": "mobile",
+    "size": "390x844",
+    "path": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release\\qa_artifacts\\screenshots\\v0_8_1_real_visual\\mobile_boundary.png",
+    "bytes": 127916,
+    "ok": true,
+    "metrics": {
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "scrollHeight": 1508,
+      "h1": "Public-safe surface only",
+      "backButton": true,
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "route": "/handoff",
+    "viewport": "mobile",
+    "size": "390x844",
+    "path": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release\\qa_artifacts\\screenshots\\v0_8_1_real_visual\\mobile_handoff.png",
+    "bytes": 146212,
+    "ok": true,
+    "metrics": {
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "scrollHeight": 1869,
+      "h1": "Unknowns-first continuity contract",
+      "backButton": true,
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "route": "/handoff-engine",
+    "viewport": "mobile",
+    "size": "390x844",
+    "path": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release\\qa_artifacts\\screenshots\\v0_8_1_real_visual\\mobile_handoff-engine.png",
+    "bytes": 121031,
+    "ok": true,
+    "metrics": {
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "scrollHeight": 1438,
+      "h1": "Continuity checks before the next agent",
+      "backButton": true,
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "route": "/duat-devday",
+    "viewport": "mobile",
+    "size": "390x844",
+    "path": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release\\qa_artifacts\\screenshots\\v0_8_1_real_visual\\mobile_duat-devday.png",
+    "bytes": 751605,
+    "ok": true,
+    "metrics": {
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "scrollHeight": 3215,
+      "h1": "DUAT",
+      "backButton": false,
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "route": "/landing",
+    "viewport": "tablet",
+    "size": "768x1024",
+    "path": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release\\qa_artifacts\\screenshots\\v0_8_1_real_visual\\tablet_landing.png",
+    "bytes": 175359,
+    "ok": true,
+    "metrics": {
+      "innerWidth": 768,
+      "innerHeight": 1024,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "scrollHeight": 1202,
+      "h1": "A clearer way to run AI work",
+      "backButton": false,
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "route": "/canon",
+    "viewport": "tablet",
+    "size": "768x1024",
+    "path": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release\\qa_artifacts\\screenshots\\v0_8_1_real_visual\\tablet_canon.png",
+    "bytes": 173358,
+    "ok": true,
+    "metrics": {
+      "innerWidth": 768,
+      "innerHeight": 1024,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "scrollHeight": 1024,
+      "h1": "Operational canon, not private vault",
+      "backButton": true,
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "route": "/tools",
+    "viewport": "tablet",
+    "size": "768x1024",
+    "path": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release\\qa_artifacts\\screenshots\\v0_8_1_real_visual\\tablet_tools.png",
+    "bytes": 174674,
+    "ok": true,
+    "metrics": {
+      "innerWidth": 768,
+      "innerHeight": 1024,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "scrollHeight": 1024,
+      "h1": "Release-safe developer modules",
+      "backButton": true,
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "route": "/boundary",
+    "viewport": "tablet",
+    "size": "768x1024",
+    "path": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release\\qa_artifacts\\screenshots\\v0_8_1_real_visual\\tablet_boundary.png",
+    "bytes": 168526,
+    "ok": true,
+    "metrics": {
+      "innerWidth": 768,
+      "innerHeight": 1024,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "scrollHeight": 1024,
+      "h1": "Public-safe surface only",
+      "backButton": true,
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "route": "/handoff",
+    "viewport": "tablet",
+    "size": "768x1024",
+    "path": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release\\qa_artifacts\\screenshots\\v0_8_1_real_visual\\tablet_handoff.png",
+    "bytes": 201043,
+    "ok": true,
+    "metrics": {
+      "innerWidth": 768,
+      "innerHeight": 1024,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "scrollHeight": 1398,
+      "h1": "Unknowns-first continuity contract",
+      "backButton": true,
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "route": "/handoff-engine",
+    "viewport": "tablet",
+    "size": "768x1024",
+    "path": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release\\qa_artifacts\\screenshots\\v0_8_1_real_visual\\tablet_handoff-engine.png",
+    "bytes": 186846,
+    "ok": true,
+    "metrics": {
+      "innerWidth": 768,
+      "innerHeight": 1024,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "scrollHeight": 1153,
+      "h1": "Continuity checks before the next agent",
+      "backButton": true,
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "route": "/duat-devday",
+    "viewport": "tablet",
+    "size": "768x1024",
+    "path": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release\\qa_artifacts\\screenshots\\v0_8_1_real_visual\\tablet_duat-devday.png",
+    "bytes": 1161494,
+    "ok": true,
+    "metrics": {
+      "innerWidth": 768,
+      "innerHeight": 1024,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "scrollHeight": 2156,
+      "h1": "DUAT",
+      "backButton": false,
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "route": "/landing",
+    "viewport": "desktop",
+    "size": "1440x900",
+    "path": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release\\qa_artifacts\\screenshots\\v0_8_1_real_visual\\desktop_landing.png",
+    "bytes": 246625,
+    "ok": true,
+    "metrics": {
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "scrollHeight": 900,
+      "h1": "A clearer way to run AI work",
+      "backButton": false,
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "route": "/canon",
+    "viewport": "desktop",
+    "size": "1440x900",
+    "path": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release\\qa_artifacts\\screenshots\\v0_8_1_real_visual\\desktop_canon.png",
+    "bytes": 256485,
+    "ok": true,
+    "metrics": {
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "scrollHeight": 900,
+      "h1": "Operational canon, not private vault",
+      "backButton": true,
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "route": "/tools",
+    "viewport": "desktop",
+    "size": "1440x900",
+    "path": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release\\qa_artifacts\\screenshots\\v0_8_1_real_visual\\desktop_tools.png",
+    "bytes": 236527,
+    "ok": true,
+    "metrics": {
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "scrollHeight": 900,
+      "h1": "Release-safe developer modules",
+      "backButton": true,
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "route": "/boundary",
+    "viewport": "desktop",
+    "size": "1440x900",
+    "path": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release\\qa_artifacts\\screenshots\\v0_8_1_real_visual\\desktop_boundary.png",
+    "bytes": 242141,
+    "ok": true,
+    "metrics": {
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "scrollHeight": 981,
+      "h1": "Public-safe surface only",
+      "backButton": true,
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "route": "/handoff",
+    "viewport": "desktop",
+    "size": "1440x900",
+    "path": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release\\qa_artifacts\\screenshots\\v0_8_1_real_visual\\desktop_handoff.png",
+    "bytes": 275845,
+    "ok": true,
+    "metrics": {
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "scrollHeight": 1152,
+      "h1": "Unknowns-first continuity contract",
+      "backButton": true,
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "route": "/handoff-engine",
+    "viewport": "desktop",
+    "size": "1440x900",
+    "path": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release\\qa_artifacts\\screenshots\\v0_8_1_real_visual\\desktop_handoff-engine.png",
+    "bytes": 259360,
+    "ok": true,
+    "metrics": {
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "scrollHeight": 947,
+      "h1": "Continuity checks before the next agent",
+      "backButton": true,
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "route": "/duat-devday",
+    "viewport": "desktop",
+    "size": "1440x900",
+    "path": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release\\qa_artifacts\\screenshots\\v0_8_1_real_visual\\desktop_duat-devday.png",
+    "bytes": 1233851,
+    "ok": true,
+    "metrics": {
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "scrollWidth": 1425,
+      "clientWidth": 1425,
+      "scrollHeight": 1359,
+      "h1": "DUAT",
+      "backButton": false,
+      "horizontalOverflow": false
+    }
+  }
+]

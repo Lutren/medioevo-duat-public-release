@@ -1,0 +1,17 @@
+warning: in the working copy of 'MAINTENANCE.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ROADMAP.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/DEV_DAY_SUBMISSION_TEXT_EN.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/MEDIOEVO_OVERVIEW.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/PUBLIC_SCOPE.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'public/llms.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'public/sitemap.xml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'qa/CLOUDFLARE_PAGES_STATUS.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'qa/GUMROAD_INTEGRATION_REPORT.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'qa/STORE_IMPLEMENTATION_REPORT.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/App.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/content/books.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/content/devday/DEV_DAY_SUBMISSION_TEXT_EN.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/content/gumroadProducts.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/content/products.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/content/publicIdentity.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/styles.css', LF will be replaced by CRLF the next time Git touches it

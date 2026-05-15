@@ -5,6 +5,8 @@ dist/
 coverage/
 *.log
 *.tsbuildinfo
+__pycache__/
+*.pyc
 qa/asset_review/
 
 .env

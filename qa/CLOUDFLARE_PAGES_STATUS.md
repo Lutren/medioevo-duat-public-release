@@ -62,3 +62,16 @@ Routes verified:
 - DNS was checked with `nslookup`.
 - `medioevo.space` and `www.medioevo.space` resolved through Cloudflare.
 - No DNS records were created, edited or deleted in P4.
+
+## DESPERTAR Deploy Update
+
+Date: 2026-05-14 01:48 -06:00
+
+- Command: `npx wrangler pages deploy dist --project-name=medioevo-site --branch=main`.
+- Deployment URL: `https://3090df2b.medioevo-site.pages.dev`.
+- Uploaded files: `19`; reused files: `58`.
+- DNS changes: none.
+- `https://medioevo.space/despertar-preview`: HTTP `200`, contains `Despertar Preview` and `dmqgzi`.
+- `https://medioevo.space/despertar-preview.html`: HTTP `200`, contains `Despertar Preview` and `dmqgzi`.
+- `https://medioevo.space/store`: HTTP `200`, contains `Despertar Preview` and `dmqgzi`.
+- `https://medioevo.space/sitemap.xml`: HTTP `200`, XML `urlset`.

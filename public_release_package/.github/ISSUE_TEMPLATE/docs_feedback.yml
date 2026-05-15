@@ -1,0 +1,37 @@
+name: Docs feedback
+description: Report unclear or incorrect public documentation.
+title: "[Docs]: "
+labels: ["documentation", "public"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Keep feedback public-safe. Do not paste private canon, internal research notes, tokens, credentials, local paths, or sensitive data.
+  - type: input
+    id: page
+    attributes:
+      label: Doc or page affected
+      placeholder: /docs or docs/ARCHITECTURE.md
+    validations:
+      required: true
+  - type: textarea
+    id: unclear_section
+    attributes:
+      label: Unclear section
+      description: Quote or summarize the public section that needs correction.
+    validations:
+      required: true
+  - type: textarea
+    id: suggested_correction
+    attributes:
+      label: Suggested correction
+      description: What should the public docs say instead?
+    validations:
+      required: true
+  - type: checkboxes
+    id: public_only
+    attributes:
+      label: Public-only confirmation
+      options:
+        - label: This feedback is based only on public material and does not include private canon or sensitive content.
+          required: true

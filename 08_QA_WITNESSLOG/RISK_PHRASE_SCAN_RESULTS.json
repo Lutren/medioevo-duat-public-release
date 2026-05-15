@@ -1,0 +1,122 @@
+[
+  {
+    "path": "CLAIMS_BOUNDARY.md",
+    "line": 7,
+    "type": "consciousness",
+    "severity": "INFO_RISK_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "CLAIMS_BOUNDARY.md",
+    "line": 7,
+    "type": "medical claims",
+    "severity": "INFO_RISK_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "CLAIMS_BOUNDARY.md",
+    "line": 11,
+    "type": "prevents errors",
+    "severity": "INFO_RISK_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "CLAIMS_BOUNDARY.md",
+    "line": 12,
+    "type": "consciousness",
+    "severity": "INFO_RISK_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/CLAIMS_BOUNDARY.md",
+    "line": 7,
+    "type": "consciousness",
+    "severity": "INFO_RISK_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/CLAIMS_BOUNDARY.md",
+    "line": 7,
+    "type": "medical claims",
+    "severity": "INFO_RISK_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/CLAIMS_BOUNDARY.md",
+    "line": 11,
+    "type": "prevents errors",
+    "severity": "INFO_RISK_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/CLAIMS_BOUNDARY.md",
+    "line": 12,
+    "type": "consciousness",
+    "severity": "INFO_RISK_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "public/llms.txt",
+    "line": 64,
+    "type": "AGI",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/llms.txt",
+    "line": 64,
+    "type": "consciousness",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/observacionismo-osit.html",
+    "line": 104,
+    "type": "AGI",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/observacionismo-osit.html",
+    "line": 104,
+    "type": "consciousness",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/projects.html",
+    "line": 81,
+    "type": "AGI",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/public-boundary.html",
+    "line": 99,
+    "type": "AGI",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/public-boundary.html",
+    "line": 99,
+    "type": "consciousness",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/theories.html",
+    "line": 104,
+    "type": "AGI",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/theories.html",
+    "line": 104,
+    "type": "consciousness",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1482,
+    "type": "consciousness",
+    "severity": "INFO_RISK_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/publicBoundary.test.js",
+    "line": 19,
+    "type": "AGI",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "src/publicBoundary.test.js",
+    "line": 20,
+    "type": "consciousness",
+    "severity": "REVIEW"
+  }
+]

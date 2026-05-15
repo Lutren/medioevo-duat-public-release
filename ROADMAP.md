@@ -25,6 +25,6 @@
 
 - No private canon publication.
 - No credentials.
-- No claims of externally validated AGI.
+- No claims of externally validated autonomous general intelligence.
 - No production claims without evidence.
 - No publication of internal source vaults.

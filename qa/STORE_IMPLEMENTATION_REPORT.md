@@ -5,6 +5,8 @@ Date: 2026-05-12
 ## Implemented Routes
 
 - `/store`
+- `/despertar-preview`
+- `/despertar-preview.html` -> `/despertar-preview`
 - `/gumroad`
 - `/products`
 - `/books`
@@ -32,11 +34,22 @@ Existing routes preserved:
 
 ## Store Behavior
 
-- Live product appears first: DUAT Templates.
+- Live book entry appears first: MEDIOEVO: Despertar Preview.
+- DUAT Templates remains a live template product.
 - Checkout uses direct external Gumroad links.
 - Price is not hardcoded; Gumroad remains source of truth.
 - Draft/coming-soon products are shown as non-checkout cards unless they have a verified external link.
 - Private/not-public material is not shown as a public product.
+
+## 2026-05-14 Update
+
+- Added DESPERTAR public-safe entry with Gumroad URL `https://lrgonzalez.gumroad.com/l/dmqgzi`.
+- Added `src/content/despertarStore.test.ts`.
+- QA: `npm test` PASS, 5 files / 32 tests.
+- QA: `npm run build` PASS.
+- QA: `npm audit --audit-level=moderate` PASS, 0 vulnerabilities.
+- QA: focused source/public secret scans `count_reported=0`.
+- Deploy remains blocked by host gate `JAMMING/BLOCK`.
 
 ## QA Results
 

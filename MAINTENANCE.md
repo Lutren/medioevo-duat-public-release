@@ -26,7 +26,7 @@ npm run build
   - `/docs`
 - Check page metadata and social preview tags.
 - Update `CHANGELOG.md` if public behavior changed.
-- Avoid unsupported AGI, government-production, scientific, medical, financial, or externally validated claims.
+- Avoid unsupported autonomous general intelligence, government-production, scientific, medical, financial, or externally validated claims.
 
 ## Deploy Notes
 

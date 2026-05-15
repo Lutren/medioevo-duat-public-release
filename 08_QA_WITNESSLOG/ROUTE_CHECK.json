@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "target": "http://127.0.0.1:4173",
+  "generated": "2026-05-12 22:57:31 -06:00",
+  "routes": [
+    {
+      "route": "/",
+      "uri": "http://127.0.0.1:4173/",
+      "status_code": 200,
+      "ok": true,
+      "length": 2044
+    },
+    {
+      "route": "/canon",
+      "uri": "http://127.0.0.1:4173/canon",
+      "status_code": 200,
+      "ok": true,
+      "length": 2044
+    },
+    {
+      "route": "/tools",
+      "uri": "http://127.0.0.1:4173/tools",
+      "status_code": 200,
+      "ok": true,
+      "length": 2044
+    },
+    {
+      "route": "/boundary",
+      "uri": "http://127.0.0.1:4173/boundary",
+      "status_code": 200,
+      "ok": true,
+      "length": 2044
+    },
+    {
+      "route": "/duat",
+      "uri": "http://127.0.0.1:4173/duat",
+      "status_code": 200,
+      "ok": true,
+      "length": 2044
+    },
+    {
+      "route": "/handoff",
+      "uri": "http://127.0.0.1:4173/handoff",
+      "status_code": 200,
+      "ok": true,
+      "length": 2044
+    },
+    {
+      "route": "/status",
+      "uri": "http://127.0.0.1:4173/status",
+      "status_code": 200,
+      "ok": true,
+      "length": 2044
+    }
+  ],
+  "bundle_markers": [
+    {
+      "pattern": "Unknowns First",
+      "found": true,
+      "file": "index-CgmSLxvZ.js"
+    },
+    {
+      "pattern": "H-MIN",
+      "found": true,
+      "file": "index-CgmSLxvZ.js"
+    },
+    {
+      "pattern": "H-STD",
+      "found": true,
+      "file": "index-CgmSLxvZ.js"
+    },
+    {
+      "pattern": "PUBLICATION_BOUNDARY",
+      "found": true,
+      "file": "index-CgmSLxvZ.js"
+    },
+    {
+      "pattern": "STATUS.md",
+      "found": true,
+      "file": "index-CgmSLxvZ.js"
+    },
+    {
+      "pattern": "ActionGate",
+      "found": true,
+      "file": "index-CgmSLxvZ.js"
+    },
+    {
+      "pattern": "Source Cards",
+      "found": true,
+      "file": "index-CgmSLxvZ.js"
+    }
+  ],
+  "note": "HTTP route check receives SPA shell; bundle marker check verifies required route content compiled into the public build."
+}

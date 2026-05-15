@@ -1,0 +1,34 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "dateModified": "2026-05-13",
+  "url": "https://medioevo.space/about.html",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Luis René González López",
+    "alternateName": [
+      "Lutren",
+      "Tyr"
+    ],
+    "description": "Independent AI systems architect and theoretical framework author building MEDIOEVO: local-first AI agent tools with evidence gates, state-aware processing and session continuity.",
+    "knowsAbout": [
+      "AI agents",
+      "local-first software",
+      "Observacionismo",
+      "OSIT",
+      "ActionGate",
+      "WitnessLog",
+      "agent handoff",
+      "data curation",
+      "release engineering"
+    ],
+    "url": "https://medioevo.space/about.html",
+    "sameAs": [
+      "https://github.com/Lutren",
+      "https://github.com/sponsors/Lutren",
+      "https://www.linkedin.com/in/luis-ren%C3%A9-gonz%C3%A1lez-l%C3%B3pez-64517b20b/",
+      "https://www.instagram.com/luisrene_medioevo/",
+      "https://www.youtube.com/@Medioevolr"
+    ]
+  }
+}

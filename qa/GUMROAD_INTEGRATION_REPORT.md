@@ -6,6 +6,7 @@ Date: 2026-05-12
 
 | product | URL | status | verification |
 |---|---|---|---|
+| MEDIOEVO: Despertar Preview | https://lrgonzalez.gumroad.com/l/dmqgzi | live public-safe book entry | GET returned HTTP 200 |
 | DUAT Templates | https://lrgonzalez.gumroad.com/l/duat-templates | live candidate | HEAD returned HTTP 200 |
 | L.R. Gonzalez Gumroad profile | https://lrgonzalez.gumroad.com/ | external store profile | HEAD returned HTTP 200 |
 
@@ -25,6 +26,12 @@ Date: 2026-05-12
 - No Gumroad token was requested, printed, stored or required.
 - No Gumroad product was created, edited, published or unpublished.
 - No embed script was added; direct links are enough for the current public site.
+
+2026-05-14 update:
+
+- DESPERTAR is linked as a direct external Gumroad checkout.
+- Host gate remained `JAMMING/BLOCK`, so no Gumroad dashboard/API write was executed.
+- DESPERTAR public copy excludes private archive, RPG/TCG files, real bestseller claims and external science claims.
 
 ## Commercial Notes
 

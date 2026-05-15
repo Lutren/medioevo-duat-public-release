@@ -1,0 +1,2840 @@
+[
+  {
+    "path": ".gitignore",
+    "line": 10,
+    "type": ".env",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": ".gitignore",
+    "line": 11,
+    "type": ".env",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": ".gitignore",
+    "line": 12,
+    "type": ".env",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": ".gitignore",
+    "line": 21,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": ".gitignore",
+    "line": 23,
+    "type": "99_SOURCE_VAULT",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "CHANGELOG.md",
+    "line": 17,
+    "type": "secret",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "MAINTENANCE.md",
+    "line": 3,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "MAINTENANCE.md",
+    "line": 19,
+    "type": "secret",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "MAINTENANCE.md",
+    "line": 41,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "MAINTENANCE.md",
+    "line": 43,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "MAINTENANCE.md",
+    "line": 45,
+    "type": ".env",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "MAINTENANCE.md",
+    "line": 46,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "MAINTENANCE.md",
+    "line": 47,
+    "type": "tcg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "MAINTENANCE.md",
+    "line": 47,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "package.json",
+    "line": 3,
+    "type": "private",
+    "severity": "INFO_GENERATED_METADATA"
+  },
+  {
+    "path": "PUBLICATION_BOUNDARY.md",
+    "line": 4,
+    "type": "secret",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "PUBLICATION_BOUNDARY.md",
+    "line": 7,
+    "type": "books",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "PUBLICATION_BOUNDARY.md",
+    "line": 7,
+    "type": "rpg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "PUBLICATION_BOUNDARY.md",
+    "line": 7,
+    "type": "tcg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "PUBLICATION_BOUNDARY.md",
+    "line": 7,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "PUBLICATION_BOUNDARY.md",
+    "line": 7,
+    "type": "Wabi-Sabi internals",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "PUBLICATION_BOUNDARY.md",
+    "line": 7,
+    "type": "Claudio private runtime",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "PUBLICATION_BOUNDARY.md",
+    "line": 7,
+    "type": ".env",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "PUBLICATION_BOUNDARY.md",
+    "line": 10,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "PUBLICATION_BOUNDARY.md",
+    "line": 10,
+    "type": "source_zips",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "PUBLICATION_BOUNDARY.md",
+    "line": 10,
+    "type": "99_SOURCE_VAULT",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "PUBLICATION_BOUNDARY.md",
+    "line": 10,
+    "type": ".local",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "PUBLIC_REPO_MAP.md",
+    "line": 9,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "PUBLIC_REPO_MAP.md",
+    "line": 11,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "PUBLIC_REPO_MAP.md",
+    "line": 14,
+    "type": "books",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "PUBLIC_REPO_MAP.md",
+    "line": 14,
+    "type": "rpg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "PUBLIC_REPO_MAP.md",
+    "line": 14,
+    "type": "tcg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "PUBLIC_REPO_MAP.md",
+    "line": 14,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "README.md",
+    "line": 5,
+    "type": "books",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "README.md",
+    "line": 5,
+    "type": "rpg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "README.md",
+    "line": 5,
+    "type": "tcg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "README.md",
+    "line": 5,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "README.md",
+    "line": 13,
+    "type": "manuscript",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "README.md",
+    "line": 19,
+    "type": "rpg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "README.md",
+    "line": 19,
+    "type": "tcg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "README.md",
+    "line": 19,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "README.md",
+    "line": 19,
+    "type": "Wabi-Sabi internals",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "README.md",
+    "line": 19,
+    "type": "Claudio private runtime",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "README.md",
+    "line": 19,
+    "type": ".env",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "README.md",
+    "line": 46,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "README.md",
+    "line": 50,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "ROADMAP.md",
+    "line": 26,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "SECURITY.md",
+    "line": 3,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "SECURITY.md",
+    "line": 13,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "SECURITY.md",
+    "line": 16,
+    "type": "tcg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "SECURITY.md",
+    "line": 16,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "SECURITY.md",
+    "line": 17,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "SECURITY.md",
+    "line": 17,
+    "type": "99_SOURCE_VAULT",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "SECURITY.md",
+    "line": 21,
+    "type": ".env",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "SECURITY.md",
+    "line": 22,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "SECURITY.md",
+    "line": 24,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "SECURITY.md",
+    "line": 30,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "SECURITY.md",
+    "line": 41,
+    "type": "secret",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "SECURITY.md",
+    "line": 43,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "STATUS.md",
+    "line": 12,
+    "type": "books",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "STATUS.md",
+    "line": 12,
+    "type": "rpg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "STATUS.md",
+    "line": 12,
+    "type": "tcg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "STATUS.md",
+    "line": 12,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "STATUS.md",
+    "line": 12,
+    "type": "Wabi-Sabi internals",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "STATUS.md",
+    "line": 12,
+    "type": "Claudio private runtime",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "tsconfig.tsbuildinfo",
+    "line": 1,
+    "type": "books",
+    "severity": "INFO_GENERATED_METADATA"
+  },
+  {
+    "path": ".github/pull_request_template.md",
+    "line": 4,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": ".github/pull_request_template.md",
+    "line": 5,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": ".github/pull_request_template.md",
+    "line": 5,
+    "type": ".env",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": ".github/pull_request_template.md",
+    "line": 8,
+    "type": "secret",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+    "line": 9,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+    "line": 74,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": ".github/ISSUE_TEMPLATE/config.yml",
+    "line": 8,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": ".github/ISSUE_TEMPLATE/docs_feedback.yml",
+    "line": 9,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": ".github/ISSUE_TEMPLATE/docs_feedback.yml",
+    "line": 36,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+    "line": 9,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+    "line": 41,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+    "line": 42,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+    "line": 57,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/ARCHITECTURE.md",
+    "line": 24,
+    "type": "secret",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/DEV_DAY_SUBMISSION.md",
+    "line": 18,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/DUAT_OVERVIEW.md",
+    "line": 18,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/DUAT_OVERVIEW.md",
+    "line": 19,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFFHUB.md",
+    "line": 15,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.json",
+    "line": 68,
+    "type": "books",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.json",
+    "line": 68,
+    "type": "rpg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.json",
+    "line": 68,
+    "type": "tcg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.json",
+    "line": 68,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.json",
+    "line": 116,
+    "type": "books",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.json",
+    "line": 116,
+    "type": "rpg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.json",
+    "line": 116,
+    "type": "tcg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.json",
+    "line": 116,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.json",
+    "line": 123,
+    "type": "secret",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.json",
+    "line": 145,
+    "type": "secret",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.json",
+    "line": 148,
+    "type": "secret",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.json",
+    "line": 256,
+    "type": "secret",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.yaml",
+    "line": 57,
+    "type": "books",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.yaml",
+    "line": 57,
+    "type": "rpg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.yaml",
+    "line": 57,
+    "type": "tcg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.yaml",
+    "line": 57,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.yaml",
+    "line": 91,
+    "type": "books",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.yaml",
+    "line": 91,
+    "type": "rpg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.yaml",
+    "line": 91,
+    "type": "tcg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.yaml",
+    "line": 91,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.yaml",
+    "line": 96,
+    "type": "secret",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.yaml",
+    "line": 116,
+    "type": "secret",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.yaml",
+    "line": 118,
+    "type": "secret",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/HANDOFF_v2_1_H-STD.yaml",
+    "line": 205,
+    "type": "secret",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/MEDIOEVO_OVERVIEW.md",
+    "line": 17,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/OBSERVACIONISMO_PUBLIC.md",
+    "line": 15,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/OBSERVACIONISMO_PUBLIC.md",
+    "line": 18,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/OBSERVACIONISMO_PUBLIC.md",
+    "line": 19,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLICATION_BOUNDARY.md",
+    "line": 4,
+    "type": "secret",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLICATION_BOUNDARY.md",
+    "line": 7,
+    "type": "books",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLICATION_BOUNDARY.md",
+    "line": 7,
+    "type": "rpg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLICATION_BOUNDARY.md",
+    "line": 7,
+    "type": "tcg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLICATION_BOUNDARY.md",
+    "line": 7,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLICATION_BOUNDARY.md",
+    "line": 7,
+    "type": "Wabi-Sabi internals",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLICATION_BOUNDARY.md",
+    "line": 7,
+    "type": "Claudio private runtime",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLICATION_BOUNDARY.md",
+    "line": 7,
+    "type": ".env",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLICATION_BOUNDARY.md",
+    "line": 10,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLICATION_BOUNDARY.md",
+    "line": 10,
+    "type": "source_zips",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLICATION_BOUNDARY.md",
+    "line": 10,
+    "type": "99_SOURCE_VAULT",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLICATION_BOUNDARY.md",
+    "line": 10,
+    "type": ".local",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLIC_README.md",
+    "line": 16,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLIC_REPO_MAP.md",
+    "line": 9,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLIC_REPO_MAP.md",
+    "line": 11,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLIC_REPO_MAP.md",
+    "line": 14,
+    "type": "books",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLIC_REPO_MAP.md",
+    "line": 14,
+    "type": "rpg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLIC_REPO_MAP.md",
+    "line": 14,
+    "type": "tcg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLIC_REPO_MAP.md",
+    "line": 14,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLIC_SCOPE.md",
+    "line": 16,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLIC_SCOPE.md",
+    "line": 18,
+    "type": "rpg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLIC_SCOPE.md",
+    "line": 18,
+    "type": "tcg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLIC_SCOPE.md",
+    "line": 18,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/PUBLIC_SCOPE.md",
+    "line": 22,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/STATUS.md",
+    "line": 12,
+    "type": "books",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/STATUS.md",
+    "line": 12,
+    "type": "rpg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/STATUS.md",
+    "line": 12,
+    "type": "tcg",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/STATUS.md",
+    "line": 12,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/STATUS.md",
+    "line": 12,
+    "type": "Wabi-Sabi internals",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "docs/STATUS.md",
+    "line": 12,
+    "type": "Claudio private runtime",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": "public/about.html",
+    "line": 91,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/about.html",
+    "line": 91,
+    "type": "rpg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/about.html",
+    "line": 91,
+    "type": "tcg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/about.html",
+    "line": 91,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/about.html",
+    "line": 91,
+    "type": "Wabi-Sabi internals",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books.html",
+    "line": 6,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books.html",
+    "line": 7,
+    "type": "book",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books.html",
+    "line": 8,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books.html",
+    "line": 11,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books.html",
+    "line": 12,
+    "type": "book",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books.html",
+    "line": 13,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books.html",
+    "line": 29,
+    "type": "book",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books.html",
+    "line": 45,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books.html",
+    "line": 46,
+    "type": "book",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books.html",
+    "line": 46,
+    "type": "manuscript",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books.html",
+    "line": 49,
+    "type": "book",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books.html",
+    "line": 50,
+    "type": "manuscript",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books.html",
+    "line": 50,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books.html",
+    "line": 51,
+    "type": "book",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books.html",
+    "line": 51,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books.html",
+    "line": 55,
+    "type": "book",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books.html",
+    "line": 60,
+    "type": "book",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books.html",
+    "line": 61,
+    "type": "rpg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books.html",
+    "line": 61,
+    "type": "tcg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books.html",
+    "line": 61,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/despertar-preview.html",
+    "line": 7,
+    "type": "rpg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/despertar-preview.html",
+    "line": 7,
+    "type": "tcg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/despertar-preview.html",
+    "line": 7,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/despertar-preview.html",
+    "line": 18,
+    "type": "book",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/despertar-preview.html",
+    "line": 56,
+    "type": "book",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/despertar-preview.html",
+    "line": 69,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/despertar-preview.html",
+    "line": 75,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/despertar-preview.html",
+    "line": 77,
+    "type": "book",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/despertar-preview.html",
+    "line": 89,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/despertar-preview.html",
+    "line": 90,
+    "type": "rpg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/despertar-preview.html",
+    "line": 90,
+    "type": "tcg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/despertar-preview.html",
+    "line": 91,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/gumroad.html",
+    "line": 37,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/gumroad.html",
+    "line": 56,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/gumroad.html",
+    "line": 56,
+    "type": "rpg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/gumroad.html",
+    "line": 56,
+    "type": "tcg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/gumroad.html",
+    "line": 56,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/llms.txt",
+    "line": 14,
+    "type": "book",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/llms.txt",
+    "line": 19,
+    "type": "book",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/llms.txt",
+    "line": 19,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/llms.txt",
+    "line": 36,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/llms.txt",
+    "line": 46,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/llms.txt",
+    "line": 46,
+    "type": "rpg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/llms.txt",
+    "line": 46,
+    "type": "tcg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/llms.txt",
+    "line": 46,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/llms.txt",
+    "line": 68,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/llms.txt",
+    "line": 68,
+    "type": "rpg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/llms.txt",
+    "line": 68,
+    "type": "tcg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/llms.txt",
+    "line": 68,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/llms.txt",
+    "line": 68,
+    "type": "Wabi-Sabi internals",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/llms.txt",
+    "line": 70,
+    "type": "book",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/llms.txt",
+    "line": 72,
+    "type": "rpg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/llms.txt",
+    "line": 72,
+    "type": "tcg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/llms.txt",
+    "line": 72,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/llms.txt",
+    "line": 74,
+    "type": "manuscript",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/projects.html",
+    "line": 7,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/projects.html",
+    "line": 12,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/projects.html",
+    "line": 19,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/projects.html",
+    "line": 75,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/prompts.html",
+    "line": 41,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/public-boundary.html",
+    "line": 75,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/public-boundary.html",
+    "line": 90,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/public-boundary.html",
+    "line": 91,
+    "type": "rpg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/public-boundary.html",
+    "line": 91,
+    "type": "tcg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/public-boundary.html",
+    "line": 92,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/public-boundary.html",
+    "line": 92,
+    "type": "Wabi-Sabi internals",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/robots.txt",
+    "line": 3,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/sitemap.xml",
+    "line": 8,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/sitemap.xml",
+    "line": 11,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/sitemap.xml",
+    "line": 15,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/store.html",
+    "line": 7,
+    "type": "book",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/store.html",
+    "line": 12,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/store.html",
+    "line": 53,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/store.html",
+    "line": 61,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/store.html",
+    "line": 65,
+    "type": "book",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/store.html",
+    "line": 68,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/store.html",
+    "line": 72,
+    "type": "book",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/store.html",
+    "line": 74,
+    "type": "rpg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/store.html",
+    "line": 74,
+    "type": "tcg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/store.html",
+    "line": 74,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/store.html",
+    "line": 95,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/store.html",
+    "line": 96,
+    "type": "rpg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/store.html",
+    "line": 96,
+    "type": "tcg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/store.html",
+    "line": 97,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/store.html",
+    "line": 97,
+    "type": "Wabi-Sabi internals",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/blog/prompts-definitivos.html",
+    "line": 26,
+    "type": "books",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books/medioevo-informacion-residuo-observacion.md",
+    "line": 10,
+    "type": "libros",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books/medioevo-informacion-residuo-observacion.md",
+    "line": 10,
+    "type": "rpg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books/medioevo-informacion-residuo-observacion.md",
+    "line": 10,
+    "type": "tcg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books/medioevo-informacion-residuo-observacion.md",
+    "line": 119,
+    "type": "libros",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books/medioevo-informacion-residuo-observacion.md",
+    "line": 119,
+    "type": "rpg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/books/medioevo-informacion-residuo-observacion.md",
+    "line": 119,
+    "type": "tcg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/prompts/01_scanner_seguridad_local.md",
+    "line": 17,
+    "type": ".env",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/prompts/01_scanner_seguridad_local.md",
+    "line": 78,
+    "type": "rpg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/prompts/01_scanner_seguridad_local.md",
+    "line": 78,
+    "type": "tcg",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/prompts/03_handoff_memoria_persistente.md",
+    "line": 15,
+    "type": ".env",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "public/schemas/handoff_v2_1.schema.json",
+    "line": 737,
+    "type": "private",
+    "severity": "INFO_SCHEMA_DECLARATION"
+  },
+  {
+    "path": "public/schemas/handoff_v2_1.schema.json",
+    "line": 738,
+    "type": "secret",
+    "severity": "INFO_SCHEMA_DECLARATION"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 48,
+    "type": "books",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 122,
+    "type": "books",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 149,
+    "type": "books",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 177,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 186,
+    "type": "books",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 186,
+    "type": "rpg",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 186,
+    "type": "tcg",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 186,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 189,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 191,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 192,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 195,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 214,
+    "type": "books",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 214,
+    "type": "libros",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 251,
+    "type": "libros",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 251,
+    "type": "rpg",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 251,
+    "type": "tcg",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 280,
+    "type": "books",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 317,
+    "type": "rpg",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 317,
+    "type": "tcg",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 320,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 323,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 326,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 346,
+    "type": "books",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 383,
+    "type": "books",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 383,
+    "type": "rpg",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 383,
+    "type": "tcg",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 383,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 386,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 389,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 392,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 407,
+    "type": "books",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 457,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 516,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 566,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 614,
+    "type": ".local",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 639,
+    "type": ".local",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 681,
+    "type": "books",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 785,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 802,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 875,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 916,
+    "type": "manuscript",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 935,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 952,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1033,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1096,
+    "type": "books",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1098,
+    "type": "books",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1110,
+    "type": "books",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1111,
+    "type": "books",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1112,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1112,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1115,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1116,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1119,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1120,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1122,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1123,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1124,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1125,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1126,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1127,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1128,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1129,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1158,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1163,
+    "type": "books",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1165,
+    "type": "rpg",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1165,
+    "type": "tcg",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1165,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1170,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1171,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1172,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1173,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1190,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1191,
+    "type": "rpg",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1191,
+    "type": "tcg",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1206,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1219,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1220,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1223,
+    "type": "book",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1258,
+    "type": "books",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1322,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1479,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1480,
+    "type": "books",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1480,
+    "type": "rpg",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1480,
+    "type": "tcg",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1481,
+    "type": ".env",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1511,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1514,
+    "type": "secret",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1515,
+    "type": "books",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1515,
+    "type": "rpg",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1515,
+    "type": "tcg",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1515,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1515,
+    "type": "Wabi-Sabi internals",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1515,
+    "type": "Claudio private runtime",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1527,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1533,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1547,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1551,
+    "type": "books",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1551,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1607,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1702,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1825,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 1843,
+    "type": "books",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/App.tsx",
+    "line": 2118,
+    "type": "private",
+    "severity": "INFO_PUBLIC_BOUNDARY_COPY"
+  },
+  {
+    "path": "src/styles.css",
+    "line": 875,
+    "type": "book",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 1,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 20,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 22,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 25,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 27,
+    "type": "rpg",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 27,
+    "type": "tcg",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 27,
+    "type": "manuscript",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 27,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 38,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 40,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 44,
+    "type": "rpg",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 44,
+    "type": "tcg",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 44,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 52,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 53,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 58,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 58,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 60,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 60,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 62,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 63,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 70,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 71,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/books.ts",
+    "line": 72,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/commercialAudit.ts",
+    "line": 3,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/commercialAudit.ts",
+    "line": 5,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/commercialAudit.ts",
+    "line": 8,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/commercialAudit.ts",
+    "line": 31,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/commercialAudit.ts",
+    "line": 37,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/commercialAudit.ts",
+    "line": 39,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/commercialAudit.ts",
+    "line": 45,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/commercialAudit.ts",
+    "line": 47,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/despertarStore.test.ts",
+    "line": 2,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/despertarStore.test.ts",
+    "line": 10,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/despertarStore.test.ts",
+    "line": 14,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/despertarStore.test.ts",
+    "line": 46,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/despertarStore.test.ts",
+    "line": 47,
+    "type": "rpg",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/despertarStore.test.ts",
+    "line": 47,
+    "type": "tcg",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/gumroadProducts.ts",
+    "line": 25,
+    "type": "rpg",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/gumroadProducts.ts",
+    "line": 25,
+    "type": "tcg",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/gumroadProducts.ts",
+    "line": 25,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/gumroadProducts.ts",
+    "line": 30,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/gumroadProducts.ts",
+    "line": 30,
+    "type": "rpg",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/gumroadProducts.ts",
+    "line": 30,
+    "type": "tcg",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/gumroadProducts.ts",
+    "line": 30,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/gumroadProducts.ts",
+    "line": 33,
+    "type": "secret",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/gumroadProducts.ts",
+    "line": 68,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/gumroadProducts.ts",
+    "line": 68,
+    "type": "rpg",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/gumroadProducts.ts",
+    "line": 68,
+    "type": "tcg",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/gumroadProducts.ts",
+    "line": 68,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/observacionismoAudit.ts",
+    "line": 32,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/observacionismoAudit.ts",
+    "line": 33,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/observacionismoAudit.ts",
+    "line": 40,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/observacionismoAudit.ts",
+    "line": 46,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/observacionismoAudit.ts",
+    "line": 46,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 1,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 2,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 26,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 28,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 30,
+    "type": "manuscript",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 30,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 31,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 34,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 35,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 36,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 41,
+    "type": "manuscript",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 48,
+    "type": "rpg",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 48,
+    "type": "tcg",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 48,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 49,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 55,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 59,
+    "type": "rpg",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 59,
+    "type": "tcg",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 59,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 78,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 86,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 87,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 90,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 92,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 93,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 96,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 97,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 115,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 137,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 138,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 139,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 141,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 142,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 145,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 146,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 147,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 148,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 151,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 152,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 169,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 175,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 193,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 196,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/products.ts",
+    "line": 200,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/promptCampaign.test.ts",
+    "line": 18,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/promptCampaign.ts",
+    "line": 113,
+    "type": "manuscript",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/promptCampaign.ts",
+    "line": 114,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/publicIdentity.ts",
+    "line": 13,
+    "type": "books",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/publicIdentity.ts",
+    "line": 13,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/publicIdentity.ts",
+    "line": 15,
+    "type": "libros",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/publicIdentity.ts",
+    "line": 25,
+    "type": "book",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/publicIdentity.ts",
+    "line": 30,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/publicIdentity.ts",
+    "line": 39,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/content/publicIdentity.ts",
+    "line": 41,
+    "type": "private",
+    "severity": "INFO_PUBLIC_CONTENT_METADATA"
+  },
+  {
+    "path": "src/messagebus/seed.ts",
+    "line": 103,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "src/messagebus/seed.ts",
+    "line": 111,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "src/messagebus/seed.ts",
+    "line": 302,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "src/messagebus/service.ts",
+    "line": 215,
+    "type": ".local",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "src/messagebus/service.ts",
+    "line": 220,
+    "type": ".local",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "src/messagebus/types.ts",
+    "line": 79,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "src/simulation/engine.ts",
+    "line": 139,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "src/simulation/engine.ts",
+    "line": 185,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "src/simulation/rng.ts",
+    "line": 2,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "src/theory/metrics.ts",
+    "line": 5,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "src/theory/metrics.ts",
+    "line": 6,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "src/theory/metrics.ts",
+    "line": 7,
+    "type": "private",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "src/ui/TelecomCore.tsx",
+    "line": 25,
+    "type": ".local",
+    "severity": "REVIEW"
+  },
+  {
+    "path": "src/ui/TelecomCore.tsx",
+    "line": 242,
+    "type": ".local",
+    "severity": "REVIEW"
+  }
+]

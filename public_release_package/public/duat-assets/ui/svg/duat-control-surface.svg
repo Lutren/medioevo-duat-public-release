@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" fill="none">
+
+  <defs>
+    <radialGradient id="duatGlow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#24E8FF" stop-opacity="0.42"/>
+      <stop offset="42%" stop-color="#3E7BFF" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#030911" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#24E8FF" stop-opacity="0.22"/>
+      <stop offset="40%" stop-color="#071525" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#3E7BFF" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#24E8FF" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#00F5D4" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#3E7BFF" stop-opacity="0.25"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M 42 0 L 0 0 0 42" stroke="#24E8FF" stroke-opacity="0.075" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="360" fill="#030911"/>
+  <path d="M80 92H1200L1100 312H180Z" fill="#071525" stroke="#24E8FF" stroke-opacity="0.45" stroke-width="2"/>
+  <path d="M200 132H1080" stroke="url(#edge)" stroke-width="3" opacity="0.65"/>
+  <circle cx="640" cy="202" r="78" fill="url(#duatGlow)"/>
+  <circle cx="640" cy="202" r="48" stroke="#24E8FF" stroke-width="3"/>
+  <circle cx="640" cy="202" r="16" fill="#00F5D4"/>
+  <rect x="160" y="165" width="150" height="86" rx="16" fill="#0A2135" stroke="#24E8FF" stroke-opacity="0.35"/><text x="235" y="214" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="700" fill="#F4FBFF">ASK</text><rect x="350" y="165" width="150" height="86" rx="16" fill="#0A2135" stroke="#24E8FF" stroke-opacity="0.35"/><text x="425" y="214" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="700" fill="#F4FBFF">CREATE</text><rect x="540" y="165" width="150" height="86" rx="16" fill="#0A2135" stroke="#24E8FF" stroke-opacity="0.35"/><text x="615" y="214" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="700" fill="#F4FBFF">EXPLORE</text><rect x="730" y="165" width="150" height="86" rx="16" fill="#0A2135" stroke="#24E8FF" stroke-opacity="0.35"/><text x="805" y="214" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="700" fill="#F4FBFF">SIMULATE</text><rect x="920" y="165" width="150" height="86" rx="16" fill="#0A2135" stroke="#24E8FF" stroke-opacity="0.35"/><text x="995" y="214" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="700" fill="#F4FBFF">REPORT</text>
+</svg>

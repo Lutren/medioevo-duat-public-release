@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Public website
+    url: https://medioevo.space
+    about: Use the public website for route and documentation context.
+  - name: Public repository
+    url: https://github.com/Lutren/medioevo-duat-public-release
+    about: Use GitHub issues only for public, non-sensitive problems. Do not post secrets, tokens, private canon, or sensitive data.

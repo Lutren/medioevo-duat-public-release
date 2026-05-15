@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" fill="none">
+
+  <defs>
+    <radialGradient id="duatGlow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#24E8FF" stop-opacity="0.42"/>
+      <stop offset="42%" stop-color="#3E7BFF" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#030911" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#24E8FF" stop-opacity="0.22"/>
+      <stop offset="40%" stop-color="#071525" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#3E7BFF" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#24E8FF" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#00F5D4" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#3E7BFF" stop-opacity="0.25"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M 42 0 L 0 0 0 42" stroke="#24E8FF" stroke-opacity="0.075" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="360" rx="28" fill="#030911"/>
+  <rect x="26" y="26" width="1228" height="308" rx="28" fill="url(#glass)" stroke="#24E8FF" stroke-opacity="0.35"/>
+  <g transform="translate(70 58) scale(.42)">
+    <circle cx="256" cy="186" r="92" stroke="#24E8FF" stroke-width="18" filter="url(#softGlow)"/>
+    <path d="M256 286V408" stroke="#24E8FF" stroke-width="18" stroke-linecap="round"/>
+    <path d="M166 332H346" stroke="#24E8FF" stroke-width="18" stroke-linecap="round"/>
+  </g>
+  <text x="310" y="157" font-family="Inter, Arial, sans-serif" font-size="116" font-weight="800" fill="#F4FBFF" letter-spacing="14">DUAT</text>
+  <text x="318" y="221" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="500" fill="#24E8FF">Adaptive Intelligence Display</text>
+  <path d="M318 258H1110" stroke="url(#edge)" stroke-width="3"/>
+  <text x="318" y="296" font-family="Inter, Arial, sans-serif" font-size="22" fill="#8CB7C9">Cognitive operating surface for structured AI workflows</text>
+</svg>

@@ -1,0 +1,58 @@
+name: Feature request
+description: Propose a small public feature for the public release.
+title: "[Feature]: "
+labels: ["enhancement", "public"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Propose only public-facing, low-claim work. Do not request publication of private canon, internal vaults, credentials, local logs, or unpublished research material.
+  - type: textarea
+    id: proposed_feature
+    attributes:
+      label: Proposed public feature
+      description: Describe the public feature or improvement.
+    validations:
+      required: true
+  - type: textarea
+    id: user_value
+    attributes:
+      label: User value
+      description: Who benefits and what becomes clearer or easier?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Which public route, doc, or component would change?
+    validations:
+      required: true
+  - type: textarea
+    id: non_goals
+    attributes:
+      label: Non-goals
+      description: What should this feature explicitly not include?
+    validations:
+      required: true
+  - type: textarea
+    id: private_canon_risk
+    attributes:
+      label: Risk of exposing private canon
+      description: Note any risk that the feature could reveal private canon, unpublished research, internal workflows, or sensitive context.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance criteria
+      description: How should maintainers know the feature is complete?
+    validations:
+      required: true
+  - type: checkboxes
+    id: public_safe
+    attributes:
+      label: Public safety confirmation
+      options:
+        - label: This request can be implemented without private canon, credentials, internal vaults, or strong unsupported claims.
+          required: true

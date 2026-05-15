@@ -20,4 +20,4 @@ DUAT is designed for situations where a normal chat interface becomes too narrow
 The demo presents DUAT as a high-level control surface for AI work: a user can ask DUAT to ingest information, create a structured workflow, coordinate specialized agents, inspect memory and evidence, simulate next steps, and generate a report or handoff.
 
 ## Positioning
-DUAT is not presented as externally verified AGI. It is a product and interface architecture for making AI-assisted work more structured, continuous, inspectable, and operationally useful.
+DUAT is not presented as externally verified autonomous general intelligence. It is a product and interface architecture for making AI-assisted work more structured, continuous, inspectable, and operationally useful.

@@ -1,0 +1,279 @@
+{
+  "handoff_v2_1": {
+    "meta": {
+      "schema_version": "2.1",
+      "level": "H-STD",
+      "type": "SESSION",
+      "project": "MEDIOEVO/DUAT public release",
+      "agent_id": "chatgpt-node",
+      "agent_role": "Release Engineer + Product Integrator + Handoff Auditor",
+      "model": "GPT-5.5 Pro"
+    },
+    "time": {
+      "wall_time_iso": "2026-05-15T19:05:52+00:00",
+      "wall_timezone": "America/Chicago",
+      "t0_session": "2026-05-15T19:05:52+00:00",
+      "t0_task": "2026-05-13T01:52:49-05:00",
+      "agent_time": {
+        "observed_tau_seconds": null,
+        "active_compute_seconds": null,
+        "paused_seconds": null,
+        "precision": "estimated",
+        "note": "Observed session tau is estimated from visible interaction. Active compute unavailable in chat runtime.",
+        "pause_intervals": []
+      }
+    },
+    "identity": {
+      "state_fingerprint": "MDV-PUBLIC-HANDOFF-V2-1-9A8FB1B1D818",
+      "ledger_entry_hash": "sha256:1793103D09D3A94574735AB00E21D0BA88F127B6D377741BE643A22629A9D00D",
+      "parent_fingerprint": "MDV-HANDOFF-v2.1-f5f2f7e689f4",
+      "merge_sources": []
+    },
+    "state": {
+      "r_before": 0.42,
+      "r_after": 0.24,
+      "r_delta": -0.18,
+      "phi_eff": 0.72,
+      "j_c_proximity": 0.32,
+      "regime": "FUNCIONAL",
+      "action_gate": "REVIEW"
+    },
+    "unknowns_first": {
+      "incognitas": [
+        {
+          "id": "U1",
+          "description": "Live website deployment may not match this local package until push/deploy.",
+          "priority": "HIGH",
+          "blocking": false,
+          "resolver": "Run live route check after deployment."
+        },
+        {
+          "id": "U2",
+          "description": "Exact GitHub release/push state requires authenticated external action verification.",
+          "priority": "MED",
+          "blocking": false,
+          "resolver": "Review git status and remote after human publication decision."
+        }
+      ],
+      "bloqueos": [
+        {
+          "id": "B1",
+          "description": "No external push/deploy is performed by this audit.",
+          "reason": "Publication boundary; user asked audit/integration, not push.",
+          "unblock_condition": "Human explicitly requests push/deploy after gates pass."
+        },
+        {
+          "id": "B2",
+          "description": "Protected assets remain excluded.",
+          "reason": "Publication boundary protects books, RPG/TCG, private runtime, raw prompts and credentials.",
+          "unblock_condition": "Never for public package unless specific sanitized artifact is reviewed."
+        }
+      ],
+      "decisions_needed": [
+        "Human must choose whether to push the local public release package after QA."
+      ]
+    },
+    "epistemic_matrix": {
+      "certeza": [
+        {
+          "id": "C1",
+          "text": "Local public repo exists and is connected to GitHub remote.",
+          "evidence": "git remote -v",
+          "falsifier": "Remote missing or different URL."
+        },
+        {
+          "id": "C2",
+          "text": "Handoff v2.1 docs and schema are available from the public schema copy.",
+          "evidence": "public/schemas/handoff_v2_1.schema.json",
+          "falsifier": "Schema file missing or validation failure."
+        },
+        {
+          "id": "C3",
+          "text": "Public app now exposes /handoff and /status routes locally.",
+          "evidence": "src/App.tsx route table",
+          "falsifier": "Route check fails."
+        }
+      ],
+      "inferencia": [
+        {
+          "id": "I1",
+          "text": "The deploy target is Cloudflare Pages medioevo-site based on prior QA docs.",
+          "evidence": "qa deployment reports and memory-derived prior context",
+          "falsifier": "Current Cloudflare project differs."
+        }
+      ],
+      "incognita": [
+        {
+          "id": "U1",
+          "text": "Whether medioevo.space currently serves this latest local commit without deployment.",
+          "evidence": "live route check",
+          "falsifier": "Live route contains Handoff v2.1 after deploy."
+        }
+      ],
+      "bloqueo": [
+        {
+          "id": "B1",
+          "text": "Do not publish private canon, books, RPG/TCG, raw prompts, credentials or source zips.",
+          "evidence": "publication boundary",
+          "falsifier": "Separate sanitized review approves a specific artifact."
+        }
+      ]
+    },
+    "contract": {
+      "next_action": "Run build, route, secret, boundary, schema and reconstruction gates; then decide push/deploy manually.",
+      "do_now": [
+        "Use this public repo as the release candidate.",
+        "Keep publication package public-safe.",
+        "Treat live website alignment as evidence, not assumption."
+      ],
+      "do_not": [
+        "Do not push or deploy automatically.",
+        "Do not publish protected material.",
+        "Do not include Prompt-Execute-Master.zip or source zips."
+      ],
+      "required_gates": [
+        "GhostGate",
+        "ActionGate",
+        "SecretScan",
+        "BoundaryCheck",
+        "HumanReview"
+      ],
+      "success_criteria": [
+        "Public package excludes protected paths.",
+        "Handoff v2.1 validates against schema.",
+        "Build, RouteCheck, SchemaValidation and ReconstructionTest pass.",
+        "No BLOCK severity secret finding exists."
+      ],
+      "stop_conditions": [
+        "Secret or protected IP in public package.",
+        "Build fails.",
+        "Handoff schema validation fails.",
+        "Reconstruction test misses critical gates."
+      ],
+      "handoff_deadline": null
+    },
+    "semantic_checksum": {
+      "canonical_claims": [
+        "Local public repo exists and is connected to GitHub remote.",
+        "Handoff v2.1 docs and schema are available from the public schema copy.",
+        "Public app now exposes /handoff and /status routes locally."
+      ],
+      "canonical_hash": "sha256:77D588DD0E647477C186E472EF3D74AA70BD0403FEE4986C4EDAD1C961FD6B7D",
+      "check_question": "What must the next agent do before push or deploy?",
+      "expected_answer": "Run required gates and keep protected material out; push/deploy only after human decision.",
+      "keyword_anchor": "Unknowns First | ActionGate | Handoff v2.1 | public-safe",
+      "tolerance": "CONCEPT"
+    },
+    "delta": {
+      "since": "MDV-HANDOFF-v2.1-f5f2f7e689f4",
+      "added": [
+        "Sandbox patch execution report",
+        "Patched ZIP artifact",
+        "Manifests and QA report"
+      ],
+      "removed": [],
+      "modified": [
+        "Target treated as available master substitute, not inaccessible Windows path."
+      ],
+      "resolved": [
+        "Protocol and schema integrated into available ZIP candidate."
+      ],
+      "new_risks": [
+        "Local replacement still requires human verification because exact Windows target was unavailable."
+      ]
+    },
+    "merge": null,
+    "artifacts": [
+      {
+        "id": "status",
+        "type": "document",
+        "path": "STATUS.md",
+        "hash": null,
+        "scope": "public",
+        "status": "READY"
+      },
+      {
+        "id": "repo-map",
+        "type": "document",
+        "path": "PUBLIC_REPO_MAP.md",
+        "hash": null,
+        "scope": "public",
+        "status": "READY"
+      },
+      {
+        "id": "publication-boundary",
+        "type": "document",
+        "path": "PUBLICATION_BOUNDARY.md",
+        "hash": null,
+        "scope": "public",
+        "status": "READY"
+      },
+      {
+        "id": "claims-boundary",
+        "type": "document",
+        "path": "CLAIMS_BOUNDARY.md",
+        "hash": null,
+        "scope": "public",
+        "status": "READY"
+      },
+      {
+        "id": "open-source-roadmap",
+        "type": "document",
+        "path": "OPEN_SOURCE_ROADMAP.md",
+        "hash": null,
+        "scope": "public",
+        "status": "READY"
+      },
+      {
+        "id": "handoff-hstd",
+        "type": "schema",
+        "path": "docs/HANDOFF_v2_1_H-STD.yaml",
+        "hash": null,
+        "scope": "public",
+        "status": "READY"
+      },
+      {
+        "id": "connectivity-audit",
+        "type": "report",
+        "path": "08_QA_WITNESSLOG/CONNECTIVITY_AUDIT.md",
+        "hash": null,
+        "scope": "local",
+        "status": "READY"
+      }
+    ],
+    "reconstruction_test": {
+      "prompt": "Using only this H-STD, identify current state, next action, do-not list and required gates.",
+      "expected_outputs": [
+        "State is REVIEW/FUNCIONAL public release candidate.",
+        "Next action is run gates and decide push/deploy manually.",
+        "Do not publish protected material.",
+        "Required gates include SecretScan, BoundaryCheck, Build, RouteCheck, SchemaValidation and ReconstructionTest."
+      ],
+      "pass_threshold": 0.85,
+      "critical_fail_conditions": [
+        "Omit protected material boundary.",
+        "Claim deploy happened.",
+        "Ignore schema/build/secret gates."
+      ]
+    },
+    "metrics": {
+      "recovery_time_estimate_seconds": 300,
+      "missing_context_count": 1,
+      "action_success_rate": null,
+      "contradiction_count": 0,
+      "token_cost_estimate": 1200,
+      "semantic_loss_estimate": "LOW"
+    },
+    "ledger": {
+      "ledger_path": "docs/handoff_ledger.jsonl",
+      "sequence_number": 1,
+      "append_only": true,
+      "supersedes": "MDV-HANDOFF-v2.1-f5f2f7e689f4"
+    },
+    "brief": {
+      "summary": "Public release candidate patched to Handoff v2.1 with status, boundary, canon and tools routes.",
+      "context_anchor": "medioevo-duat-public-release local repo; BRAIN_OS is source of public-safe handoff protocol.",
+      "risk_flag": "REVIEW until external push/deploy decision."
+    }
+  }
+}

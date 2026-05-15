@@ -1,0 +1,75 @@
+name: Bug report
+description: Report a public website or documentation bug.
+title: "[Bug]: "
+labels: ["bug", "public"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report only public issues. Do not include secrets, tokens, credentials, private canon, local logs, internal paths, or sensitive data.
+  - type: dropdown
+    id: route
+    attributes:
+      label: Route affected
+      options:
+        - /
+        - /duat
+        - /telecom
+        - /handoff-hub
+        - /duat-devday
+        - /docs
+        - Other public route
+    validations:
+      required: true
+  - type: input
+    id: public_url
+    attributes:
+      label: Public URL
+      placeholder: https://medioevo.space/duat
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should happen on the public route?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. See ...
+    validations:
+      required: true
+  - type: input
+    id: browser_device
+    attributes:
+      label: Browser and device
+      placeholder: Chrome on Windows, Safari on iPhone, Firefox on Linux
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot or screen recording
+      description: Optional. Attach only public-safe screenshots.
+    validations:
+      required: false
+  - type: checkboxes
+    id: public_safe
+    attributes:
+      label: Public safety confirmation
+      options:
+        - label: I did not include secrets, tokens, private canon, unpublished research, local logs, or internal files.
+          required: true

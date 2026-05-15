@@ -75,3 +75,24 @@ Date: 2026-05-14 01:48 -06:00
 - `https://medioevo.space/despertar-preview.html`: HTTP `200`, contains `Despertar Preview` and `dmqgzi`.
 - `https://medioevo.space/store`: HTTP `200`, contains `Despertar Preview` and `dmqgzi`.
 - `https://medioevo.space/sitemap.xml`: HTTP `200`, XML `urlset`.
+
+## Prompt Campaign / Blog Deploy Update
+
+Date: 2026-05-15 13:17 -06:00
+
+- Source commit: `dca3c79` (`fix: remove clean-url redirect loop`).
+- GitHub branch pushed: `public-identity-ai-discovery`.
+- GitHub main fast-forwarded: `origin/main -> dca3c79`.
+- Deploy command: `npx wrangler pages deploy dist --project-name=medioevo-site --branch=main`.
+- Deployment URL: `https://83605973.medioevo-site.pages.dev`.
+- Uploaded files: `0`; reused files: `93`; `_redirects` uploaded.
+- DNS changes: none.
+- Redirect repair: removed explicit `_redirects` rewrites for `/blog`, `/blog/prompts-definitivos` and `/prompts` to avoid Cloudflare Clean URL 308 loops.
+
+Live content verification:
+
+- `https://medioevo.space/blog`: HTTP `200`, contains `Los 3 prompts`, `ahorro de tokens` and `Handoff`.
+- `https://medioevo.space/blog/prompts-definitivos`: HTTP `200`, contains `Los 3 prompts`, `Scanner de seguridad local`, `ahorro de tokens` and `Handoff`.
+- `https://medioevo.space/prompts`: HTTP `200`, contains `ahorro de tokens` and `Handoff`.
+- `https://medioevo.space/prompts/01_scanner_seguridad_local.md`: HTTP `200`, contains `Scanner de seguridad local`.
+- `https://medioevo.space/sitemap.xml`: HTTP `200`, contains `/blog/prompts-definitivos` and `/prompts`.

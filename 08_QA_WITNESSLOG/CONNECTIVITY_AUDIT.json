@@ -2,12 +2,12 @@
   "root": "C:\\Users\\L-Tyr\\OneDrive\\Escritorio\\-=L.R.GONZALEZ=-\\publish_staging\\medioevo-duat-public-release",
   "repo_role": "public release repo",
   "remote": "origin\thttps://github.com/Lutren/medioevo-duat-public-release.git (fetch)\norigin\thttps://github.com/Lutren/medioevo-duat-public-release.git (push)",
-  "git_status": "## public-identity-ai-discovery\n M MAINTENANCE.md\n M README.md\n M ROADMAP.md\n M docs/DEV_DAY_SUBMISSION_TEXT_EN.md\n M docs/MEDIOEVO_OVERVIEW.md\n M docs/PUBLIC_SCOPE.md\n M public/_redirects\n M public/llms.txt\n M public/sitemap.xml\n M qa/CLOUDFLARE_PAGES_STATUS.md\n M qa/GUMROAD_INTEGRATION_REPORT.md\n M qa/STORE_IMPLEMENTATION_REPORT.md\n M src/App.tsx\n M src/content/books.ts\n M src/content/devday/DEV_DAY_SUBMISSION_TEXT_EN.md\n M src/content/gumroadProducts.ts\n M src/content/products.ts\n M src/content/publicIdentity.ts\n M src/messagebus/seed.ts\n M src/styles.css\n?? 08_QA_WITNESSLOG/\n?? CLAIMS_BOUNDARY.md\n?? OPEN_SOURCE_ROADMAP.md\n?? PUBLICATION_BOUNDARY.md\n?? PUBLIC_REPO_MAP.md\n?? STATUS.md\n?? docs/CLAIMS_BOUNDARY.md\n?? docs/HANDOFF_v2_1_H-STD.json\n?? docs/HANDOFF_v2_1_H-STD.yaml\n?? docs/HANDOFF_v2_1_STATUS.md\n?? docs/OPEN_SOURCE_ROADMAP.md\n?? docs/PUBLICATION_BOUNDARY.md\n?? docs/PUBLIC_REPO_MAP.md\n?? docs/STATUS.md\n?? docs/handoff_ledger.jsonl\n?? public/blog.html\n?? public/blog/\n?? public/books.html\n?? public/books/\n?? public/despertar-preview.html\n?? public/gumroad.html\n?? public/product-assets/\n?? public/prompts.html\n?? public/prompts/\n?? public/schemas/\n?? public/store.html\n?? public_release_package/\n?? qa/DESPERTAR_STORE_STAGING_REPORT_2026-05-14.md\n?? qa/HANDOFF_P8_PUBLIC_FEEDBACK_LOOP.md\n?? qa/P7_PUBLIC_ITERATION_REPORT.md\n?? qa/P7_SECURITY_REVIEW_REQUIRED.md\n?? qa/PRODUCT_ASSETS_PUBLICITY_REPORT_2026-05-14.md\n?? qa/PROMPT_CAMPAIGN_LOCAL_QA_2026-05-15.md\n?? qa/PUBLIC_DOCS_REVIEW_P7.md\n?? qa/PUBLIC_ISSUES_REVIEW.md\n?? qa/PUBLIC_ROUTE_HEALTH_P7.md\n?? qa/SCREENSHOT_CAPTURE_REPORT.md\n?? qa/SOCIAL_POST_READY_QUEUE.md\n?? qa/UNTRACKED_CONTENT_REVIEW.md\n?? qa/screenshots/\n?? scripts/\n?? src/content/despertarStore.test.ts\n?? src/content/promptCampaign.test.ts\n?? src/content/promptCampaign.ts\n?? src/publicBoundary.test.js",
+  "git_status": "## public-identity-ai-discovery...origin/public-identity-ai-discovery\n M docs/HANDOFF_v2_1_H-STD.json\n M docs/HANDOFF_v2_1_H-STD.yaml\n M docs/handoff_ledger.jsonl\n M public/_redirects\n M public_release_package/public/_redirects\n M qa/PROMPT_CAMPAIGN_LOCAL_QA_2026-05-15.md",
   "github": {
     "url": "https://github.com/Lutren/medioevo-duat-public-release",
     "status": 200,
     "bytes": 300000,
-    "sha256": "5DE9E02DC634C5C845C859F0F7AC68C4088863DD34B5AFDAD3493C474B0D8F14",
+    "sha256": "2811400A6EEC8D53AF04D716D4C8C3CA01FBCB2FB881FF348FA0B8C759B19ABA",
     "contains_duat": true,
     "contains_handoff_v2_1": true,
     "contains_status": true
@@ -17,7 +17,7 @@
       "url": "https://medioevo.space/",
       "status": 200,
       "bytes": 6313,
-      "sha256": "816D313843C2A1D427B3E6D0402A8BCFE1EE5077FB2D1235310CDFA271F28276",
+      "sha256": "7EEA66B5EC7303DC78D2880C86B984ACC0123E01AAF0B976D725BC0FA8EA7B55",
       "contains_duat": true,
       "contains_handoff_v2_1": false,
       "contains_status": true
@@ -26,7 +26,7 @@
       "url": "https://medioevo.space/canon",
       "status": 200,
       "bytes": 6313,
-      "sha256": "816D313843C2A1D427B3E6D0402A8BCFE1EE5077FB2D1235310CDFA271F28276",
+      "sha256": "7EEA66B5EC7303DC78D2880C86B984ACC0123E01AAF0B976D725BC0FA8EA7B55",
       "contains_duat": true,
       "contains_handoff_v2_1": false,
       "contains_status": true
@@ -35,7 +35,7 @@
       "url": "https://medioevo.space/tools",
       "status": 200,
       "bytes": 6313,
-      "sha256": "816D313843C2A1D427B3E6D0402A8BCFE1EE5077FB2D1235310CDFA271F28276",
+      "sha256": "7EEA66B5EC7303DC78D2880C86B984ACC0123E01AAF0B976D725BC0FA8EA7B55",
       "contains_duat": true,
       "contains_handoff_v2_1": false,
       "contains_status": true
@@ -44,7 +44,7 @@
       "url": "https://medioevo.space/boundary",
       "status": 200,
       "bytes": 6313,
-      "sha256": "816D313843C2A1D427B3E6D0402A8BCFE1EE5077FB2D1235310CDFA271F28276",
+      "sha256": "7EEA66B5EC7303DC78D2880C86B984ACC0123E01AAF0B976D725BC0FA8EA7B55",
       "contains_duat": true,
       "contains_handoff_v2_1": false,
       "contains_status": true
@@ -53,7 +53,7 @@
       "url": "https://medioevo.space/duat",
       "status": 200,
       "bytes": 6313,
-      "sha256": "816D313843C2A1D427B3E6D0402A8BCFE1EE5077FB2D1235310CDFA271F28276",
+      "sha256": "7EEA66B5EC7303DC78D2880C86B984ACC0123E01AAF0B976D725BC0FA8EA7B55",
       "contains_duat": true,
       "contains_handoff_v2_1": false,
       "contains_status": true
@@ -62,7 +62,7 @@
       "url": "https://medioevo.space/handoff",
       "status": 200,
       "bytes": 6313,
-      "sha256": "816D313843C2A1D427B3E6D0402A8BCFE1EE5077FB2D1235310CDFA271F28276",
+      "sha256": "7EEA66B5EC7303DC78D2880C86B984ACC0123E01AAF0B976D725BC0FA8EA7B55",
       "contains_duat": true,
       "contains_handoff_v2_1": false,
       "contains_status": true
@@ -71,7 +71,7 @@
       "url": "https://medioevo.space/status",
       "status": 200,
       "bytes": 6313,
-      "sha256": "816D313843C2A1D427B3E6D0402A8BCFE1EE5077FB2D1235310CDFA271F28276",
+      "sha256": "7EEA66B5EC7303DC78D2880C86B984ACC0123E01AAF0B976D725BC0FA8EA7B55",
       "contains_duat": true,
       "contains_handoff_v2_1": false,
       "contains_status": true

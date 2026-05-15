@@ -25,6 +25,7 @@ External actions were rechecked on 2026-05-15. The operator explicitly authorize
   - Home community block with three prompts, short-book CTA and DUAT link.
   - DUAT field unlock panel and public-safe "where this goes" panel.
   - Sitemap, redirects and `llms.txt` updated for prompt/book discovery.
+  - Cloudflare Pages Clean URLs serve `/blog`, `/blog/prompts-definitivos` and `/prompts`; explicit `_redirects` rewrites for those routes were removed to avoid 308 loops.
 
 ## Verification
 

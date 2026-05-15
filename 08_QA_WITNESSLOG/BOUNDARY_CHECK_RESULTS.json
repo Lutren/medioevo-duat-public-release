@@ -1,31 +1,31 @@
 [
   {
     "path": ".gitignore",
-    "line": 10,
-    "type": ".env",
-    "severity": "INFO_BOUNDARY_DECLARATION"
-  },
-  {
-    "path": ".gitignore",
-    "line": 11,
-    "type": ".env",
-    "severity": "INFO_BOUNDARY_DECLARATION"
-  },
-  {
-    "path": ".gitignore",
     "line": 12,
     "type": ".env",
     "severity": "INFO_BOUNDARY_DECLARATION"
   },
   {
     "path": ".gitignore",
-    "line": 21,
-    "type": "private",
+    "line": 13,
+    "type": ".env",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": ".gitignore",
+    "line": 14,
+    "type": ".env",
     "severity": "INFO_BOUNDARY_DECLARATION"
   },
   {
     "path": ".gitignore",
     "line": 23,
+    "type": "private",
+    "severity": "INFO_BOUNDARY_DECLARATION"
+  },
+  {
+    "path": ".gitignore",
+    "line": 25,
     "type": "99_SOURCE_VAULT",
     "severity": "INFO_BOUNDARY_DECLARATION"
   },

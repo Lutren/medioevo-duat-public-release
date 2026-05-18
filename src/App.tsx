@@ -1848,10 +1848,10 @@ function HubRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElement
       <div className="module-grid" style={{ marginTop: 18 }}>
         <ModuleCard icon={BrainCircuit} title="OSIT method" body="State-aware information work: observe from an existing state, reduce residue, use gates and preserve evidence." />
         <ModuleCard icon={BarChart3} title="DUAT status" body="Synthetic simulation and display lane for public demos, replay, evidence panels and falsifier-oriented work." />
-        <ModuleCard icon={Workflow} title="Wabi status" body="Local workbench summary: provider state remains reviewed; gated workpack execution is local-only and evidence-backed." />
+        <ModuleCard icon={Workflow} title="Wabi status" body="Local workbench summary: provider state remains reviewed; gated workpack and BrowserBridge selection are local-only and evidence-backed." />
         <ModuleCard icon={Network} title="Agent Hub" body="Public concept for agent roles, queues, gates, workpacks and handoffs. Private messages and local execution are not exposed." />
         <ModuleCard icon={ShieldCheck} title="Boundary" body="Public pages exclude protected manuscripts, private canon, protected game systems, internal prompts, datasets and internal runtime." />
-        <ModuleCard icon={ClipboardCheck} title="QA" body="Public updates ship with build, test, secret scan and boundary scan before publication." />
+        <ModuleCard icon={ClipboardCheck} title="QA" body="Public updates ship with build, test, secret scan, boundary scan and source-intake review before publication." />
       </div>
       <div className="route-actions">
         <a className="command-link primary" href="/theory" onClick={(event) => navigate(event, "/theory")}>Read theory summary</a>
@@ -1937,8 +1937,8 @@ function RoadmapRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorEle
         body="The roadmap separates completed public-safe progress from research and blocked work. Private execution remains local."
       />
       <div className="content-grid">
-        <InfoList title="Done" items={["Wabi Operational Workbench consolidated", "Local Execute v0.2", "Workpack Bridge v0.1", "Agent Chat Routing v0.2", "Workpack Scheduler v0.1", "Multi-step Workpacks v0.2"]} />
-        <InfoList title="Next" items={["Agent Chat persistence/search v0.3", "Scheduler priorities/dependencies v0.2", "Public-safe docs update", "Claudio Mission Control dashboard v0.1"]} />
+        <InfoList title="Done" items={["Wabi Operational Workbench consolidated", "Local Execute v0.2", "Workpack Bridge v0.1", "Agent Chat Routing v0.2", "Workpack Scheduler v0.1", "Multi-step Workpacks v0.2", "BrowserBridge Selector Pack v0.2", "Source Intake registration discipline"]} />
+        <InfoList title="Next" items={["Agent Chat persistence/search v0.3", "Scheduler priorities/dependencies v0.2", "BrowserBridge setup guide", "Source Intake falsifier tests", "Claudio Mission Control dashboard v0.1"]} />
         <InfoList title="Research" items={["OSIT public-safe articles", "DUAT/Wabi dashboard bridge", "Manual NVIDIA route review before retry"]} />
         <InfoList title="Blocked" tone="warn" items={["NVIDIA smoke retry until route review passes", "Public bridge into private Claudio", "Publishing full canon or private runtime"]} />
       </div>
@@ -1974,6 +1974,8 @@ function Update20260518Route({ navigate }: { navigate: (event: MouseEvent<HTMLAn
         <StatusLine label="Coding acceptance" status="v0.3 PASS locally" />
         <StatusLine label="Workpack scheduler" status="manual tick / local-only" />
         <StatusLine label="Multi-step workpacks" status="v0.2 PASS locally" />
+        <StatusLine label="BrowserBridge selector" status="dry-run first / proposal-only" />
+        <StatusLine label="Source Intake" status="registered before import" />
         <StatusLine label="Publication boundary" status="Public-safe summaries only" />
       </div>
       <div className="route-actions">

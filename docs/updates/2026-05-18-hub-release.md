@@ -14,6 +14,7 @@ This update connects four public tracks:
 2. **DUAT** - synthetic simulation, replay, falsifier and evidence-panel work.
 3. **Wabi** - local-first operational workbench status, provider honesty, rollback and witness evidence.
 4. **Agent Hub** - a public role map for local agents, with internal execution kept private and gated.
+5. **OSIT Formal Lab** - reproducible public-safe metrics for `H_eff`, `R`, `Phi_eff`, MTS residue and gates: <https://github.com/Lutren/medioevo-osit-formal-lab>.
 
 ## Boundary
 

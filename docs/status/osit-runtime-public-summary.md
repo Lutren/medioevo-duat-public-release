@@ -13,6 +13,7 @@ OSIT Runtime Architecture is a local operational layer for evidence-aware workfl
 - WitnessLog: append-only evidence.
 - Handoff: a reconstruction aid for the next operator or agent.
 - ReconstructionTest: a way to verify that the state can be rebuilt from artifacts.
+- OSIT Formal Lab: a separate reproducible metrics repository for `H_eff`, `R`, `Phi_eff`, MTS residue and gates.
 
 ## Public Boundary
 
@@ -21,3 +22,5 @@ This is a high-level operational summary. It does not publish private runtime da
 ## Status
 
 The runtime architecture is active locally as an evidence and contract layer. Public copy should describe it as a method and architecture, not as proof of universal physics or real-world prediction.
+
+The public formal-lab companion lives at <https://github.com/Lutren/medioevo-osit-formal-lab>.

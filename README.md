@@ -13,6 +13,7 @@ This repository contains the public release only. Private canon, internal vaults
 - Read the 2026-05-18 MEDIOEVO Hub release update.
 - Visit the public MEDIOEVO Hub, Agent Hub, Theory and Roadmap pages.
 - Review the DUAT v0.4 evidence-panel summary and OSIT runtime summary.
+- Inspect the OSIT Formal Lab for reproducible public-safe metrics.
 - Download the three public-safe prompt campaign files.
 - Read the short public-safe manuscript: MEDIOEVO: Informacion, Residuo y Observacion.
 - Reuse ActionGate, WitnessLog, Source Card and boundary documentation.
@@ -53,6 +54,7 @@ Do not publish or import full manuscripts, private prompt material, private data
 - [2026-05-17 public-safe update](docs/updates/2026-05-17-public-safe-update.md)
 - [DUAT evidence panel v0.4](docs/status/duat-evidence-panel-v0-4.md)
 - [OSIT runtime public summary](docs/status/osit-runtime-public-summary.md)
+- [OSIT formal lab public summary](docs/status/osit-formal-lab-public-summary.md)
 - [Canon Tripartito status](docs/status/canon-tripartito-status-public-safe.md)
 - [Protected manuscript QA status](docs/status/fragmentos-qa-status-public-safe.md)
 

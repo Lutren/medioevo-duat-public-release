@@ -32,9 +32,15 @@ h1 { font-size:clamp(2.2rem, 7vw, 4.8rem); line-height:1; margin:0 0 14px; } h2 
     <li><span class="ok">Public Hub:</span> OSIT, DUAT, Wabi, Agent Hub and roadmap pages added.</li>
     <li><span class="ok">Local Hub:</span> pending tasks can be prepared as TaskSpecs, reviewed by GhostGate and queued locally.</li>
     <li><span class="ok">Agent Chat:</span> local-only MSN-style chat endpoint created for agent coordination.</li>
+    <li><span class="ok">Workpack Scheduler:</span> local manual-tick scheduling demonstrated with gates, rollback and dependency checks.</li>
+    <li><span class="ok">Multi-step Workpacks:</span> local multi-step workpacks demonstrated with per-step evidence and rollback.</li>
     <li><span class="review">Provider status:</span> NVIDIA route remains under review; no retry is allowed in this update.</li>
     <li><span class="block">Execution boundary:</span> public pages cannot run Claudio, Wabi or private local tasks.</li>
   </ul>
+</section>
+<section class="card">
+  <h2>Follow-up: gated local execution</h2>
+  <p>The internal operator lane now separates TaskSpec, GhostGate, rollback, WitnessLog, scheduler tick and multi-step workpack evidence. This is local-only. The public site does not expose private queues, internal workpack manifests, local endpoints or execution controls.</p>
 </section>
 <section class="card">
   <h2>Evidence boundary</h2>

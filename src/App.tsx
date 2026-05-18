@@ -1848,8 +1848,8 @@ function HubRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElement
       <div className="module-grid" style={{ marginTop: 18 }}>
         <ModuleCard icon={BrainCircuit} title="OSIT method" body="State-aware information work: observe from an existing state, reduce residue, use gates and preserve evidence." />
         <ModuleCard icon={BarChart3} title="DUAT status" body="Synthetic simulation and display lane for public demos, replay, evidence panels and falsifier-oriented work." />
-        <ModuleCard icon={Workflow} title="Wabi status" body="Local workbench summary: provider state remains reviewed, fallback-only coding acceptance passed in local sandbox." />
-        <ModuleCard icon={Network} title="Agent Hub" body="Public concept for agent roles, queues, gates and handoffs. Private messages and local execution are not exposed." />
+        <ModuleCard icon={Workflow} title="Wabi status" body="Local workbench summary: provider state remains reviewed; gated workpack execution is local-only and evidence-backed." />
+        <ModuleCard icon={Network} title="Agent Hub" body="Public concept for agent roles, queues, gates, workpacks and handoffs. Private messages and local execution are not exposed." />
         <ModuleCard icon={ShieldCheck} title="Boundary" body="Public pages exclude protected manuscripts, private canon, protected game systems, internal prompts, datasets and internal runtime." />
         <ModuleCard icon={ClipboardCheck} title="QA" body="Public updates ship with build, test, secret scan and boundary scan before publication." />
       </div>
@@ -1937,8 +1937,8 @@ function RoadmapRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorEle
         body="The roadmap separates completed public-safe progress from research and blocked work. Private execution remains local."
       />
       <div className="content-grid">
-        <InfoList title="Done" items={["Wabi Operational Workbench consolidated", "Tree Health PASS locally", "Fallback-only coding acceptance v0.3 PASS", "DUAT synthetic simulation lane active"]} />
-        <InfoList title="Next" items={["MEDIOEVO Hub v0.1", "Local Agent Hub v0.1", "MSN-style local agent chat", "Fallback-only coding acceptance v0.4"]} />
+        <InfoList title="Done" items={["Wabi Operational Workbench consolidated", "Local Execute v0.2", "Workpack Bridge v0.1", "Agent Chat Routing v0.2", "Workpack Scheduler v0.1", "Multi-step Workpacks v0.2"]} />
+        <InfoList title="Next" items={["Agent Chat persistence/search v0.3", "Scheduler priorities/dependencies v0.2", "Public-safe docs update", "Claudio Mission Control dashboard v0.1"]} />
         <InfoList title="Research" items={["OSIT public-safe articles", "DUAT/Wabi dashboard bridge", "Manual NVIDIA route review before retry"]} />
         <InfoList title="Blocked" tone="warn" items={["NVIDIA smoke retry until route review passes", "Public bridge into private Claudio", "Publishing full canon or private runtime"]} />
       </div>
@@ -1965,13 +1965,15 @@ function Update20260518Route({ navigate }: { navigate: (event: MouseEvent<HTMLAn
         </article>
         <article className="content-panel">
           <h2>Local hub</h2>
-          <p>Runs only on the owner machine. It prepares TaskSpecs, runs gates, queues local work and records witness events. It does not call cloud LLMs by default.</p>
+          <p>Runs only on the owner machine. It prepares TaskSpecs, runs gates, packages workpacks, schedules manual ticks and records witness events. It does not expose private execution to the public site.</p>
         </article>
       </div>
       <div className="content-grid">
         <StatusLine label="Wabi provider public-safe status" status="SMOKE_FAIL_REDACTED / route REVIEW" tone="blocked" />
         <StatusLine label="NVIDIA next smoke" status="DO_NOT_CALL" tone="blocked" />
         <StatusLine label="Coding acceptance" status="v0.3 PASS locally" />
+        <StatusLine label="Workpack scheduler" status="manual tick / local-only" />
+        <StatusLine label="Multi-step workpacks" status="v0.2 PASS locally" />
         <StatusLine label="Publication boundary" status="Public-safe summaries only" />
       </div>
       <div className="route-actions">

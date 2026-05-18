@@ -9,13 +9,37 @@ This roadmap describes the public-safe direction of the MEDIOEVO local agent sys
 - Local Operator Hub v0.1 created inside the local Wabi/Claudio environment.
 - Local agent chat v0.1 created as a local-only coordination surface.
 - Task preparation, GhostGate review and local queue flow are defined for internal use.
-- Direct execution remains blocked in v0.1.
+- Local Execute v0.2 demonstrated sandbox/docs-local execution with TaskSpec, GhostGate, rollback and WitnessLog.
+- Workpack Bridge v0.1 connected local hub tasks to reviewable workpacks.
+- Agent Chat Routing v0.2 can create TaskSpec and Workpack drafts without executing them.
+- Workpack Scheduler v0.1 demonstrated manual-tick execution with dependencies and blocked cloud lanes.
+- Multi-step Workpacks v0.2 demonstrated step dependencies, per-step rollback and full workpack rollback.
 
 ## Next
 
-### Local Execute v0.2
+### Agent Chat persistence/search v0.3
 
-Local Execute v0.2 should support only sandbox or documentation tasks. It must require:
+Planned improvements:
+
+- local search over public-safe message metadata;
+- room filters;
+- evidence links;
+- redaction checks;
+- export views that do not expose private messages publicly.
+
+### Scheduler priorities/dependencies v0.2
+
+Planned improvements:
+
+- clearer priority review;
+- dependency visualization;
+- retry policy review;
+- manual operator confirmation for higher-risk queues;
+- no hidden autonomy.
+
+## Local Execution Contract
+
+Internal local execution must continue to require:
 
 - a TaskSpec;
 - an ActionGate decision;
@@ -26,16 +50,6 @@ Local Execute v0.2 should support only sandbox or documentation tasks. It must r
 - no cloud LLM;
 - no NVIDIA retry;
 - no publication side effect.
-
-### Agent Chat v0.2
-
-Planned improvements:
-
-- local search;
-- room filters;
-- message-to-TaskSpec draft;
-- evidence links;
-- stronger redaction checks.
 
 ### Public Updates
 

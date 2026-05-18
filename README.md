@@ -11,6 +11,7 @@ This repository contains the public release only. Private canon, internal vaults
 - Use the Handoff v2.1 public contract and templates.
 - Read the 2026-05-17 public-safe evidence update.
 - Read the 2026-05-18 MEDIOEVO Hub release update.
+- Read the 2026-05-18 Workpack Scheduler and Multi-step Workpacks public-safe update.
 - Visit the public MEDIOEVO Hub, Agent Hub, Theory and Roadmap pages.
 - Review the DUAT v0.4 evidence-panel summary and OSIT runtime summary.
 - Inspect the OSIT Formal Lab for reproducible public-safe metrics.
@@ -46,6 +47,7 @@ Do not publish or import full manuscripts, private prompt material, private data
 ## Latest Public-Safe Update
 
 - [2026-05-18 MEDIOEVO Hub release](docs/updates/2026-05-18-hub-release.md)
+- [2026-05-18 Workpack Scheduler and Multi-step Workpacks update](docs/updates/2026-05-18-workpack-scheduler-multistep.md)
 - [Local Agent Hub roadmap](docs/roadmap/local-agent-hub-roadmap.md)
 - [Tripartite Framework public-safe summary](docs/theory/tripartite-framework-public-safe.md)
 - [Public Agent Hub overview](docs/agents/public-agent-hub-overview.md)

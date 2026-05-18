@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-05-18 - Workpack Scheduler and Multi-step Workpacks public-safe update
+
+- Added public-safe update note for Local Execute, Workpack Bridge, Agent Chat Routing, Workpack Scheduler and Multi-step Workpacks.
+- Updated Wabi local workbench status with gated scheduler and multi-step progress.
+- Updated Local Agent Hub roadmap to separate completed local gated execution work from next public-safe research and UI improvements.
+- Reaffirmed boundary: public pages are read-only and do not expose private runtime, workpack manifests, local paths, internal messages, credentials or protected material.
+
 ## 2026-05-18 - MEDIOEVO Hub public-safe follow-up
 
 - Added release notes for the live MEDIOEVO Hub.

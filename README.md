@@ -9,6 +9,8 @@ This repository contains the public release only. Private canon, internal vaults
 - Run the DUAT synthetic visual demo.
 - Inspect the Telecom / MessageBus surface.
 - Use the Handoff v2.1 public contract and templates.
+- Read the 2026-05-17 public-safe evidence update.
+- Review the DUAT v0.4 evidence-panel summary and OSIT runtime summary.
 - Download the three public-safe prompt campaign files.
 - Read the short public-safe manuscript: MEDIOEVO: Informacion, Residuo y Observacion.
 - Reuse ActionGate, WitnessLog, Source Card and boundary documentation.
@@ -16,7 +18,7 @@ This repository contains the public release only. Private canon, internal vaults
 
 ## Protected
 
-Do not publish or import full manuscripts, raw private prompts, private datasets, source zips, complete DUAT/GEODIA, Wabi-Sabi internals, Claudio private runtime, RPG/TCG, credentials, tokens or `.env` files.
+Do not publish or import full manuscripts, private prompt material, private datasets, source archives, complete DUAT/GEODIA, Wabi-Sabi internals, Claudio private runtime, private game systems or credential-bearing files.
 
 ## Routes
 
@@ -32,6 +34,14 @@ Do not publish or import full manuscripts, raw private prompts, private datasets
 - `/status`
 - `/telecom`
 - `/docs`
+
+## Latest Public-Safe Update
+
+- [2026-05-17 public-safe update](docs/updates/2026-05-17-public-safe-update.md)
+- [DUAT evidence panel v0.4](docs/status/duat-evidence-panel-v0-4.md)
+- [OSIT runtime public summary](docs/status/osit-runtime-public-summary.md)
+- [Canon Tripartito status](docs/status/canon-tripartito-status-public-safe.md)
+- [Fragmentos QA status](docs/status/fragmentos-qa-status-public-safe.md)
 
 ## Local Dev
 

@@ -126,6 +126,10 @@ const NAV_ITEMS = [
   { href: "/boundary", label: "Boundary" },
   { href: "/canon", label: "Canon" },
   { href: "/tools", label: "Tools" },
+  { href: "/hub", label: "Hub" },
+  { href: "/agents", label: "Agents" },
+  { href: "/theory", label: "Theory" },
+  { href: "/roadmap", label: "Roadmap" },
   { href: "/duat", label: "DUAT" },
   { href: "/telecom", label: "Telecom" },
   { href: "/handoff", label: "Handoff" },
@@ -183,7 +187,7 @@ const I18N: Record<LanguageCode, LocalizedCopy> = {
       eyebrow: "Public demo route",
       title: "DUAT City",
       lede: "A public-safe map of MEDIOEVO / OSIT agent infrastructure.",
-      notice: "Public-safe demo. This is not the full DUAT/GEODIA runtime. Protected systems, books, RPG/TCG, private prompts, datasets, secrets and internal agent logic are not included.",
+      notice: "Public-safe demo. This is not the full DUAT/GEODIA runtime. Protected systems, books, protected game systems, private prompt libraries, datasets, secrets and internal agent logic are not included.",
       cityKicker: "City shell",
       cityTitle: "Agent work as public districts",
       cityBody: "This route presents a toy city shell for visibility, evidence and safe routing. It does not connect to private runtimes, local logs or protected source material.",
@@ -248,7 +252,7 @@ const I18N: Record<LanguageCode, LocalizedCopy> = {
       eyebrow: "Ruta demo publica",
       title: "DUAT City",
       lede: "Un mapa publico seguro de la infraestructura de agentes MEDIOEVO / OSIT.",
-      notice: "Demo publica segura. Esto no es el runtime completo DUAT/GEODIA. Sistemas protegidos, libros, RPG/TCG, prompts privados, datasets, secretos y logica interna de agentes no estan incluidos.",
+      notice: "Demo publica segura. Esto no es el runtime completo DUAT/GEODIA. Sistemas protegidos, libros, sistemas de juego protegidos, bibliotecas privadas de prompts, datasets, secretos y logica interna de agentes no estan incluidos.",
       cityKicker: "Shell de ciudad",
       cityTitle: "Trabajo de agentes como distritos publicos",
       cityBody: "Esta ruta muestra una maqueta de ciudad para visibilidad, evidencia y enrutamiento seguro. No conecta con runtimes privados, logs locales ni material fuente protegido.",
@@ -314,7 +318,7 @@ const I18N: Record<LanguageCode, LocalizedCopy> = {
       eyebrow: "Публичная demo route",
       title: "DUAT City",
       lede: "Публично безопасная карта инфраструктуры агентов MEDIOEVO / OSIT.",
-      notice: "Публично безопасная демонстрация. Это не полный runtime DUAT/GEODIA. Защищенные системы, книги, RPG/TCG, частные prompts, datasets, secrets и внутренняя логика агентов не включены.",
+      notice: "Публично безопасная демонстрация. Это не полный runtime DUAT/GEODIA. Защищенные системы, книги, protected game systems, private prompt libraries, datasets, secrets и внутренняя логика агентов не включены.",
       cityKicker: "Городская оболочка",
       cityTitle: "Работа агентов как публичные районы",
       cityBody: "Эта route показывает toy city shell для видимости, доказательств и безопасной маршрутизации. Она не подключается к private runtimes, local logs или защищенным источникам.",
@@ -380,7 +384,7 @@ const I18N: Record<LanguageCode, LocalizedCopy> = {
       eyebrow: "公开演示路线",
       title: "DUAT City",
       lede: "MEDIOEVO / OSIT agent infrastructure 的 public-safe 地图。",
-      notice: "Public-safe demo. This is not the full DUAT/GEODIA runtime. Protected systems, books, RPG/TCG, private prompts, datasets, secrets and internal agent logic are not included.",
+      notice: "Public-safe demo. This is not the full DUAT/GEODIA runtime. Protected systems, books, protected game systems, private prompt libraries, datasets, secrets and internal agent logic are not included.",
       cityKicker: "城市外壳",
       cityTitle: "把代理工作组织成公开区块",
       cityBody: "这条路线是一个 toy city shell，用于可见性、证据和安全路由。它不连接 private runtimes、local logs 或受保护源材料。",
@@ -419,6 +423,12 @@ const ROUTE_PATHS = [
   "/boundary",
   "/canon",
   "/tools",
+  "/hub",
+  "/agents",
+  "/theory",
+  "/roadmap",
+  "/updates/2026-05-18",
+  "/updates-2026-05-18",
   "/duat",
   "/telecom",
   "/teleco",
@@ -692,6 +702,11 @@ export default function App() {
       {path === "/boundary" ? <BoundaryRoute navigate={navigate} /> : null}
       {path === "/canon" ? <CanonRoute navigate={navigate} /> : null}
       {path === "/tools" ? <ToolsRoute navigate={navigate} /> : null}
+      {path === "/hub" ? <HubRoute navigate={navigate} /> : null}
+      {path === "/agents" ? <AgentsRoute navigate={navigate} /> : null}
+      {path === "/theory" ? <TheoryRoute navigate={navigate} /> : null}
+      {path === "/roadmap" ? <RoadmapRoute navigate={navigate} /> : null}
+      {path === "/updates/2026-05-18" || path === "/updates-2026-05-18" ? <Update20260518Route navigate={navigate} /> : null}
       {path === "/duat" ? <DuatRoute /> : null}
       {path === "/telecom" || path === "/teleco" ? <TelecomCore /> : null}
       {path === "/handoff" || path === "/handoff-hub" ? <HandoffHubRoute navigate={navigate} /> : null}
@@ -1162,7 +1177,7 @@ function DespertarPreviewRoute({ navigate }: { navigate: (event: MouseEvent<HTML
       <RouteHeader
         eyebrow="MEDIOEVO books"
         title="DESPERTAR is the public entry"
-        body="A single reader-facing door into MEDIOEVO, prepared with a human reading gate and local editorial QA. It stays separate from private archives, RPG/TCG material and external science claims."
+        body="A single reader-facing door into MEDIOEVO, prepared with a human reading gate and local editorial QA. It stays separate from private archives, protected game material and external science claims."
       />
       <div className="content-grid two">
         <article className="content-panel lead-panel">
@@ -1188,7 +1203,7 @@ function DespertarPreviewRoute({ navigate }: { navigate: (event: MouseEvent<HTML
           <ul className="check-list">
             <li><CheckCircle2 size={16} /> Public-safe preview only.</li>
             <li><CheckCircle2 size={16} /> No full private archive.</li>
-            <li><CheckCircle2 size={16} /> No RPG/TCG distribution from this route.</li>
+            <li><CheckCircle2 size={16} /> No protected game-system distribution from this route.</li>
             <li><CheckCircle2 size={16} /> No real bestseller claim until market evidence exists.</li>
             <li><CheckCircle2 size={16} /> Diegetic systems remain fiction unless separately validated.</li>
           </ul>
@@ -1476,8 +1491,8 @@ function StatusRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElem
         <article className="content-panel">
           <h2>Blocked from public release</h2>
           <ul className="check-list warn">
-            <li><AlertTriangle size={16} /> Private canon, raw prompts and source vaults</li>
-            <li><AlertTriangle size={16} /> Full books, manuscripts, RPG/TCG and DUAT/GEODIA internals</li>
+            <li><AlertTriangle size={16} /> Private canon, internal prompt libraries and source vaults</li>
+            <li><AlertTriangle size={16} /> Full books, manuscripts, protected game systems and DUAT/GEODIA internals</li>
             <li><AlertTriangle size={16} /> Credentials, tokens, local runtime logs and .env files</li>
             <li><AlertTriangle size={16} /> Unsupported claims about autonomous general intelligence, consciousness or physics</li>
           </ul>
@@ -1512,7 +1527,7 @@ function BoundaryRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorEl
       />
       <div className="content-grid two">
         <InfoList title="Publicable" items={["ActionGate", "WitnessLog", "Handoff v2.1", "Source Cards", "Claim Classifier", "Secret Scanner", "Canon Compiler", "Context Compressor", "agent templates", "toy demos", "synthetic data", "public roadmap"]} />
-        <InfoList title="Protected" tone="warn" items={["full books and unpublished manuscripts", "RPG/TCG systems and assets", "complete DUAT/GEODIA", "Wabi-Sabi internals", "Claudio private runtime", "raw prompts", "private datasets", "source zips", "credentials and local logs"]} />
+        <InfoList title="Protected" tone="warn" items={["full books and unpublished manuscripts", "protected game systems and assets", "complete DUAT/GEODIA", "Wabi-Sabi internals", "Claudio private runtime", "internal prompt libraries", "private datasets", "source zips", "credentials and local logs"]} />
       </div>
     </section>
   );
@@ -1548,7 +1563,7 @@ function ToolsRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorEleme
       />
       <div className="content-grid two">
         <InfoList title="Tooling candidates" items={["SecretScan", "BoundaryCheck", "Claim Classifier", "Handoff v2.1 validator", "Context Compressor", "Canon Compiler", "Source Card template", "WitnessLog reader"]} />
-        <InfoList title="Demo constraints" tone="warn" items={["synthetic data only", "no local machine paths", "no credentials", "no private books", "no raw prompts", "no protected runtime internals"]} />
+        <InfoList title="Demo constraints" tone="warn" items={["synthetic data only", "no local machine paths", "no credentials", "no private books", "no private prompt libraries", "no protected runtime internals"]} />
       </div>
     </section>
   );
@@ -1811,6 +1826,157 @@ function DevDayRoute() {
             </article>
           );
         })}
+      </div>
+    </section>
+  );
+}
+
+function HubRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElement>, href: string) => void }) {
+  return (
+    <section className="route-surface">
+      <RouteHeader
+        eyebrow="MEDIOEVO Hub v0.1"
+        title="Public-safe OSIT and local-agent status"
+        body="A public overview of the MEDIOEVO / OSIT method, DUAT synthetic simulation work, Wabi local workbench evidence and the Agent Hub concept. This page is read-only and does not connect to private Claudio or Wabi runtimes."
+      />
+      <div className="signal-strip">
+        <Metric label="Public layer" value="READ_ONLY" />
+        <Metric label="Local execution" value="NOT_CONNECTED" />
+        <Metric label="Claim gate" value="ACTIVE" />
+        <Metric label="Private runtime" value="PROTECTED" />
+      </div>
+      <div className="module-grid" style={{ marginTop: 18 }}>
+        <ModuleCard icon={BrainCircuit} title="OSIT method" body="State-aware information work: observe from an existing state, reduce residue, use gates and preserve evidence." />
+        <ModuleCard icon={BarChart3} title="DUAT status" body="Synthetic simulation and display lane for public demos, replay, evidence panels and falsifier-oriented work." />
+        <ModuleCard icon={Workflow} title="Wabi status" body="Local workbench summary: provider state remains reviewed, fallback-only coding acceptance passed in local sandbox." />
+        <ModuleCard icon={Network} title="Agent Hub" body="Public concept for agent roles, queues, gates and handoffs. Private messages and local execution are not exposed." />
+        <ModuleCard icon={ShieldCheck} title="Boundary" body="Public pages exclude protected manuscripts, private canon, protected game systems, internal prompts, datasets and internal runtime." />
+        <ModuleCard icon={ClipboardCheck} title="QA" body="Public updates ship with build, test, secret scan and boundary scan before publication." />
+      </div>
+      <div className="route-actions">
+        <a className="command-link primary" href="/theory" onClick={(event) => navigate(event, "/theory")}>Read theory summary</a>
+        <a className="command-link" href="/agents" onClick={(event) => navigate(event, "/agents")}>View agent roles</a>
+        <a className="command-link" href="/roadmap" onClick={(event) => navigate(event, "/roadmap")}>View roadmap</a>
+        <a className="command-link" href="/updates/2026-05-18" onClick={(event) => navigate(event, "/updates/2026-05-18")}>View update</a>
+      </div>
+    </section>
+  );
+}
+
+function AgentsRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElement>, href: string) => void }) {
+  const publicAgents = [
+    ["Core Orchestrator", "Routes local tasks through evidence and gates."],
+    ["Gatekeeper", "Blocks unsafe publication, cloud calls and unsupported claims."],
+    ["Memory Keeper", "Maintains handoff, witness and continuity records."],
+    ["Wabi Local Programmer", "Represents fallback-only local coding loops in sandbox."],
+    ["Test Runner", "Keeps local proof tied to tests and compile checks."],
+    ["Release Sentinel", "Separates public-safe updates from protected internal work."],
+    ["DUAT Display Agent", "Maintains display concepts and synthetic evidence panels."],
+    ["GEODIA Sim Agent", "Tracks synthetic simulation work without real prediction claims."],
+  ];
+  return (
+    <section className="route-surface">
+      <RouteHeader
+        eyebrow="Agent Hub v0.1"
+        title="Agent roles without private execution"
+        body="These cards describe public-safe roles. They are not live internal agents, do not expose local messages and cannot execute Claudio from the website."
+      />
+      <div className="content-grid">
+        {publicAgents.map(([name, body]) => (
+          <article className="content-panel" key={name}>
+            <Network size={20} />
+            <h2>{name}</h2>
+            <p>{body}</p>
+            <p className="muted-line">Public status: role card only.</p>
+          </article>
+        ))}
+      </div>
+      <div className="content-grid two">
+        <InfoList title="Public buttons allowed" items={["View roadmap", "Read theory summary", "Open update", "Copy public-safe prompt text"]} />
+        <InfoList title="Private actions blocked" tone="warn" items={["Run Claudio", "Queue internal work", "Read private messages", "Access local Wabi endpoints"]} />
+      </div>
+      <div className="route-actions">
+        <a className="command-link" href="/hub" onClick={(event) => navigate(event, "/hub")}>Back to hub</a>
+      </div>
+    </section>
+  );
+}
+
+function TheoryRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElement>, href: string) => void }) {
+  return (
+    <section className="route-surface">
+      <RouteHeader
+        eyebrow="Public-safe theory"
+        title="OSIT as an operational framework"
+        body="The public theory layer is presented as proposed theory and engineering method. It is intentionally smaller than the private canon and does not present proof-level physics claims."
+      />
+      <div className="workflow-lanes">
+        <WorkflowNode icon={Eye} title="Observer state" body="Work begins from an existing state, not from a blank context." />
+        <WorkflowNode icon={Activity} title="Residue" body="Accumulated unresolved state should be reduced before expanding scope." />
+        <WorkflowNode icon={ShieldCheck} title="Gates" body="ActionGate and GhostGate separate planning from side effects and rollback." />
+        <WorkflowNode icon={FileText} title="Handoff" body="Continuity is externalized into evidence, briefs and fingerprints." />
+      </div>
+      <div className="content-grid two">
+        <InfoList title="Safe public framing" items={["Proposed theory", "Operational method", "Synthetic simulation", "Local-first tooling", "Evidence-gated workflow"]} />
+        <InfoList title="Blocked framing" tone="warn" items={["General-intelligence achievement claims", "New-physics proof claims", "Real-world prediction guarantees", "Absolute safety claims", "Private canon transfer"]} />
+      </div>
+      <div className="route-actions">
+        <a className="command-link primary" href="/roadmap" onClick={(event) => navigate(event, "/roadmap")}>View roadmap</a>
+        <a className="command-link" href="/hub" onClick={(event) => navigate(event, "/hub")}>Back to hub</a>
+      </div>
+    </section>
+  );
+}
+
+function RoadmapRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElement>, href: string) => void }) {
+  return (
+    <section className="route-surface">
+      <RouteHeader
+        eyebrow="Roadmap"
+        title="Public-safe pending work"
+        body="The roadmap separates completed public-safe progress from research and blocked work. Private execution remains local."
+      />
+      <div className="content-grid">
+        <InfoList title="Done" items={["Wabi Operational Workbench consolidated", "Tree Health PASS locally", "Fallback-only coding acceptance v0.3 PASS", "DUAT synthetic simulation lane active"]} />
+        <InfoList title="Next" items={["MEDIOEVO Hub v0.1", "Local Agent Hub v0.1", "MSN-style local agent chat", "Fallback-only coding acceptance v0.4"]} />
+        <InfoList title="Research" items={["OSIT public-safe articles", "DUAT/Wabi dashboard bridge", "Manual NVIDIA route review before retry"]} />
+        <InfoList title="Blocked" tone="warn" items={["NVIDIA smoke retry until route review passes", "Public bridge into private Claudio", "Publishing full canon or private runtime"]} />
+      </div>
+      <div className="route-actions">
+        <a className="command-link primary" href="/updates/2026-05-18" onClick={(event) => navigate(event, "/updates/2026-05-18")}>Read update</a>
+        <a className="command-link" href="/hub" onClick={(event) => navigate(event, "/hub")}>Back to hub</a>
+      </div>
+    </section>
+  );
+}
+
+function Update20260518Route({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElement>, href: string) => void }) {
+  return (
+    <section className="route-surface">
+      <RouteHeader
+        eyebrow="Update 2026-05-18"
+        title="MEDIOEVO Hub and local agent hub split"
+        body="This update introduces a public-safe hub and a separate local operator hub. Public pages are informational. Local execution remains gated and private."
+      />
+      <div className="content-grid two">
+        <article className="content-panel">
+          <h2>Public hub</h2>
+          <p>Summarizes OSIT, DUAT, Wabi, Agent Hub roles, roadmap and boundaries. It does not expose private paths, local endpoints, internal messages or protected source material.</p>
+        </article>
+        <article className="content-panel">
+          <h2>Local hub</h2>
+          <p>Runs only on the owner machine. It prepares TaskSpecs, runs gates, queues local work and records witness events. It does not call cloud LLMs by default.</p>
+        </article>
+      </div>
+      <div className="content-grid">
+        <StatusLine label="Wabi provider public-safe status" status="SMOKE_FAIL_REDACTED / route REVIEW" tone="blocked" />
+        <StatusLine label="NVIDIA next smoke" status="DO_NOT_CALL" tone="blocked" />
+        <StatusLine label="Coding acceptance" status="v0.3 PASS locally" />
+        <StatusLine label="Publication boundary" status="Public-safe summaries only" />
+      </div>
+      <div className="route-actions">
+        <a className="command-link primary" href="/hub" onClick={(event) => navigate(event, "/hub")}>Open hub</a>
+        <a className="command-link" href="/theory" onClick={(event) => navigate(event, "/theory")}>Theory summary</a>
       </div>
     </section>
   );

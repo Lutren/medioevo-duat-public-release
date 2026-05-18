@@ -2,7 +2,7 @@
 
 MEDIOEVO / DUAT is a public-safe cognitive engineering and agent orchestration release focused on reducing informational residue across complex workflows.
 
-This repository contains the public release only. Private canon, internal vaults, credentials, unpublished research material, private prompt systems, complete books, RPG/TCG systems and private runtime internals are intentionally excluded.
+This repository contains the public release only. Private canon, internal vaults, credentials, unpublished research material, private prompt systems, complete books, protected game systems and private runtime internals are intentionally excluded.
 
 ## Use Now
 
@@ -10,6 +10,8 @@ This repository contains the public release only. Private canon, internal vaults
 - Inspect the Telecom / MessageBus surface.
 - Use the Handoff v2.1 public contract and templates.
 - Read the 2026-05-17 public-safe evidence update.
+- Read the 2026-05-18 MEDIOEVO Hub release update.
+- Visit the public MEDIOEVO Hub, Agent Hub, Theory and Roadmap pages.
 - Review the DUAT v0.4 evidence-panel summary and OSIT runtime summary.
 - Download the three public-safe prompt campaign files.
 - Read the short public-safe manuscript: MEDIOEVO: Informacion, Residuo y Observacion.
@@ -34,14 +36,25 @@ Do not publish or import full manuscripts, private prompt material, private data
 - `/status`
 - `/telecom`
 - `/docs`
+- `/hub`
+- `/agents`
+- `/theory`
+- `/roadmap`
+- `/updates/2026-05-18`
 
 ## Latest Public-Safe Update
 
+- [2026-05-18 MEDIOEVO Hub release](docs/updates/2026-05-18-hub-release.md)
+- [Local Agent Hub roadmap](docs/roadmap/local-agent-hub-roadmap.md)
+- [Tripartite Framework public-safe summary](docs/theory/tripartite-framework-public-safe.md)
+- [Public Agent Hub overview](docs/agents/public-agent-hub-overview.md)
+- [Wabi local workbench public status](docs/wabi/local-workbench-public-status.md)
+- [DUAT synthetic simulation public status](docs/duat/synthetic-simulation-public-status.md)
 - [2026-05-17 public-safe update](docs/updates/2026-05-17-public-safe-update.md)
 - [DUAT evidence panel v0.4](docs/status/duat-evidence-panel-v0-4.md)
 - [OSIT runtime public summary](docs/status/osit-runtime-public-summary.md)
 - [Canon Tripartito status](docs/status/canon-tripartito-status-public-safe.md)
-- [Fragmentos QA status](docs/status/fragmentos-qa-status-public-safe.md)
+- [Protected manuscript QA status](docs/status/fragmentos-qa-status-public-safe.md)
 
 ## Local Dev
 

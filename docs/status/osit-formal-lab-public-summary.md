@@ -25,6 +25,16 @@ It excludes private MEDIOEVO books, RPG/TCG material, Claudio/Wabi/DUAT private 
 - Python package scaffold: `src/osit_lab`.
 - Metrics modules: `measure_tools`, `mts`, `gates`.
 - Tests: `pytest` coverage for entropy, `H_eff`, channel residue, channel `Phi_eff` and gates.
+- Minimal synthetic examples:
+  - `examples/basic_measure_tools.py`;
+  - `examples/mts_channel_demo.py`;
+  - `examples/gates_demo.py`.
 - Claim boundary: `CLAIMS.md`.
 - Private exclusions: `PRIVATE_EXCLUSIONS.md`.
 
+## Example Boundary
+
+The examples use synthetic values only. They do not use real social data,
+private runtime telemetry, protected MEDIOEVO canon, raw prompts or deployment
+logs. They demonstrate API usage and gate posture, not prediction or scientific
+proof.

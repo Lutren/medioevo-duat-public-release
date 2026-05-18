@@ -55,6 +55,7 @@ Do not publish or import full manuscripts, private prompt material, private data
 - [DUAT evidence panel v0.4](docs/status/duat-evidence-panel-v0-4.md)
 - [OSIT runtime public summary](docs/status/osit-runtime-public-summary.md)
 - [OSIT formal lab public summary](docs/status/osit-formal-lab-public-summary.md)
+- [OSIT formal lab examples update](docs/updates/2026-05-18-formal-lab-examples.md)
 - [Canon Tripartito status](docs/status/canon-tripartito-status-public-safe.md)
 - [Protected manuscript QA status](docs/status/fragmentos-qa-status-public-safe.md)
 

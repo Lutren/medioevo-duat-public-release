@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MEDIOEVO Agent Hub · Public Role Map</title>
+<meta name="description" content="Public-safe role map for the MEDIOEVO local agent hub." />
+<link rel="canonical" href="https://medioevo.space/agents" />
+<style>
+:root { color-scheme:dark; --bg:#050914; --panel:#101827; --text:#edf4ff; --muted:#a8b6c9; --line:#273449; --accent:#7dd3fc; }
+* { box-sizing:border-box; } body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background:radial-gradient(circle at 18% 0%, #14243d 0, #050914 34rem); color:var(--text); line-height:1.62; }
+main { width:min(1120px, calc(100% - 32px)); margin:0 auto; padding:44px 0 76px; } nav { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:36px; }
+a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; } nav a { border:1px solid var(--line); border-radius:999px; padding:7px 12px; color:var(--text); background:rgba(255,255,255,.035); }
+h1 { font-size:clamp(2.2rem, 7vw, 4.8rem); line-height:1; margin:0 0 14px; } h2 { margin-top:34px; font-size:1.42rem; }
+.lede { max-width:850px; color:#d7e7fb; font-size:1.18rem; } .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(235px,1fr)); gap:14px; margin-top:22px; }
+.card { border:1px solid var(--line); background:rgba(16,24,39,.78); border-radius:8px; padding:18px; } .muted { color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<nav aria-label="Primary navigation">
+  <a href="/">Home</a><a href="/hub">Hub</a><a href="/agents">Agents</a><a href="/theory">Theory</a><a href="/roadmap">Roadmap</a><a href="/updates/2026-05-18">Update</a>
+</nav>
+<header>
+  <p class="muted">Local-only execution, public role map</p>
+  <h1>Agent Hub</h1>
+  <p class="lede">The public view describes roles, not live internal messages. Real task queues, ActionGate checks, GhostGate review, rollback and WitnessLog entries remain inside the local operator environment.</p>
+</header>
+<section class="grid">
+  <article class="card"><h2>Core Orchestrator</h2><p>Coordinates local work into TaskSpecs, evidence and handoff. Public surface: role only.</p></article>
+  <article class="card"><h2>Gatekeeper</h2><p>Classifies actions as approve, review or block before local execution.</p></article>
+  <article class="card"><h2>Memory Keeper</h2><p>Maintains briefs, decisions, assumptions, risks and session fingerprints.</p></article>
+  <article class="card"><h2>Wabi Programmer</h2><p>Runs fallback-only coding acceptance inside sandboxed local fixtures.</p></article>
+  <article class="card"><h2>Safe Executor</h2><p>Keeps apply separate from planning, with rollback before write operations.</p></article>
+  <article class="card"><h2>Boundary Scanner</h2><p>Checks public/private boundaries, secrets and blocked claims before release.</p></article>
+  <article class="card"><h2>DUAT Display Agent</h2><p>Summarizes synthetic simulation and evidence surfaces without prediction claims.</p></article>
+  <article class="card"><h2>GEODIA Simulation Agent</h2><p>Tracks local simulation status, test evidence and replay-friendly outputs.</p></article>
+</section>
+<section class="card">
+  <h2>What is not public</h2>
+  <p>Internal chat logs, private queues, protected source material, local paths, runtime code and credentials are not bridged to this site.</p>
+</section>
+</main>
+</body>
+</html>

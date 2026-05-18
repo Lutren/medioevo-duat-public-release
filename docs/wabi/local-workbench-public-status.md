@@ -12,6 +12,7 @@ This document is a public-safe status note. It does not publish private Wabi/Cla
 - Local Execute: sandbox/docs tasks require TaskSpec, GhostGate, rollback and WitnessLog.
 - Workpack Scheduler: manual-tick queue demonstrated locally with gates and dependency checks.
 - Multi-step Workpacks: demonstrated locally with per-step gates, per-step rollback and full workpack rollback.
+- BrowserBridge Selector Pack: dry-run-first selection, service readiness ranking and proposal-only handling are documented locally; browser send remains gated.
 - Provider status: honest review state.
 - NVIDIA retry: blocked until route review.
 - Public execution bridge: not provided.
@@ -33,6 +34,7 @@ The local coding lane has moved from single sandbox tasks into gated workpacks:
 - Workpack Bridge packages local tasks into reviewable workpacks.
 - Workpack Scheduler runs by manual tick only; it is not hidden autonomy.
 - Multi-step Workpacks allow step dependencies and rollback per step.
+- BrowserBridge prepares local browser/council work without sending private workspace material; external send requires explicit gates and public/sanitized payloads.
 
 Public pages describe the method and status only. They do not expose internal workpack manifests, local endpoints, local paths or execution controls.
 

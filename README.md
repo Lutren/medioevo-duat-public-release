@@ -12,6 +12,7 @@ This repository contains the public release only. Private canon, internal vaults
 - Read the 2026-05-17 public-safe evidence update.
 - Read the 2026-05-18 MEDIOEVO Hub release update.
 - Read the 2026-05-18 Workpack Scheduler and Multi-step Workpacks public-safe update.
+- Review the public-safe state note for BrowserBridge selection and Source Intake discipline.
 - Visit the public MEDIOEVO Hub, Agent Hub, Theory and Roadmap pages.
 - Review the DUAT v0.4 evidence-panel summary and OSIT runtime summary.
 - Inspect the OSIT Formal Lab for reproducible public-safe metrics.

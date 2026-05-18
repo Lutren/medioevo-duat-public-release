@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-05-18 - State reconciliation public-safe note
+
+- Added public-safe BrowserBridge Selector Pack status: dry-run first, council ranking, no default browser send and proposal-only handling.
+- Added Source Intake discipline note: protected/review material is registered before import, cleanup or publication.
+- Reaffirmed boundary: no private workspace, raw prompts, local paths, protected source material or credentials are published.
+
 ## 2026-05-18 - Workpack Scheduler and Multi-step Workpacks public-safe update
 
 - Added public-safe update note for Local Execute, Workpack Bridge, Agent Chat Routing, Workpack Scheduler and Multi-step Workpacks.

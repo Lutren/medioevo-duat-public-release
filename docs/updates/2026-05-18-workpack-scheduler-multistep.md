@@ -9,6 +9,8 @@ The local operator system now has a gated workpack lane:
 - **Agent Chat Routing v0.2**: local messages can create TaskSpec and Workpack drafts, but do not execute work.
 - **Workpack Scheduler v0.1**: approved workpacks can run by manual tick, with max concurrency 1 and dependency checks.
 - **Multi-step Workpacks v0.2**: workpacks can contain multiple local steps, each with its own gate, rollback and evidence.
+- **BrowserBridge Selector Pack v0.2**: local browser bridge selection is dry-run first, ranks service readiness, and keeps external responses as proposal-only artifacts.
+- **Source Intake discipline**: new source material is registered with boundaries before any import, cleanup or publication.
 
 ## Public Boundary
 
@@ -26,6 +28,7 @@ The public provider status remains conservative:
 - NVIDIA retry remains blocked until manual route review.
 - DeepSeek remains under quota/billing review.
 - Private workspace material is not sent to cloud LLMs.
+- Browser send remains double opt-in only and was not used for this public update.
 - No public page claims cloud-provider success.
 
 ## Why It Matters

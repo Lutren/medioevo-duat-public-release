@@ -14,6 +14,8 @@ This roadmap describes the public-safe direction of the MEDIOEVO local agent sys
 - Agent Chat Routing v0.2 can create TaskSpec and Workpack drafts without executing them.
 - Workpack Scheduler v0.1 demonstrated manual-tick execution with dependencies and blocked cloud lanes.
 - Multi-step Workpacks v0.2 demonstrated step dependencies, per-step rollback and full workpack rollback.
+- BrowserBridge Selector Pack v0.2 demonstrated dry-run-first service selection, council ranking and proposal-only conversion without external send.
+- Source Intake discipline registered protected/review material before any import, cleanup or publication.
 
 ## Next
 
@@ -37,6 +39,22 @@ Planned improvements:
 - manual operator confirmation for higher-risk queues;
 - no hidden autonomy.
 
+### BrowserBridge setup notes
+
+Planned improvements:
+
+- redacted setup guide for optional browser adapters;
+- public synthetic smoke only after explicit double opt-in;
+- no private workspace, prompts or local paths in browser payloads.
+
+### Source Intake falsifier tests
+
+Planned improvements:
+
+- choose one registered source delta;
+- write a falsifier/test before any selective extraction;
+- keep raw source adoption blocked.
+
 ## Local Execution Contract
 
 Internal local execution must continue to require:
@@ -50,6 +68,7 @@ Internal local execution must continue to require:
 - no cloud LLM;
 - no NVIDIA retry;
 - no publication side effect.
+- no browser send without explicit double opt-in and public/sanitized payload.
 
 ### Public Updates
 

@@ -35,6 +35,9 @@ h1 { font-size:clamp(2.2rem, 7vw, 4.8rem); line-height:1; margin:0 0 14px; } h2 
     <li><span class="ok">Workpack Scheduler:</span> local manual-tick scheduling demonstrated with gates, rollback and dependency checks.</li>
     <li><span class="ok">Multi-step Workpacks:</span> local multi-step workpacks demonstrated with per-step evidence and rollback.</li>
     <li><span class="ok">BrowserBridge Selector Pack:</span> dry-run-first browser selection, council ranking and proposal-only conversion documented locally.</li>
+    <li><span class="ok">Agent Chat Search:</span> local persistence/search and hash-chain status added without public message export.</li>
+    <li><span class="ok">Claudio Mission Control:</span> local read-only command surface added for agents, workpacks, scheduler, BrowserBridge, provider state, risks and evidence.</li>
+    <li><span class="ok">Wabi MCP Bridge plan:</span> local-first bridge planned with read-only tools first, prepare-only drafts second and gated-write only under TaskSpec, GhostGate, rollback and WitnessLog.</li>
     <li><span class="ok">Source Intake discipline:</span> protected or review material is registered before import, cleanup or publication.</li>
     <li><span class="review">Provider status:</span> NVIDIA route remains under review; no retry is allowed in this update.</li>
     <li><span class="block">Execution boundary:</span> public pages cannot run Claudio, Wabi or private local tasks.</li>
@@ -47,6 +50,10 @@ h1 { font-size:clamp(2.2rem, 7vw, 4.8rem); line-height:1; margin:0 0 14px; } h2 
 <section class="card">
   <h2>Follow-up: selector and intake discipline</h2>
   <p>BrowserBridge selection remains dry-run first and proposal-only by default. External browser send requires explicit gates and public or sanitized payloads. Source Intake remains registration-first: protected material is not imported, copied or published from a raw source.</p>
+</section>
+<section class="card">
+  <h2>Follow-up: Mission Control and Wabi MCP Bridge</h2>
+  <p>Mission Control is local and read-only. The Wabi MCP Bridge roadmap is local-first: read-only status and evidence first, prepare-only drafts second and gated-write only after local gates. The public site remains an informational layer and does not expose a runtime bridge.</p>
 </section>
 <section class="card">
   <h2>Evidence boundary</h2>

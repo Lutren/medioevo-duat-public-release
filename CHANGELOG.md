@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-05-18 - Mission Control and Wabi MCP Bridge public-safe update
+
+- Added public-safe Mission Control v0.1 summary.
+- Added Wabi MCP Bridge public-safe architecture and roadmap notes.
+- Updated Hub, roadmap and 2026-05-18 update copy to distinguish public documentation from local gated runtime.
+- Preserved private runtime, internal chat, workpack payload and local execution boundaries.
+
 ## 2026-05-18 - State reconciliation public-safe note
 
 - Added public-safe BrowserBridge Selector Pack status: dry-run first, council ranking, no default browser send and proposal-only handling.

@@ -12,6 +12,8 @@ It does not expose private work queues, local messages, private source material 
 - **Wabi Programmer** - handles local coding acceptance inside sandboxed tasks.
 - **Safe Executor** - separates planning from apply and requires rollback.
 - **Boundary Scanner** - checks private/public, secret and claim boundaries.
+- **Mission Control Reader** - summarizes local operational evidence without executing or mutating.
+- **MCP Bridge Planner** - designs safe read-only and draft-only tool access before any gated write path.
 - **DUAT Display Agent** - summarizes synthetic simulation and evidence surfaces.
 - **GEODIA Simulation Agent** - tracks simulation status and replay-friendly evidence.
 

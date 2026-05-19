@@ -1876,7 +1876,7 @@ function AgentsRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElem
     ["Test Runner", "Keeps local proof tied to tests and compile checks."],
     ["Release Sentinel", "Separates public-safe updates from protected internal work."],
     ["Mission Control Reader", "Summarizes local operational evidence without executing or mutating."],
-    ["MCP Bridge Planner", "Designs safe read-only and draft-only tool access before any gated write path."],
+    ["Wabi MCP Bridge Planner", "Designs safe read-only and draft-only tool access before any gated write path."],
     ["DUAT Display Agent", "Maintains display concepts and synthetic evidence panels."],
     ["GEODIA Sim Agent", "Tracks synthetic simulation work without real prediction claims."],
   ];

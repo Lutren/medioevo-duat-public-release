@@ -12,6 +12,7 @@ This repository contains the public release only. Private canon, internal vaults
 - Read the 2026-05-17 public-safe evidence update.
 - Read the 2026-05-18 MEDIOEVO Hub release update.
 - Read the 2026-05-18 Workpack Scheduler and Multi-step Workpacks public-safe update.
+- Read the 2026-05-18 Mission Control and Wabi MCP Bridge public-safe update.
 - Review the public-safe state note for BrowserBridge selection and Source Intake discipline.
 - Visit the public MEDIOEVO Hub, Agent Hub, Theory and Roadmap pages.
 - Review the DUAT v0.4 evidence-panel summary and OSIT runtime summary.
@@ -49,7 +50,10 @@ Do not publish or import full manuscripts, private prompt material, private data
 
 - [2026-05-18 MEDIOEVO Hub release](docs/updates/2026-05-18-hub-release.md)
 - [2026-05-18 Workpack Scheduler and Multi-step Workpacks update](docs/updates/2026-05-18-workpack-scheduler-multistep.md)
+- [2026-05-18 Mission Control and Wabi MCP Bridge update](docs/updates/2026-05-18-mission-control.md)
 - [Local Agent Hub roadmap](docs/roadmap/local-agent-hub-roadmap.md)
+- [Mission Control public-safe architecture](docs/architecture/mission-control-public-safe.md)
+- [Wabi MCP Bridge public-safe architecture](docs/architecture/wabi-mcp-bridge-public-safe.md)
 - [Tripartite Framework public-safe summary](docs/theory/tripartite-framework-public-safe.md)
 - [Public Agent Hub overview](docs/agents/public-agent-hub-overview.md)
 - [Wabi local workbench public status](docs/wabi/local-workbench-public-status.md)

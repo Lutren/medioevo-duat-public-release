@@ -16,18 +16,27 @@ This roadmap describes the public-safe direction of the MEDIOEVO local agent sys
 - Multi-step Workpacks v0.2 demonstrated step dependencies, per-step rollback and full workpack rollback.
 - BrowserBridge Selector Pack v0.2 demonstrated dry-run-first service selection, council ranking and proposal-only conversion without external send.
 - Source Intake discipline registered protected/review material before any import, cleanup or publication.
+- Agent Chat persistence/search v0.3 added local append-only storage, hash-chain verification, local search and internal exports without public publication.
+- Claudio Mission Control v0.1 added a local read-only command surface over agents, chat, workpacks, scheduler, BrowserBridge, provider state, tree health, risks and evidence.
 
 ## Next
 
-### Agent Chat persistence/search v0.3
+### Wabi MCP Server scaffold v0.2
 
 Planned improvements:
 
-- local search over public-safe message metadata;
-- room filters;
-- evidence links;
-- redaction checks;
-- export views that do not expose private messages publicly.
+- localhost-only scaffold;
+- read-only tools first;
+- prepare-only draft tools after redaction checks;
+- gated-write disabled by default until TaskSpec, GhostGate, rollback and WitnessLog tests exist.
+
+### Mission Control v0.2
+
+Planned improvements:
+
+- read-only alerts and filters;
+- evidence navigation;
+- no direct execution buttons.
 
 ### Scheduler priorities/dependencies v0.2
 
@@ -69,6 +78,7 @@ Internal local execution must continue to require:
 - no NVIDIA retry;
 - no publication side effect.
 - no browser send without explicit double opt-in and public/sanitized payload.
+- no MCP gated-write without TaskSpec, GhostGate, rollback and WitnessLog.
 
 ### Public Updates
 
@@ -81,3 +91,4 @@ Future public updates may include additional public-safe theory articles, DUAT s
 - Cloud LLM use over private workspace.
 - NVIDIA retry before manual route review.
 - Strong claims about prediction, physical proof or autonomous safety.
+- MCP tools that publish, deploy, delete, expose secrets or export internal chat publicly.

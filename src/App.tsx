@@ -6,6 +6,7 @@ import {
   BarChart3,
   BookOpenText,
   BrainCircuit,
+  Cable,
   CheckCircle2,
   ClipboardCheck,
   Database,
@@ -15,6 +16,7 @@ import {
   GitBranch,
   Globe2,
   Library,
+  MonitorCog,
   Network,
   PackageCheck,
   Pause,
@@ -1850,6 +1852,8 @@ function HubRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElement
         <ModuleCard icon={BarChart3} title="DUAT status" body="Synthetic simulation and display lane for public demos, replay, evidence panels and falsifier-oriented work." />
         <ModuleCard icon={Workflow} title="Wabi status" body="Local workbench summary: provider state remains reviewed; gated workpack and BrowserBridge selection are local-only and evidence-backed." />
         <ModuleCard icon={Network} title="Agent Hub" body="Public concept for agent roles, queues, gates, workpacks and handoffs. Private messages and local execution are not exposed." />
+        <ModuleCard icon={MonitorCog} title="Mission Control" body="Local read-only command surface for agents, chat search, workpacks, scheduler, BrowserBridge, provider state, risks and evidence." />
+        <ModuleCard icon={Cable} title="Wabi MCP Bridge" body="Planned local bridge for safe tools: read-only first, prepare-only drafts second and gated-write only with evidence." />
         <ModuleCard icon={ShieldCheck} title="Boundary" body="Public pages exclude protected manuscripts, private canon, protected game systems, internal prompts, datasets and internal runtime." />
         <ModuleCard icon={ClipboardCheck} title="QA" body="Public updates ship with build, test, secret scan, boundary scan and source-intake review before publication." />
       </div>
@@ -1871,6 +1875,8 @@ function AgentsRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElem
     ["Wabi Local Programmer", "Represents fallback-only local coding loops in sandbox."],
     ["Test Runner", "Keeps local proof tied to tests and compile checks."],
     ["Release Sentinel", "Separates public-safe updates from protected internal work."],
+    ["Mission Control Reader", "Summarizes local operational evidence without executing or mutating."],
+    ["MCP Bridge Planner", "Designs safe read-only and draft-only tool access before any gated write path."],
     ["DUAT Display Agent", "Maintains display concepts and synthetic evidence panels."],
     ["GEODIA Sim Agent", "Tracks synthetic simulation work without real prediction claims."],
   ];
@@ -1937,10 +1943,10 @@ function RoadmapRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorEle
         body="The roadmap separates completed public-safe progress from research and blocked work. Private execution remains local."
       />
       <div className="content-grid">
-        <InfoList title="Done" items={["Wabi Operational Workbench consolidated", "Local Execute v0.2", "Workpack Bridge v0.1", "Agent Chat Routing v0.2", "Workpack Scheduler v0.1", "Multi-step Workpacks v0.2", "BrowserBridge Selector Pack v0.2", "Source Intake registration discipline"]} />
-        <InfoList title="Next" items={["Agent Chat persistence/search v0.3", "Scheduler priorities/dependencies v0.2", "BrowserBridge setup guide", "Source Intake falsifier tests", "Claudio Mission Control dashboard v0.1"]} />
-        <InfoList title="Research" items={["OSIT public-safe articles", "DUAT/Wabi dashboard bridge", "Manual NVIDIA route review before retry"]} />
-        <InfoList title="Blocked" tone="warn" items={["NVIDIA smoke retry until route review passes", "Public bridge into private Claudio", "Publishing full canon or private runtime"]} />
+        <InfoList title="Done" items={["Wabi Operational Workbench consolidated", "Local Execute v0.2", "Workpack Bridge v0.1", "Agent Chat Routing v0.2", "Agent Chat persistence/search v0.3", "Workpack Scheduler v0.1", "Multi-step Workpacks v0.2", "BrowserBridge Selector Pack v0.2", "Claudio Mission Control v0.1", "Source Intake registration discipline"]} />
+        <InfoList title="Next" items={["Wabi MCP Server scaffold v0.2", "Mission Control v0.2 read-only alerts and filters", "Scheduler priorities/dependencies v0.2", "BrowserBridge setup guide", "Source Intake falsifier tests"]} />
+        <InfoList title="Research" items={["OSIT public-safe articles", "DUAT/Wabi evidence navigation", "Manual NVIDIA route review before retry"]} />
+        <InfoList title="Blocked" tone="warn" items={["NVIDIA smoke retry until route review passes", "Public bridge into private Claudio", "MCP publish, deploy or delete tools", "Publishing full canon or private runtime"]} />
       </div>
       <div className="route-actions">
         <a className="command-link primary" href="/updates/2026-05-18" onClick={(event) => navigate(event, "/updates/2026-05-18")}>Read update</a>
@@ -1974,6 +1980,9 @@ function Update20260518Route({ navigate }: { navigate: (event: MouseEvent<HTMLAn
         <StatusLine label="Coding acceptance" status="v0.3 PASS locally" />
         <StatusLine label="Workpack scheduler" status="manual tick / local-only" />
         <StatusLine label="Multi-step workpacks" status="v0.2 PASS locally" />
+        <StatusLine label="Agent Chat search" status="v0.3 local-only / no public export" />
+        <StatusLine label="Mission Control" status="v0.1 read-only / no execution" />
+        <StatusLine label="Wabi MCP Bridge" status="v0.1 plan / read-only first" />
         <StatusLine label="BrowserBridge selector" status="dry-run first / proposal-only" />
         <StatusLine label="Source Intake" status="registered before import" />
         <StatusLine label="Publication boundary" status="Public-safe summaries only" />

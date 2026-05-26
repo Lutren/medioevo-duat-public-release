@@ -9,6 +9,7 @@ This repository contains the public release only. Private canon, internal vaults
 - Run the DUAT synthetic visual demo.
 - Inspect the Telecom / MessageBus surface.
 - Use the Handoff v2.1 public contract and templates.
+- Read the 2026-05-25 public-safe "what I am building now" update.
 - Read the 2026-05-17 public-safe evidence update.
 - Read the 2026-05-18 MEDIOEVO Hub release update.
 - Read the 2026-05-18 Workpack Scheduler and Multi-step Workpacks public-safe update.
@@ -44,10 +45,15 @@ Do not publish or import full manuscripts, private prompt material, private data
 - `/agents`
 - `/theory`
 - `/roadmap`
+- `/updates/2026-05-25-working-on.html`
+- `/updates/2026-05-25-working-on`
 - `/updates/2026-05-18`
 
 ## Latest Public-Safe Update
 
+- [2026-05-25 What I am building now](https://medioevo.space/updates/2026-05-25-working-on.html)
+- [2026-05-25 public-safe update note](docs/updates/2026-05-25-working-on.md)
+- [Open core vs protected assets](OPEN_CORE_VS_PROTECTED.md)
 - [2026-05-18 MEDIOEVO Hub release](docs/updates/2026-05-18-hub-release.md)
 - [2026-05-18 Workpack Scheduler and Multi-step Workpacks update](docs/updates/2026-05-18-workpack-scheduler-multistep.md)
 - [2026-05-18 Mission Control and Wabi MCP Bridge update](docs/updates/2026-05-18-mission-control.md)
@@ -65,6 +71,12 @@ Do not publish or import full manuscripts, private prompt material, private data
 - [OSIT formal lab examples update](docs/updates/2026-05-18-formal-lab-examples.md)
 - [Canon Tripartito status](docs/status/canon-tripartito-status-public-safe.md)
 - [Protected manuscript QA status](docs/status/fragmentos-qa-status-public-safe.md)
+
+## Current Public Boundary
+
+Open-source work is limited to reviewed public-safe foundations: schemas, validators, ActionGate demos, WitnessLog demos, Source Cards, TaskSpec examples, artifact contracts, falsifier templates and synthetic fixtures.
+
+Protected material remains outside public repos: full books, LORE, private canon, Wabi-Sabi internals, complete OSIT packets, commercial UI, premium agents, installers, templates, RPG/TCG systems, video/audio source files, credentials and proprietary calibration.
 
 ## Local Dev
 

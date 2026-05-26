@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-05-25 - Public-safe working-on and open-core boundary update
+
+- Added a public-safe "What I am building now" update page for Wabi visual artifacts, OSIT Formal Lab, Agent City, token economy and protected-source boundaries.
+- Added `OPEN_CORE_VS_PROTECTED.md` to separate MIT-friendly contracts from proprietary books, LORE, Wabi internals, video sources, premium agents and commercial products.
+- Updated README, Hub, sitemap, llms metadata and SPA routes to surface the current update without publishing private canon or multimedia source files.
+- Reaffirmed boundary: no AGI, consciousness, new-physics proof, prediction guarantee, private runtime, full canon, credentials or protected media claims.
+
 ## 2026-05-18 - Mission Control and Wabi MCP Bridge public-safe update
 
 - Added public-safe Mission Control v0.1 summary.

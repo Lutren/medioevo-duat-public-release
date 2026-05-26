@@ -429,6 +429,8 @@ const ROUTE_PATHS = [
   "/agents",
   "/theory",
   "/roadmap",
+  "/updates/2026-05-25-working-on",
+  "/updates/2026-05-25-working-on.html",
   "/updates/2026-05-18",
   "/updates-2026-05-18",
   "/duat",
@@ -708,6 +710,7 @@ export default function App() {
       {path === "/agents" ? <AgentsRoute navigate={navigate} /> : null}
       {path === "/theory" ? <TheoryRoute navigate={navigate} /> : null}
       {path === "/roadmap" ? <RoadmapRoute navigate={navigate} /> : null}
+      {path === "/updates/2026-05-25-working-on" || path === "/updates/2026-05-25-working-on.html" ? <Update20260525Route navigate={navigate} /> : null}
       {path === "/updates/2026-05-18" || path === "/updates-2026-05-18" ? <Update20260518Route navigate={navigate} /> : null}
       {path === "/duat" ? <DuatRoute /> : null}
       {path === "/telecom" || path === "/teleco" ? <TelecomCore /> : null}
@@ -1854,6 +1857,8 @@ function HubRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElement
         <ModuleCard icon={Network} title="Agent Hub" body="Public concept for agent roles, queues, gates, workpacks and handoffs. Private messages and local execution are not exposed." />
         <ModuleCard icon={MonitorCog} title="Mission Control" body="Local read-only command surface for agents, chat search, workpacks, scheduler, BrowserBridge, provider state, risks and evidence." />
         <ModuleCard icon={Cable} title="Wabi MCP Bridge" body="Planned local bridge for safe tools: read-only first, prepare-only drafts second and gated-write only with evidence." />
+        <ModuleCard icon={MonitorCog} title="Wabi visual artifacts" body="Current lane: renderable artifacts first, source as a secondary tab and local-only previews for HTML, JSX, PDF and media." />
+        <ModuleCard icon={ShieldCheck} title="Open core boundary" body="MIT-friendly contracts stay public; books, LORE, Wabi internals, premium UI, video source and private runtime stay protected." />
         <ModuleCard icon={ShieldCheck} title="Boundary" body="Public pages exclude protected manuscripts, private canon, protected game systems, internal prompts, datasets and internal runtime." />
         <ModuleCard icon={ClipboardCheck} title="QA" body="Public updates ship with build, test, secret scan, boundary scan and source-intake review before publication." />
       </div>
@@ -1861,6 +1866,7 @@ function HubRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElement
         <a className="command-link primary" href="/theory" onClick={(event) => navigate(event, "/theory")}>Read theory summary</a>
         <a className="command-link" href="/agents" onClick={(event) => navigate(event, "/agents")}>View agent roles</a>
         <a className="command-link" href="/roadmap" onClick={(event) => navigate(event, "/roadmap")}>View roadmap</a>
+        <a className="command-link" href="/updates/2026-05-25-working-on" onClick={(event) => navigate(event, "/updates/2026-05-25-working-on")}>Current update</a>
         <a className="command-link" href="/updates/2026-05-18" onClick={(event) => navigate(event, "/updates/2026-05-18")}>View update</a>
       </div>
     </section>
@@ -1944,13 +1950,63 @@ function RoadmapRoute({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorEle
       />
       <div className="content-grid">
         <InfoList title="Done" items={["Wabi Operational Workbench consolidated", "Local Execute v0.2", "Workpack Bridge v0.1", "Agent Chat Routing v0.2", "Agent Chat persistence/search v0.3", "Workpack Scheduler v0.1", "Multi-step Workpacks v0.2", "BrowserBridge Selector Pack v0.2", "Claudio Mission Control v0.1", "Source Intake registration discipline"]} />
-        <InfoList title="Next" items={["Wabi MCP Server scaffold v0.2", "Mission Control v0.2 read-only alerts and filters", "Scheduler priorities/dependencies v0.2", "BrowserBridge setup guide", "Source Intake falsifier tests"]} />
-        <InfoList title="Research" items={["OSIT public-safe articles", "DUAT/Wabi evidence navigation", "Manual NVIDIA route review before retry"]} />
-        <InfoList title="Blocked" tone="warn" items={["NVIDIA smoke retry until route review passes", "Public bridge into private Claudio", "MCP publish, deploy or delete tools", "Publishing full canon or private runtime"]} />
+        <InfoList title="Next" items={["Wabi artifact viewer public-safe notes", "Wabi MCP Server scaffold v0.2", "Mission Control v0.2 read-only alerts and filters", "Scheduler priorities/dependencies v0.2", "BrowserBridge setup guide", "Source Intake falsifier tests"]} />
+        <InfoList title="Research" items={["OSIT formal-lab articles", "DUAT/Wabi evidence navigation", "Agent City app-as-agent pattern", "Manual NVIDIA route review before retry"]} />
+        <InfoList title="Blocked" tone="warn" items={["NVIDIA smoke retry until route review passes", "Public bridge into private Claudio", "MCP publish, deploy or delete tools", "Publishing full canon, video source or private runtime"]} />
       </div>
       <div className="route-actions">
-        <a className="command-link primary" href="/updates/2026-05-18" onClick={(event) => navigate(event, "/updates/2026-05-18")}>Read update</a>
+        <a className="command-link primary" href="/updates/2026-05-25-working-on" onClick={(event) => navigate(event, "/updates/2026-05-25-working-on")}>Read current update</a>
+        <a className="command-link" href="/updates/2026-05-18" onClick={(event) => navigate(event, "/updates/2026-05-18")}>Read previous update</a>
         <a className="command-link" href="/hub" onClick={(event) => navigate(event, "/hub")}>Back to hub</a>
+      </div>
+    </section>
+  );
+}
+
+function Update20260525Route({ navigate }: { navigate: (event: MouseEvent<HTMLAnchorElement>, href: string) => void }) {
+  return (
+    <section className="route-surface">
+      <RouteHeader
+        eyebrow="Update 2026-05-25"
+        title="What I am building now"
+        body="MEDIOEVO is moving toward a local-first visual workbench for AI agents: artifacts first, evidence before action, explicit boundaries for public work and protected private canon."
+      />
+      <div className="signal-strip">
+        <Metric label="Public layer" value="LOW_CLAIM" />
+        <Metric label="OSIT" value="FORMAL_LAB" />
+        <Metric label="Video source" value="PRIVATE" />
+        <Metric label="Open core" value="MIT_REVIEW" />
+      </div>
+      <div className="content-grid">
+        <article className="content-panel">
+          <h2>Wabi visual artifacts</h2>
+          <p>Wabi is being shaped as a local workbench that opens renderable artifacts first: HTML, JSX, PDF, image, audio, video and JSON previews before raw source text.</p>
+        </article>
+        <article className="content-panel">
+          <h2>OSIT Formal Lab</h2>
+          <p>The public OSIT lane stays reproducible and conservative: residue, gates, source cards, falsifier templates and synthetic examples. It is not a claim of new-physics validation.</p>
+        </article>
+        <article className="content-panel">
+          <h2>Agent City</h2>
+          <p>Each app and NPC can be modeled as a specialized agent with role, memory, tools, limits and background. The public page shows the design pattern, not private runtime state.</p>
+        </article>
+        <article className="content-panel">
+          <h2>Token economy</h2>
+          <p>Source Cards, manifests, hashes and artifact-first previews reduce repeated context and avoid unnecessary clarifications in long AI-assisted work.</p>
+        </article>
+      </div>
+      <div className="content-grid two">
+        <InfoList title="MIT after review" items={["Schemas", "Validators", "ActionGate demo", "WitnessLog demo", "TaskSpec examples", "Source Card contract", "Artifact contract", "Synthetic fixtures"]} />
+        <InfoList title="Protected" tone="warn" items={["Full books and LORE", "Private canon", "Wabi internals", "Complete OSIT packets", "Premium agents and UI", "RPG/TCG systems", "Video and audio sources", "Credentials and datasets"]} />
+      </div>
+      <div className="content-grid two">
+        <InfoList title="Safe public framing" items={["Formal lab", "Engineering method", "Public-safe tooling", "Synthetic demos", "Designed to reduce informational residue"]} />
+        <InfoList title="Blocked framing" tone="warn" items={["AGI achievement wording", "Consciousness-solved wording", "New-physics proof wording", "Prediction guarantee wording", "Absolute safety wording", "Medical or legal guarantee"]} />
+      </div>
+      <div className="route-actions">
+        <a className="command-link primary" href="/hub" onClick={(event) => navigate(event, "/hub")}>Open hub</a>
+        <a className="command-link" href="/theory" onClick={(event) => navigate(event, "/theory")}>Theory summary</a>
+        <a className="command-link" href="/updates/2026-05-18" onClick={(event) => navigate(event, "/updates/2026-05-18")}>Previous update</a>
       </div>
     </section>
   );
